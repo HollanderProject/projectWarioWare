@@ -14,7 +14,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Sprint Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
 
-* [Requirements]
+* [Requirements](https://github.com/HollanderProject/projectWarioWare/blob/main/artifacts/requirements.md)
 
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
 
