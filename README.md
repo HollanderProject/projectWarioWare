@@ -29,8 +29,8 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * [Product Demonstration]
 
 ## Task Allocation
-* Cameron Bernard -
-* Isaiah Nagac - 
-* Jesse Jericho - 
-* Noah Lang - 
-* Noah Law -
+* Cameron Bernard - Install Unity/Visual Studio, Format Trello Board, Microgame Prototype
+* Isaiah Nagac - Install Unity/Visual Studio, Format Trello Board
+* Jesse Jericho - Install Unity/Visual Studio, Format Trello Board, Created Burndown/Velocity charts
+* Noah Lang - Install Unity/Visual Studio, Format Trello Board, Main Menu, Settings
+* Noah Law -Install Unity/Visual Studio, Format Trello Board
