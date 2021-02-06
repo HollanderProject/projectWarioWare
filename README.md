@@ -31,6 +31,6 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 ## Task Allocation
 * Cameron Bernard - Install Unity/Visual Studio, Format Trello Board, Microgame Prototype
 * Isaiah Nagac - Install Unity/Visual Studio, Format Trello Board
-* Jesse Jericho - Install Unity/Visual Studio, Format Trello Board, Created Burndown/Velocity charts
+* Jesse Jericho - Install Unity/Visual Studio, Format Trello Board, Create Burndown/Velocity charts
 * Noah Lang - Install Unity/Visual Studio, Format Trello Board, Main Menu, Settings
 * Noah Law -Install Unity/Visual Studio, Format Trello Board
