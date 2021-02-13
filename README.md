@@ -35,7 +35,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Noah Lang - Install Unity/Visual Studio, Format Trello Board, Main Menu, Settings
 * Noah Law -Install Unity/Visual Studio, Format Trello Board
 
-# Sprint 1
+# Sprint 2
 * [Product Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
 
 * [Sprint Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
