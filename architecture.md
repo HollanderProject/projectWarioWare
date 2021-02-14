@@ -29,10 +29,8 @@ You should list the assumptions, rules, and guidelines from external sources tha
 See Code Complete, Chapter 3
 
 # User Interface Design
-
-You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
-
-See Code Complete, Chapter 3
+## User Interaction Diagram
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/umd_v1.png)
 
 # Resource Management
 
