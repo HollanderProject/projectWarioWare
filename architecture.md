@@ -32,6 +32,15 @@ See Code Complete, Chapter 3
 ## User Interaction Diagram
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/umd_v1.png)
 
+## User Interface Mockup Design
+![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-1.png)
+
+![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-2.png)
+
+![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-3.png)
+
+![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-4.png)
+
 # Resource Management
 
 See Code Complete, Chapter 3
