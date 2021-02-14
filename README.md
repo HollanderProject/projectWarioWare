@@ -52,10 +52,10 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Automated Tests]
 
-* [Product Demonstration]
+* [Product Demonstration](https://youtu.be/YRLIusKyYX4)
 
 ## Task Allocation
-* Cameron Bernard -
+* Cameron Bernard - Create Demo Video and System Architecture
 * Isaiah Nagac - Create UI Mockup diagrams and UML chart
 * Jesse Jericho - Create C4 Model diagrams
 * Noah Lang - 
