@@ -24,7 +24,7 @@ See Code Complete, Chapter 3
 
 # Business Rules
 
-You should list the assumptions, rules, and guidelines from external sources that are impacting your program design. 
+The only business rule that this project has is that the game must be fun for everyone to play.
 
 See Code Complete, Chapter 3
 
@@ -71,30 +71,28 @@ The game will be using a just-in-time reading scheme to read in any user data fr
 
 # Error Processing
 
-See Code Complete, Chapter 3
+Errors within the game will be corrective, it will attempt to save the user’s data and then attempt to skip the microgame that caused the error, if this cannot be done it will then quit the game. Error detection will be passive, there will not be a situation in which we will have to screen the user’s inputs, though we will attempt to clean up if an error does occur. When the game detects an error, the user will receive a popup stating that an error has occurred and that the game will attempt to recover, if this cannot be done then another popup will inform the player that the game must close. All error messages should be sent to a log file for the user to view. Any non-critical exceptions will be caught and logged in the same file mentioned before, any critical exceptions that may cause the game to crash will also be logged and have a pop-up warning the user. Having a constant error-handling class that can be called will be the preferred method for dealing with any errors or exceptions. Classes themselves should validate any input needed. There will not be many cases like this. We will likely use C#’s in built exception handling as it allows us to log and take actions appropriately.
 
 # Fault Tolerance
 
-See Code Complete, Chapter 3
+Whenever the game detects an error, its priority will be logging the error. Next, the game will attempt to save the data of the user currently playing so that they will not lose any progress or settings recently changed. Then, if the user is playing a microgame while the error occurs, it will attempt to skip to the next microgame. If this cannot occur, then the game will shut down.
 
 # Architectural Feasibility
 
-See Code Complete, Chapter 3
+The modularity of this system makes the architecture very feasible. We do not foresee any issues to arise that would cause infeasibility within the project rendering it unworkable.
 
 # Overengineering
 
-See Code Complete, Chapter 3
+The system allows for overengineering where it is needed and simplicity where it is not. Being able to verify inputs and allowing for increasing complexity within the microgames will require overengineering. Architects should always err on the side of overengineering as it will allow for a smoother experience.
 
 # Build-vs-Buy Decisions
 
-This section should list the third party libraries your system is using and describe what those libraries are being used for.
-
-See Code Complete, Chapter 3
+Our game will be using primarily off-the-shelf components within unity such as the hitbox detection and other various pieces. This simplifies the creation process as well as maintaining a consistency across the various microgames. However, we will be using custom code to run the microgames and handle errors within them.
 
 # Reuse
 
-See Code Complete, Chapter 3
+There will be no reused software within this project from other games. However reusing and conforming software from similar microgames will drastically improve creation times.
 
 # Change Strategy
 
-See Code Complete, Chapter 3
+As we are working with AGILE principles, it is incredibly important to be able to change quickly with responses from all the parties involved. Our strategy for this is simple, due to our game being incredibly modular with the various microgames being pieced together to form a full game, we can change a lot about a particular game or setup without having massive, sweeping changes to the entire project. We plan on implementing simple, quantitatively positive changes with a highest priority based on feedback as a priority, then looking at other changes. Additionally, we are very aware of project bloat and plan to add onto the project only once we have a very good, and functional base.
