@@ -26,8 +26,6 @@ See Code Complete, Chapter 3
 
 The only business rule that this project has is that the game must be fun for everyone to play.
 
-See Code Complete, Chapter 3
-
 # User Interface Design
 ## User Interaction Diagram
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/umd_v1.png)
