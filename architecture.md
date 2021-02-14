@@ -51,23 +51,23 @@ See Code Complete, Chapter 3
 
 # Performance
 
-See Code Complete, Chapter 3
+Due it being a video game, performance is a great concern. The game should explicitly run quickly as this is a priority for it being a fast paced style game. Speed is the highest priority over memory and cost. However, major memory and cost should not be wasted for very minor increases in speed.
 
 # Scalability
 
-See Code Complete, Chapter 3
+The game should have infinite scalability when concerning number of games. Through the level selector we can constantly make more sets of games, grouping them together into level sets and allowing our players to play them. As much of the design is based around a single player experience on a player’s own computer, it is not expected to need an increase in anything related to networking or database capabilities.
 
 # Interoperability
 
-See Code Complete, Chapter 3
+The game is entirely a local experience, there is no need to share data or resources
 
 # Internationalization/Localization
 
-See Code Complete, Chapter 3
+This project has very few messages that would need to be localized for different regions. The most important of these would be the prompts. By having all of these prompts stored in a class that is translatable, the prompts can easily be translated to any language necessary, though this is not a priority for the game.
 
 # Input/Output
 
-See Code Complete, Chapter 3
+The game will be using a just-in-time reading scheme to read in any user data from saved files. This is the only file input necessary with the output simply being writing to that file. As such, I/O errors will be detected at the file level.
 
 # Error Processing
 
