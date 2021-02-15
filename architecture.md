@@ -1,6 +1,8 @@
 # Program Organization
-Our architecture displays the current plans to deliver a working game title using the Unity Game Engine as a foundation. 
-We will use a simple database consisting of external JSON/CSV files along with Unity's provided internal system for our data storage. 
+Our architecture displays the current plans to deliver a working game title using the Unity Game Engine as a foundation.
+
+We will use a simple database consisting of external JSON/CSV files along with Unity's provided internal system for our data storage.
+
 Below are diagrams in high and low level structure to display our current plans for the system.
 
 ## Context Diagram
@@ -16,19 +18,26 @@ Below are diagrams in high and low level structure to display our current plans 
 
 # Code Design
 ## Class Diagram
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassDiagram.png)
+
 Our class diagram consists of three main classes: GameManager, SceneSelector, and LoadedGameScene.
+
 GameManager is responsible for updating the lives count, score count, and calling the game scenes to be loaded (Microgames).
+
 SceneSelector is responsible for randomly selecting a scene (Microgame), but not allowing duplicate scenes to be loaded in succession.
+
 LoadedGameScene is responsible for updating the GameManager's win/loss condition as well as updating the score and lives.
 
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassDiagram.png)
+
 ## Sequence Activity Diagram
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/SequenceActivity.png)
 The sequence activity diagram shows how objects in our project will interact with each other and the flow of work that will happen depending on which activity is performed.
 
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/SequenceActivity.png)
+
 # Data Design
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ER%20Diagram.jpg)
 ER Diagram shows the relationship between entities in our system and how they interact with each other to create a working piece of software.
+
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ER%20Diagram.jpg)
 
 # Business Rules
 
