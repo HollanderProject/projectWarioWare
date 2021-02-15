@@ -8,12 +8,18 @@ Using this architecture will allow us to provide our users with an interactive, 
 Below are diagrams in high and low level structure to display our current plans for the system.
 
 ## Context Diagram
+The Context diagram below shows the big picture of our project, in its simplest form our project will consist of a user playing our game by interacting with the game system via input.
+
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ContextDiagram.png)
 
 ## Container Diagram
+The Container diagram allows us to see what makes up the game system. In our case, it will be the Unity Game Engine as our main foundation as well as a small database for storing data.
+
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ContainerDiagram.png)
 
 ## Component Diagrams
+The Component diagrams shows the structural blocks of each container in our system. The Unity Game Engine has four core components: User Interaction, Game Objects, Utility, and User Interface. Our simple database only has two components: A leaderboards file to save the local leaderboard scores and a save file to store the player's main story progress.
+
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UnityEngineComponentDiagram.png)
 
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/DatabaseComponentDiagram.png)
