@@ -3,6 +3,8 @@ Our architecture displays the current plans to deliver a working game title usin
 
 We will use a simple database consisting of external JSON/CSV files along with Unity's provided internal system for our data storage.
 
+Using this architecture will allow us to provide our users with an interactive, simple, and fast-paced game that changes with each play, keeping them engaged. (U011, U012, U015)
+
 Below are diagrams in high and low level structure to display our current plans for the system.
 
 ## Context Diagram
@@ -29,6 +31,12 @@ LoadedGameScene is responsible for updating the GameManager's win/loss condition
 
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassDiagram.png)
 
+## Class Table
+
+Class Table that relates our classes to user stories
+
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassTable.png)
+
 ## Sequence Activity Diagram
 The sequence activity diagram shows how objects in our project will interact with each other and the flow of work that will happen depending on which activity is performed.
 
@@ -44,6 +52,11 @@ ER Diagram shows the relationship between entities in our system and how they in
 The only business rule that this project has is that the game must be fun for everyone to play.
 
 # User Interface Design
+
+The UI interface for our project will consist of scenes that have interactable buttons and sliders providing many different functionalities. The player must simply hover their mouse over a button and click down for it to change the scene. While in a microgame, the player engages with the game using their mouse to play and attempts to complete the goal of the microgame. The UI will display information vital to the player's experience, such as score and life count. These are all necessities, as our users must be able to interact with the menus, interact with the microgame, and keep track of their progress all while keeping it simplistic. (U001, U002, U003, etc.)
+
+More specific details of functionality entailed in the diagrams.
+
 ## User Interaction Diagram
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/umd_v1.png)
 
@@ -55,8 +68,6 @@ The only business rule that this project has is that the game must be fun for ev
 ![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-3.png)
 
 ![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-4.png)
-
-The UI interface for our project will consist of scenes that have interactable buttons and sliders providing many different functionalities. The player must simply hover their mouse over a button and click down for it to change the scene. This is a necessity, as our users must be able to interact with the various functions of our title, while keeping it simplistic. (U001, U002, U003, etc.) More specific details of functionality entailed in the diagrams.
 
 # Performance
 
