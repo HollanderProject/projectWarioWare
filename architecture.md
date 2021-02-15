@@ -1,4 +1,8 @@
 # Program Organization
+Our architecture displays the current plans to deliver a working game title using the Unity Game Engine as a foundation. 
+We will use a simple database consisting of external JSON/CSV files along with Unity's provided internal system for our data storage. 
+Below are diagrams in high and low level structure to display our current plans for the system.
+
 ## Context Diagram
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ContextDiagram.png)
 
@@ -11,16 +15,20 @@
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/DatabaseComponentDiagram.png)
 
 # Code Design
+## Class Diagram
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassDiagram.png)
+Our class diagram consists of three main classes: GameManager, SceneSelector, and LoadedGameScene.
+GameManager is responsible for updating the lives count, score count, and calling the game scenes to be loaded (Microgames).
+SceneSelector is responsible for randomly selecting a scene (Microgame), but not allowing duplicate scenes to be loaded in succession.
+LoadedGameScene is responsible for updating the GameManager's win/loss condition as well as updating the score and lives.
 
-You should have your UML Class diagram and any other useful UML diagrams in this section. Each diagram should be accompanied by a brief description explaining what the elements are and why they are in the diagram. For your class diagram, you must also include a table that relates each class to one or more user stories. 
-
-See Code Complete, Chapter 3 and https://c4model.com/
+## Sequence Activity Diagram
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/SequenceActivity.png)
+The sequence activity diagram shows how objects in our project will interact with each other and the flow of work that will happen depending on which activity is performed.
 
 # Data Design
-
-If you are using a database, you should have a basic Entity Relationship Diagram (ERD) in this section. This diagram should describe the tables in your database and their relationship to one another (especially primary/foreign keys), including the columns within each table. 
-
-See Code Complete, Chapter 3
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ER%20Diagram.jpg)
+ER Diagram shows the relationship between entities in our system and how they interact with each other to create a working piece of software.
 
 # Business Rules
 
@@ -39,13 +47,7 @@ The only business rule that this project has is that the game must be fun for ev
 
 ![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-4.png)
 
-# Resource Management
-
-See Code Complete, Chapter 3
-
-# Security
-
-See Code Complete, Chapter 3
+The UI interface for our project will consist of scenes that have interactable buttons and sliders providing many different functionalities. The player must simply hover their mouse over a button and click down for it to change the scene. This is a necessity, as our users must be able to interact with the various functions of our title, while keeping it simplistic. (U001, U002, U003, etc.) More specific details of functionality entailed in the diagrams.
 
 # Performance
 
