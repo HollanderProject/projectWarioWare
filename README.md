@@ -10,11 +10,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Noah Law
 
 # Sprint 1
-* [Product Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
-
-* [Sprint Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
-
-* [Requirements](https://trello.com/b/jtsmfnkz/stuff-to-do)
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
 
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
 
@@ -36,11 +32,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Noah Law -Install Unity/Visual Studio, Format Trello Board
 
 # Sprint 2
-* [Product Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
-
-* [Sprint Backlog](https://trello.com/b/jtsmfnkz/stuff-to-do)
-
-* [Requirements](https://trello.com/b/jtsmfnkz/stuff-to-do)
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
 
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
 
@@ -60,3 +52,25 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Jesse Jericho - Create C4 Model diagrams
 * Noah Lang - ER diagram
 * Noah Law - Sequency Activity diagram
+
+# Sprint 3
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests]
+
+* [Product Demonstration]
+
+## Task Allocation
+* Cameron Bernard -
+* Isaiah Nagac - 
+* Jesse Jericho - Create CUT prototype and update existing diagrams based on feedback from Sprint 2.
+* Noah Lang -
+* Noah Law -
