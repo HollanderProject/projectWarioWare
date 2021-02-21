@@ -35,13 +35,13 @@ SceneSelector is responsible for randomly selecting a scene (Microgame), but not
 
 LoadedGameScene is responsible for updating the GameManager's win/loss condition as well as updating the score and lives.
 
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassDiagram.png)
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UpdatedClassDiagram.png)
 
 ## Class Table
 
 Class Table that relates our classes to user stories
 
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassTable.png)
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassStoryTable.png)
 
 ## Sequence Activity Diagram
 The sequence activity diagram shows how objects in our project will interact with each other and the flow of work that will happen depending on which activity is performed.
@@ -74,6 +74,10 @@ More specific details of functionality entailed in the diagrams.
 ![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-3.png)
 
 ![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UImockupv1-4.png)
+
+## User Interface Table
+
+![alttext](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/uiStoryTable.png)
 
 # Performance
 
