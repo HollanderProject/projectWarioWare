@@ -27,13 +27,23 @@ The Component diagrams shows the structural blocks of each container in our syst
 # Code Design
 ## Class Diagram
 
-Our class diagram consists of three main classes: GameManager, SceneSelector, and LoadedGameScene.
+Our class diagram consists of classes:
 
 GameManager is responsible for updating the lives count, score count, and calling the game scenes to be loaded (Microgames).
 
 SceneSelector is responsible for randomly selecting a scene (Microgame), but not allowing duplicate scenes to be loaded in succession.
 
 LoadedGameScene is responsible for updating the GameManager's win/loss condition as well as updating the score and lives.
+
+countdown is responsible for updating the timer displayed to the player, showing how much time remains before they lose the game.
+
+gamePrompt is responsible for giving the player a brief prompt of what to do in the current microgame they are playing.
+
+climbCharacter controls the character for the CLIMB microgame.
+
+cutBlade controls the players blade in the CUT microgame.
+
+cutBamboo awaits detection to trigger a collision from cutBlade in the CUT microgame.
 
 ![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UpdatedClassDiagram.png)
 
