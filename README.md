@@ -72,5 +72,5 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Cameron Bernard -
 * Isaiah Nagac - 
 * Jesse Jericho - Create CUT prototype and update existing diagrams based on feedback from Sprint 2.
-* Noah Lang -
+* Noah Lang - Created POKE prototype
 * Noah Law -
