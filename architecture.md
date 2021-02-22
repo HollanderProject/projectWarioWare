@@ -61,7 +61,7 @@ The sequence activity diagram shows how objects in our project will interact wit
 # Data Design
 ER Diagram shows the relationship between entities in our system and how they interact with each other to create a working piece of software.
 
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ER%20Diagram.png)
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ER diagram.png)
 
 # Business Rules
 
