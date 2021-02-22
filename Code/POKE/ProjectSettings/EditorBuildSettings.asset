@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: af8d8d3b5e1b5b2409f3e022aafa0b9f
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: ab773577927073044bbd92fab37b51af
+  - enabled: 1
+    path: Assets/POKE/Scenes/Poke.unity
+    guid: e4b0a40437ea7b046aa1f84ccf8e027e
+  - enabled: 1
+    path: Assets/POKE/Scenes/winScene.unity
+    guid: 47bc37978116df046b9339f262246636
+  - enabled: 1
+    path: Assets/POKE/Scenes/loseScene.unity
+    guid: 38ac89d43d512ba42ad56e0c3bb34a0c
+  m_configObjects: {}
