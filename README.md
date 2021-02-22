@@ -70,7 +70,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 ## Task Allocation
 * Cameron Bernard -
-* Isaiah Nagac - 
+* Isaiah Nagac - Create SHOOT prototype
 * Jesse Jericho - Create CUT prototype and update existing diagrams based on feedback from Sprint 2.
 * Noah Lang - 
 * Noah Law - Created POKE prototype
