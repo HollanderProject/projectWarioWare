@@ -69,8 +69,8 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * [Product Demonstration](https://youtu.be/n42jLY1ivPo)
 
 ## Task Allocation
-* Cameron Bernard -
+* Cameron Bernard - Work on ORGANIZE prototype and improve CLIMB prototype
 * Isaiah Nagac - Create SHOOT prototype
 * Jesse Jericho - Create CUT prototype and update existing diagrams based on feedback from Sprint 2.
-* Noah Lang - Created CATCH prototype and (with help from others) the product demonstration video
-* Noah Law - Created POKE prototype
+* Noah Lang - Create CATCH prototype and (with help from others) the product demonstration video
+* Noah Law - Create POKE prototype
