@@ -64,7 +64,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
 
-* [Tests](https://drive.google.com/drive/folders/1sPo5_9n-KqPZes8Xxw_R7zCiZWV5qgWI?usp=sharing)
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
 * [Product Demonstration](https://youtu.be/n42jLY1ivPo)
 
