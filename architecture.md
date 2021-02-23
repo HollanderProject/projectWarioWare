@@ -45,13 +45,23 @@ cutBlade controls the players blade in the CUT microgame.
 
 cutBamboo awaits detection to trigger a collision from cutBlade in the CUT microgame.
 
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/UpdatedClassDiagram.png)
+pokeButton awaits detection to count as a poke from pokeMouseFollow in the POKE microgame.
+
+pokeMouseFollow controls the player's "finger" to poke in the POKE microgame.
+
+catchWinCondition monitors the score flow of the CATCH microgame.
+
+catchSpawn controls the player's object that is used to increase score in the CATCH microgame.
+
+shootGameBehaviour controls all aspects of the shoot microgame, including controls, win/loss conditions, and behavious.
+
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/classDiagramUpdated.png)
 
 ## Class Table
 
 Class Table that relates our classes to user stories
 
-![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/ClassStoryTable.png)
+![alt text](https://github.com/HollanderProject/projectWarioWare/blob/main/Diagrams/classTableUpdated.png)
 
 ## Sequence Activity Diagram
 The sequence activity diagram shows how objects in our project will interact with each other and the flow of work that will happen depending on which activity is performed.
