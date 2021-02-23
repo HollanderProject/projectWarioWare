@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Scissors : MonoBehaviour
 {
-    //public GameObject scissorsTrailPrefab;
     public float minCutVelocity = 0.1f;
 
     bool isCutting = false;
     Vector2 previousPosition;
-    GameObject currentScissorsTrail;
 
     Rigidbody2D rb;
     Camera cam;
@@ -20,7 +18,6 @@ public class Scissors : MonoBehaviour
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         circleCollider = GetComponent<CircleCollider2D>();
-        //scissorsTrailPrefab.GetComponent<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -60,15 +57,12 @@ public class Scissors : MonoBehaviour
     void StartCutting()
     {
         isCutting = true;
-        //currentScissorsTrail = Instantiate(scissorsTrailPrefab, transform);
         circleCollider.enabled = false;
     }
 
     void StopCutting()
     {
         isCutting = false;
-        //currentScissorsTrail.transform.SetParent(null);
-        //Destroy(currentScissorsTrail, 0.5f);
         circleCollider.enabled = false;
     }
 }
