@@ -91,7 +91,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * [Product Demonstration]
 
 ## Task Allocation
-* Cameron Bernard -
+* Cameron Bernard - Finish ORGANIZE and begin work on POKE, create automated tests for CLIMB and ORGANIZE and manual tests for ORGANIZE
 * Isaiah Nagac -
 * Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
 * Noah Lang -
