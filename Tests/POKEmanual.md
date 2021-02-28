@@ -1,16 +1,23 @@
 # POKE MANUAL TEST CASES
 ## CountdownTimer.cs
-1. Begin the game
-2. Countdown starts at 10 seconds
-3. Do nothing and allow the countdown to reach zero
-4. Once the timer reaches 3 seconds the timer number’s turn red
-5. Once the countdown reaches 0, the player is taken to the losing screen
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of POKE should be displayed and start running. |
+| 2. Observe:       | The countdown timer starts at 10 seconds, and will decrement by 1 for each second that passes      |
+| 3. Wait for the timer to reach 3. | The timer's text should turn red.      |
+| 4. Wait for the timer to reach 0. | A failure screen should be displayed.     |
 
 ## ButtonInteraction.cs
-1. Begin the game
-2. Click on the glowing nose 3 times before the timer reaches 0
-3. Once the nose is clicked on 3 times the player is taken to the win screen
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of POKE should be displayed and start running. |
+| 2. Using the mouse, click on the nose object 3 times before the time reaches 0     | A win screen should be displayed.      |
 
 ## MouseFollow.cs
-1. Begin the game
-2. Move the mouse around the screen, the finger will follow the mouse,
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of POKE should be displayed and start running. |
+| 2. Move the mouse cursor around the screen      | A finger icon should follow the mouse cursor closely.      |
