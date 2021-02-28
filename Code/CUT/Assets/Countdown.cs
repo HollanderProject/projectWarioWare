@@ -10,16 +10,24 @@ public class Countdown : MonoBehaviour
     public GameObject scissors;
     public GameObject Bamboo;
     public float time;
+    public int count = 0;
 
     // Update is called once per frame
     void Update()
     {
+        // Check if the time is greater than 1 and that the winText is not active
         if (time > 0 && !winText.activeSelf)
         {
             // Counts down time and displays it
             time -= Time.deltaTime;
             timerText.text = ((int)time).ToString();
+            // if the timer is <= 3, turn the timer text to red
+            if (time <= 3 && !winText.activeSelf)
+            {
+                timerText.color = Color.red;
+            }
         }
+        // If the time hits 0, fail the player
         else if (time <= 0 && !winText.activeSelf)
         {
             // Creates a failure state if time hits 0
