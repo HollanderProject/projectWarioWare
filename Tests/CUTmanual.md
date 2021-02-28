@@ -1,68 +1,80 @@
 # CUT MANUAL TEST CASES
 
 ## Countdown.cs countdown test –
-1.	Hit play to launch the game. The game will start running.
-2.	Check if the timer appears on screen, beginning with 5.
-3.	Observe that every second the timer goes down 1 second until 0.
-4.	When the timer reaches 0, the game ends in a failure.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds . |
+| 2. Check that a timer appears on the top right of the screen, starting at 7.      | A timer starting at the value 7 should appear in the top right of the screen      |
+| 3. Watch the timer count down. Observe:     | Every second the timer value should go down by 1 second, until it reaches 0 |
+| 4. Wait for the timer to hit 0.     | When the timer reaches 0, the game ends in a failure. A prompt text saying "Fail!" should appear. |
 
 ## Bamboo.cs gravity test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	A green bamboo object should appear in the middle of the screen.
-3.	The object should slowly fall with a gravity scale of 4 (check in unity).
-4.	It should be off screen within 5 seconds of falling.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Observe the following:     | The bamboo objects should be falling with a gravity scale of 100 (Verify this in Unity.) to the bottom of the player's screen |
 
 ## Bamboo.cs win test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	A green bamboo object should appear in the middle of the screen.
-3.	The object should slowly fall with a gravity scale of 4.
-4.	Successfully cut the bamboo by holding down the left mouse button and moving the mouse over the bamboo with a velocity over 0.01f.
-5.	The bamboo object should disappear, and the game will end in a win screen.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Observe:    | Bamboo should be falling from the top of the screen in random spots.      |
+| 3. Successfully cut 5 bamboo objects by holding down the left mouse button and moving the mouse over the bamboo with a velocity over 0.01f. | After cutting 5 bamboo objects, the bamboo objects should stop spawning and the game will end with a text prompt displaying "Win!" |
 
 ## Bamboo.cs fail test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	A green bamboo object should appear in the middle of the screen.
-3.	The object should slowly fall with a gravity scale of 4.
-4.	Do nothing.
-5.	The bamboo should fall off screen within 5 seconds of falling and the game will end in a failure.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Observe:    | Bamboo should be falling from the top of the screen in random spots.      |
+| 3. Do nothing. Wait for the timer to reach 0. | After the timer runs out, the bamboo objects should stop spawning and the game will end with a text prompt displaying "Fail!" |
 
 ## Blade.cs Blade not active test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	DO NOT hold down the left mouse button. The cursor trail will be yellow.
-3.	Cross the cursor over the bamboo object at any many different speeds.
-4.	The bamboo should not be cut, and the game should not end.
-5.	The timer should reach 0, and the game will end in a failure.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Do not click down the left mouse button, but move the mouse cursor around and attempt to cut bamboo objects.   | The mouse cursor will have a yellow trail behind it and the mouse will not be able to cut any bamboo objects |
+| 3. Repeat step 2 until the timer reaches 0. | After the timer runs out, The cut score should be 0/5. The bamboo objects should stop spawning and the game will end with a text prompt displaying "Fail!". |
 
 ## Blade.cs Blade velocity test (no hit) –
-1.	Hit play to launch the microgame. The game will start running.
-2.	Hold down the left mouse button. The cursor trail will turn red.
-3.	Move the cursor at a velocity below 0.01f (use unity circle collider to check that it is not active).
-4.	Cross the cursor over the bamboo object.
-5.	The bamboo should not be cut, and the game should not end.
-6.	When the timer reaches 0, the game will end in a failure.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Click down the left mouse button, but move the mouse cursor under a velocity of 0.01f (Use the unity circle collider to check that it is not active.) and attempt to cut bamboo objects.   | The mouse cursor will have a red trail behind it and the mouse will not be able to cut any bamboo objects |
+| 3. Repeat step 2 until the timer reaches 0. | After the timer runs out, The cut score should be 0/5. The bamboo objects should stop spawning and the game will end with a text prompt displaying "Fail!". |
 
 ## Blade.cs Blade velocity test (hit) –
-1.	Hit play to launch the microgame. The game will start running.
-2.	Hold down the left mouse button. The cursor trail will turn red.
-3.	Move the cursor at a velocity above 0.01f (use unity circle collider to check that it is active).
-4.	Cross the cursor over the bamboo object.
-5.	The bamboo should be cut, and the game should end in a win screen.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Click down the left mouse button, and move the mouse cursor over a velocity of 0.01f (Use the unity circle collider to check that it is active.) and attempt to cut bamboo objects.   | The mouse cursor will have a red trail behind it and the mouse will be able to cut bamboo objects |
+| 3. Repeat step 2 until you cut 5 bamboo objects. | After cutting 5 bamboo objects, The cut score should be 5/5. The bamboo objects should stop spawning and the game will end with a text prompt displaying "Win!". |
 
 ## Prompts.cs Win screen test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	Hold down the left mouse button. The cursor trail will turn red.
-3.	Move the cursor at a velocity above 0.01f (use unity circle collider to check that it is active).
-4.	Cross the cursor over the bamboo object.
-5.	The bamboo should be cut.
-6.	The game should display a text that says “Win!”
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds. |
+| 2. Intentionally win the game by slicing 5 bamboo objects | Upon reaching cut score 5/5 within the time limit, the bamboo objects should stop spawning and the game will end with a text prompt displaying "Win!".  |
+
 
 ## Prompts.cs Lose screen test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	Do nothing until the timer reaches 0.
-3.	The game should display a text that says “Fail”.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds. |
+| 2. Intentionally lose the game by do nothing until the timer reaches 0. | Upon the timer reaching 0, the cut score  will be 0/5, and the bamboo objects should stop spawning and the game will end with a text prompt displaying "Fail!".  |
 
 ## CutPrompt.cs CUT screen test –
-1.	Hit play to launch the microgame. The game will start running.
-2.	A text prompt should immediately pop up saying “CUT!”.
-3.	The text prompt will remain for exactly 2 seconds.
-4.	After 2 seconds, the text should be removed from the player screen.
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running.|
+| 2. Observe the following: | A text prompt "CUT!" should appear for 2 seconds. During these 2 seconds, no bamboo should be spawning or falling from the top of the screen.|
+| 3. Wait 2 seconds.     | The text prompt "CUT!" should disappear, and bamboo should begin spawning and falling from the top of the screen. |
