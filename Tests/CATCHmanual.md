@@ -1,42 +1,47 @@
 # CATCH MANUAL TEST CASES
 ## MouseMovement.cs
-1. Begin the game
-2. Move the mouse up, down, left, right
-3. The following should happen:
-4. The player never moves up or down
-5. The player icon moves smoothly with the position of the mouse cursor
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game      | The Scene of CATCH should be displayed and start running. |
+| 2. Move the mouse up, down, left, and right     | The player should only move left and right, NEVER up or down. The player icon should also move smoothly with the position of the mouse cursor.    |
 
 ## ScoreScript.cs
-1. Begin the game
-2. Score should display as zero to begin with
-3. Play the game, and each time a dog is caught: 
-4. scoreValue is incremented by 1
-5. The Score Text on-screen increments by 1
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game.     | The scene of CATCH should be displayed and start running. |
+| 2. Observe the initial score value.     | The initial score value should display zero to begin with.      |
+| 3. Play the game by catching dogs using the mouse cursor to move left and right. | Upon catching a dog, the scoreValue is incremented by 1 and the Score Text on-screen increments by 1.      |
 
 ## FailScript.cs
-1. Begin the game
-2. Failures should display as zero to begin with
-3. Play the game, and each time a dog is missed: 
-4. failScoreValue is incremented by 1
-5. The Fail Text on-screen increments by 1
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game.     | The scene of CATCH should be displayed and start running. |
+| 2. Observe the initial failures value.     | The initial failures value should display zero to begin with.      |
+| 3. Play the game. Intentionally miss dogs using the mouse cursor to move left and right to avoid catching them. | Upon missing a dog, the failscoreValue is incremented by 1 and the Fail Text on-screen increments by 1.      |
 
 ## WinCondition.cs (Win)
-1. Begin the game
-2. Play the game until the maximum score is reached. The following should happen:
-3. Dogs cease falling from the sky
-4. The text “You Win!” appears in the center of the screen
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CATCH should be displayed and start running. |
+| 2. Play the game by using the mouse cursor to move left and right to catch dogs. Catch dogs until the maximum score value is reached.      | Upon reaching maximum score value, the dogs should cease falling from the top of the screen. A text displaying "You Win!" should also appear in the center of the screen      |
 
 ## WinCondition.cs (Lose)
-1. Begin the game
-2. Play the game until the maximum allowed missed dogs is reached. The following should happen:
-3. Dogs cease falling from the sky
-4. The text “You Lose” appears in the center of the screen
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CATCH should be displayed and start running. |
+| 2. Play the game by using the mouse cursor to move left and right to catch dogs. Intentionally miss all dogs until the maximum fail value is reached.      | Upon reaching maximum fail value, the dogs should cease falling from the top of the screen. A text displaying "You Lose!" should also appear in the center of the screen      |
 
 ## DogSpawn.cs
-1. Begin the game
-   The following should happen:
-2. Dogs should fall from the sky, only spawning the next dog after the previous dog was caught or missed.
-3. When a dog is caught, increment scoreValue by 1
-4. When a dog is missed, increment failScoreValue by 1
-5. When a dog is either caught or missed, remove it from the game & spawn a new one
-6. If the maximum amount of successes or failures are reached, dogs will no longer spawn
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CATCH should be displayed and start running. Dog objects should immediately begin to fall from the top of the screen. |
+| 2. Play the game by using the mouse cursor to move left and right to catch a dog.   | When a dog is caught, increment scoreValue by 1     |
+| 3. Play the game by using the mouse cursor to move left and right to intentionally miss a dog.   | When a dog is missed, increment failscoreValue by 1     |
+| 4. Observe that if a dog is either caught or missed:   | The dog object is removed from the game and a new one is spawned    |
+| 5. Reach the maximum score on either scoreValue or failscoreValue.   | All dog objects will no longer spawn.     |
