@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3D2BAAC0-0EAF-9D10-C63E-3BC966E07CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts", "Scripts.csproj", "{CAD080EB-EA27-FB05-5296-0C7B71FBBF68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMode", "PlayMode.csproj", "{2E2B075B-F9F6-3303-CCF6-161F164B8CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditMode", "EditMode.csproj", "{8D15EDC4-DE47-A4CE-B412-5901B215E62D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D2BAAC0-0EAF-9D10-C63E-3BC966E07CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2BAAC0-0EAF-9D10-C63E-3BC966E07CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2BAAC0-0EAF-9D10-C63E-3BC966E07CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2BAAC0-0EAF-9D10-C63E-3BC966E07CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD080EB-EA27-FB05-5296-0C7B71FBBF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD080EB-EA27-FB05-5296-0C7B71FBBF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD080EB-EA27-FB05-5296-0C7B71FBBF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD080EB-EA27-FB05-5296-0C7B71FBBF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2B075B-F9F6-3303-CCF6-161F164B8CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2B075B-F9F6-3303-CCF6-161F164B8CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2B075B-F9F6-3303-CCF6-161F164B8CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2B075B-F9F6-3303-CCF6-161F164B8CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D15EDC4-DE47-A4CE-B412-5901B215E62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D15EDC4-DE47-A4CE-B412-5901B215E62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D15EDC4-DE47-A4CE-B412-5901B215E62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D15EDC4-DE47-A4CE-B412-5901B215E62D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
