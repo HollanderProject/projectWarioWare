@@ -74,3 +74,25 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Jesse Jericho - Create CUT prototype and update existing diagrams based on feedback from Sprint 2.
 * Noah Lang - Create CATCH prototype and (with help from others) the product demonstration video
 * Noah Law - Create POKE prototype
+
+# Sprint 4
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
+
+* [Product Demonstration]
+
+## Task Allocation
+* Cameron Bernard -
+* Isaiah Nagac -
+* Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
+* Noah Lang -
+* Noah Law -
