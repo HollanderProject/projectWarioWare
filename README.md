@@ -95,4 +95,4 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Isaiah Nagac - Improvements to SHOOT micrgame, created original assets for BROWSE micrograms. 
 * Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
 * Noah Lang - Improvements to CATCH microgame, created automated test units for CATCH microgame.
-* Noah Law -
+* Noah Law - Improvements to POKE microgame, created automated test units for POKE microgame.
