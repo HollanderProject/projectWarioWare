@@ -88,7 +88,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
-* [Product Demonstration]
+* [Product Demonstration](https://www.youtube.com/watch?v=IwnGkqxPYag&feature=youtu.be)
 
 ## Task Allocation
 * Cameron Bernard - Finish ORGANIZE and begin work on POKE, create automated tests for CLIMB and ORGANIZE and manual tests for ORGANIZE
