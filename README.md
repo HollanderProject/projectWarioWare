@@ -94,5 +94,5 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Cameron Bernard - Finish ORGANIZE and begin work on POKE, create automated tests for CLIMB and ORGANIZE and manual tests for ORGANIZE
 * Isaiah Nagac - Improvements to SHOOT micrgame, created original assets for BROWSE micrograms. 
 * Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
-* Noah Lang -
+* Noah Lang - Improvements to CATCH microgame, created automated test units for CATCH microgame.
 * Noah Law -
