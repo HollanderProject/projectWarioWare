@@ -88,11 +88,33 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
+* [Product Demonstration](https://www.youtube.com/watch?v=IwnGkqxPYag&feature=youtu.be)
+
+## Task Allocation
+* Cameron Bernard - Finish CLIMB and begin work on ORGANIZE, created automated tests for CLIMB and ORGANIZE and manual tests for ORGANIZE.
+* Isaiah Nagac - Improvements to SHOOT micrgame, created original assets for BROWSE micrograms. 
+* Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
+* Noah Lang - Improvements to CATCH microgame, created automated test units for CATCH microgame.
+* Noah Law - Improvements to POKE microgame, created automated test units for POKE microgame.
+
+# Sprint 5
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
+
 * [Product Demonstration]
 
 ## Task Allocation
 * Cameron Bernard -
 * Isaiah Nagac -
-* Jesse Jericho - Improvements to CUT microgame, created automated unit tests for CUT microgame, and applied corrections to manual tests format based on feedback.
+* Jesse Jericho - Created prototype for HERD microgame, created automated/manual tests for HERD microgame.
 * Noah Lang -
 * Noah Law -

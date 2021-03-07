@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class GameBehavior : MonoBehaviour
 {
 
-    public bool canPlayerShoot = false;
-    public bool showWinScreen = false;
-    public bool showLoseScreen = false;
+    private bool canPlayerShoot = false;
+    private bool showWinScreen = false;
+    private bool showLoseScreen = false;
     private bool stopCounting = false;
-    public float drawWindow = 0.70f;
-    public float timeRemaining = 8;
+
+    public int minDraw = 1;
+    public int maxDraw = 3;
+    public float drawWindow = 0.65f;
+    public float timeRemaining = 5;
+
     private float randomDrawTime;
     private float drawWindowWithRandomTime;
 
@@ -23,13 +27,16 @@ public class GameBehavior : MonoBehaviour
     SpriteRenderer neutralRender;
     SpriteRenderer attackRender;
     SpriteRenderer hitRender;
+    SpriteRenderer eyeRender;
 
     GameObject neutralStance;
     GameObject attackStance;
 
+    AudioSource gunSound;
+
     void Awake()
     {
-        randomDrawTime = Random.Range(2,5);
+        randomDrawTime = Random.Range(minDraw,maxDraw);
         drawWindowWithRandomTime = randomDrawTime - drawWindow;
         Debug.Log("Random Number is: " + randomDrawTime);
         Debug.Log("You lose the draw if don't fire before: " + drawWindowWithRandomTime);
@@ -43,6 +50,8 @@ public class GameBehavior : MonoBehaviour
         shotRender = GameObject.Find("ShotAnimation").GetComponent<SpriteRenderer>();
         neutralStance = GameObject.Find("CowboyNeutral");
         attackStance = GameObject.Find("CowboyFire");
+
+        gunSound = GameObject.Find("GunSound").GetComponent<AudioSource>();
     }
 
     void Update()
@@ -102,6 +111,7 @@ public class GameBehavior : MonoBehaviour
 
     void displayShotAnimation()
     {
+        gunSound.Play();
         fireSpeachBubble.enabled = false;
         neutralStance.SetActive(false);
         shotRender.enabled = true;
@@ -110,12 +120,13 @@ public class GameBehavior : MonoBehaviour
 
     void displayHitAnimation(bool hitRightTime)
     {
+        gunSound.Play();
         neutralStance.SetActive(false);
         attackStance.SetActive(false);
         hitRender.enabled = true;
         if (hitRightTime)
             youWinSpeachBubble.enabled = true;
-        else if(!hitRightTime)
+        else
             youLoseSpeachBubble.enabled = true;
     }
 
@@ -129,7 +140,7 @@ public class GameBehavior : MonoBehaviour
     {
         if (showWinScreen)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "YOU WON!!"))
+            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "Retry?"))
             {
                 RestartLevel();
             }
@@ -137,7 +148,7 @@ public class GameBehavior : MonoBehaviour
         
         if (showLoseScreen)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "You lose..."))
+            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "Retry"))
             {
                 RestartLevel();
             }
