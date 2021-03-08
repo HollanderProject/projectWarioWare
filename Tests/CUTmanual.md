@@ -16,6 +16,30 @@
 | 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
 | 2. Observe the following:     | The bamboo objects should be falling with a gravity scale of 100 (Verify this in Unity.) to the bottom of the player's screen |
 
+## Bamboo.cs spawn test –
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game     | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Observe the following:     | The bamboo objects should be continuously spawning at the top of the player's screen.  |
+| 3. Wait for the timer to hit 0.    | The bamboo objects should no longer be spawning at the top of the player's screen and a fail text should be displayed.  |
+
+## Bamboo.cs random spawn test –
+
+| Step        | Expected Behaviour |
+| ------------- |:-------------:|
+| 1. Begin the game for the first round of testing | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 2. Observe the following:     | The bamboo objects should be continuously spawning at the top of the player's screen.  |
+| 3. Take note of where the bamboo pieces are spawning during the first testing round.    | The bamboo objects should be spawning in random locations at the top of the player's screen. Record where they spawn and in what order.  |
+| 4. Wait for the timer to hit 0.    | The bamboo objects should no longer be spawning at the top of the player's screen and a fail text should be displayed.  |
+| 5. Begin the game for the second round of testing | The scene of CUT should be displayed and start running. Bamboo objects should begin falling from the top of the screen after 2 seconds.  |
+| 6. Observe the following:     | The bamboo objects should be continuously spawning at the top of the player's screen.  |
+| 7. Take note of where the bamboo pieces are spawning during the second testing round.    | The bamboo objects should be spawning in random locations at the top of the player's screen. Record where they spawn and in what order.  |
+| 8. Compare the bamboo spawn locations/order of the first and second testing rounds. | The bamboo objects spawn order will be different in the first and second testing round. |
+
+
+
+
 ## Bamboo.cs win test –
 
 | Step        | Expected Behaviour |
