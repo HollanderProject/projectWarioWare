@@ -114,7 +114,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 ## Task Allocation
 * Cameron Bernard - Created prototype for NUDGE microgame, created automated/manual tests for NUDGE microgame.
-* Isaiah Nagac - Created prototype for BROWSE microgame, created automated/manual tests for BROWSE microgame.
-* Jesse Jericho - Created prototype for HERD microgame, created automated/manual tests for HERD microgame.
+* Isaiah Nagac - Created prototype for BROWSE microgame.
+* Jesse Jericho - Created prototype for HERD microgame, created automated/manual tests for HERD microgame. Finished CUT tests.
 * Noah Lang - Created prototype for CONNECT microgame, created automated/manual tests for CONNECT microgame.
 * Noah Law - Refined POKE microgame, continued to create automated tests for POKE microgame.
