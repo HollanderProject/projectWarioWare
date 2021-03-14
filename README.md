@@ -110,11 +110,33 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
+* [Product Demonstration](https://youtu.be/3h4LoCKsez8)
+
+## Task Allocation
+* Cameron Bernard - Created prototype for NUDGE microgame, created automated/manual tests for NUDGE microgame.
+* Isaiah Nagac - Created prototype for BROWSE microgame.
+* Jesse Jericho - Created prototype for HERD microgame, created automated/manual tests for HERD microgame. Finished CUT tests.
+* Noah Lang - Created prototype for CONNECT microgame, created automated/manual tests for CONNECT microgame.
+* Noah Law - Refined POKE microgame, continued to create automated tests for POKE microgame.
+
+# Sprint 6
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
+
 * [Product Demonstration]
 
 ## Task Allocation
 * Cameron Bernard -
 * Isaiah Nagac -
-* Jesse Jericho - Created prototype for HERD microgame, created automated/manual tests for HERD microgame.
+* Jesse Jericho - Refined HERD microgame to meet better standards than a prototype. Added more automated tests to HERD following updates.
 * Noah Lang -
 * Noah Law -

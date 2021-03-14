@@ -1,0 +1,9 @@
+﻿{
+    "name": "EditTests_POKE",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}
