@@ -135,7 +135,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * [Product Demonstration]
 
 ## Task Allocation
-* Cameron Bernard -
+* Cameron Bernard - Refine CLIMB, NUDGE, and ORGANIZE to be more visually similar to other microgames. Create more tests for these microgames.
 * Isaiah Nagac -
 * Jesse Jericho - Refined HERD microgame to meet better standards than a prototype. Added more automated tests to HERD following updates.
 * Noah Lang -
