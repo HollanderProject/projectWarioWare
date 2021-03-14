@@ -11,6 +11,7 @@ public class PigMove : MonoBehaviour
     public static float forcePower = 50f;
     public float time;
     public bool turnFlag = false;
+    bool soundPlayed = false;
 
 
 
@@ -27,8 +28,13 @@ public class PigMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((SheepMove.SheepisHerded == true) && !turnFlag)
+        if (RandomAnimal.pigTurn == true)
         {
+            if (soundPlayed == false)
+            {
+                PigOinkAudio.Play();
+                soundPlayed = true;
+            }
             UpdatePig();
         }
 
@@ -47,19 +53,40 @@ public class PigMove : MonoBehaviour
 
     public void StopPig()
     {
+        RandomAnimal.pigTurn = false;
         PigisHerded = true;
         rb.simulated = false;
+        turnFlag = false;
+        RandomAnimal.boolean = (Random.value > 0.5f);
+        if (RandomAnimal.animalCount == 1)
+        {
+            if (RandomAnimal.boolean)
+            {
+                RandomAnimal.sheepTurn = true;
+            }
+            else
+            {
+                RandomAnimal.cowTurn = true;
+            }
+        }
+        else if (RandomAnimal.animalCount == 2)
+        {
+            if (PigMove.PigisHerded == true && CowMove.CowisHerded == false)
+                RandomAnimal.cowTurn = true;
+            else if (SheepMove.SheepisHerded == false && CowMove.CowisHerded == true)
+                RandomAnimal.sheepTurn = true;
+        }
     }
 
     public void UpdatePig()
     {
-        PigOinkAudio.Play();
         rb.simulated = true;
         turnFlag = true;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        RandomAnimal.animalCount++;
         StopPig();
         Debug.Log("Collision Detected from Pig.");
     }

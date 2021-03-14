@@ -69,11 +69,12 @@ MonoBehaviour:
     height: 295
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 1
+  - {fileID: 15}
+  - {fileID: 21}
+  m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -187,8 +188,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 578, y: 200}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 579, y: 221}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
   controlID: 120
 --- !u!114 &9
@@ -212,8 +213,8 @@ MonoBehaviour:
     y: 0
     width: 1532
     height: 947
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 95
 --- !u!114 &10
@@ -235,11 +236,11 @@ MonoBehaviour:
     y: 0
     width: 349
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -263,11 +264,11 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 15}
   - {fileID: 18}
+  - {fileID: 16}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
@@ -316,9 +317,9 @@ MonoBehaviour:
     height: 525
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &14
@@ -342,12 +343,41 @@ MonoBehaviour:
     height: 422
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 743
+    width: 1531
+    height: 274
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 36564
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,7 +438,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -439,7 +469,7 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,7 +500,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 965effff485fffffbc5fffff8860ffff5661ffffdc61ffff0e66ffff4868ffffc868ffffbc7cffff307dffffae7dffff347effff8a7fffffbe7fffff0881ffff8881ffff3e8bffffb28bffff388cffffb88cffff02d1ffff76d1fffff6d1ffff7cd2fffffed3ffff7ad4fffffcd4ffffeed5ffff6ad6ffff58d7ffffdad7ffff54d8ffffdcd8ffffccd9ffff48daffffc4daffff46dbffffcadbffffa4dcffffa4ddffffc4deffffacdfffff2ce0fffface0ffffd6e0ffff66e1ffffa4e1ffffc8e2ffff4ae3ffffbae5ffff3ee6ffff6ce7ffffeae7ffff6ce8ffff12edffff86edffff0aeeffff88eeffff06efffff82efffff06f0ffff8ef0ffff64fbffff64390000f0430000fa5e00007a630000a66f0000
+      m_ExpandedIDs: 809affff129bffffbc9effffa2a5ffff32a6ffff5ea6fffff6a6ffff96a7ffff34a8ffffd2a8ffff76a9ffffa6a9ffff96aaffffc6aaffffb6abffffecabffff42aeffff7caeffff2eb0ffff94b2ffff32b3ffff0eb4ffff42b4ffff7cb4ffff60b5ffffecb5ffffa2bcffffc8bcffff00bdfffffebdffff68bfffff7ac0ffffaac0ffffdac0ffff0ac1ffff3ac1ffffc6c1fffff6c1ffff2cc2ffff12c3ffffacc3ffff44c4ffffd8c4ffff72c5ffff06c6ffff36c6ffffb6c7ffffe4c7ffff12c8ffff42c8ffff72c8ffffa2c8ffffd2c8ffff02c9ffff32c9ffff62c9ffff92c9ffffc2c9fffff2c9ffff22caffff52caffff88caffffbecafffff6caffff80cbffffaecbffffdecbffff0eccffff44ccffff74ccffffacccffffe2ccffffb8cdffffe8cdffff20ceffff50ceffff86ceffffb6ceffff8acfffffbacfffffeacfffff1ad0ffff4ad0ffff7ad0ffffaad0ffffdad0ffff0ad1ffff3ad1ffff70d1ffffa0d1ffffd0d1ffff00d2ffff30d2ffff60d2ffff8ed2ffffc4d2ffff44d3ffff7ad3ffffb0d3ffff36d4ffff6cd4ffff9cd4ffffccd4fffffcd4ffff32d5ffff70d5ffffa6d5ffffdcd5ffffcad6ffff64d7ffff00d8ffff9ad8ffff38d9ffffd2d9ffffbcdaffff02ddffffb0ddffff58deffff4adfffffe0dfffff76e0ffff12e1ffffaae1ffff46ebffff6aebffff98ebffffceebffff78ecffffaeecffff3cedffffceedffffaeeeffff38efffffc2efffff52f0ffffdef0ffff08f3ffff8cf3ffffb6f3ffffdef3ffff6af4ffff46f5ffffd2f9ffff44faffff64fbffff5a9f000080ac0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -494,7 +524,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: deded26740eee3c42ae50f9e9befd06e
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -530,9 +560,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.45400542, y: -0.29129538, z: -692.0947}
+    m_Target: {x: -0.15838064, y: -0.011366347, z: -759.8779}
     speed: 2
-    m_Value: {x: 0.45400542, y: -0.29129538, z: -692.0947}
+    m_Value: {x: -0.15838064, y: -0.011366347, z: -759.8779}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -582,9 +612,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.874102
+    m_Target: 4.9457445
     speed: 2
-    m_Value: 4.874102
+    m_Value: 4.9457445
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -609,7 +639,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -635,7 +665,7 @@ MonoBehaviour:
     width: 1181
     height: 926
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -674,20 +704,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Tests/EditMode
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Tests/EditMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Desktop\projectHollander\projectWarioWare\Code\HERD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c3a0000
-    m_LastClickedID: 14924
-    m_ExpandedIDs: 00000000463a000000ca9a3b
+    m_SelectedIDs: 903a0000
+    m_LastClickedID: 14992
+    m_ExpandedIDs: 000000006e3a0000703a0000763a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -715,7 +745,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000463a0000
+    m_ExpandedIDs: 000000006e3a0000703a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,10 +770,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 8aac0000
+    m_LastClickedInstanceID: 44170
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000
+    m_ExpandedInstanceIDs: c6230000000000000e3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -771,7 +801,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 150
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -797,7 +827,7 @@ MonoBehaviour:
     width: 1531
     height: 274
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -834,8 +864,8 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
---- !u!114 &22
+  m_LastVerticalScrollValue: 540
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -861,7 +891,7 @@ MonoBehaviour:
     height: 401
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 164
+    ID: 152
     splitterInitialOffset: 348
     currentActiveSplitter: -1
     realSizes: 0d0100003e000000
@@ -875,7 +905,7 @@ MonoBehaviour:
     xOffset: 0
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 22}
+    m_Window: {fileID: 23}
     newResultList:
     - id: 1003
       uniqueId: '[HERD][suite]'
@@ -1020,14 +1050,14 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 22}
+    m_Window: {fileID: 23}
     newResultList:
     - id: 1000
       uniqueId: '[HERD][suite]'
       name: HERD
       fullName: HERD
       resultStatus: 1
-      duration: 0.0975807
+      duration: 0.1497526
       messages: 
       output: 
       stacktrace: 
@@ -1043,7 +1073,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: E:/Desktop/projectHollander/projectWarioWare/Code/HERD/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0758716
+      duration: 0.114048
       messages: 
       output: 
       stacktrace: 
@@ -1059,7 +1089,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0687868
+      duration: 0.1061118
       messages: 
       output: 
       stacktrace: 
@@ -1075,7 +1105,7 @@ MonoBehaviour:
       name: AnimalHerdedTests
       fullName: Tests.AnimalHerdedTests
       resultStatus: 1
-      duration: 0.0186161
+      duration: 0.0360656
       messages: 
       output: 
       stacktrace: 
@@ -1091,7 +1121,7 @@ MonoBehaviour:
       name: CowHerdedTest
       fullName: Tests.AnimalHerdedTests.CowHerdedTest
       resultStatus: 1
-      duration: 0.0005693
+      duration: 0.0111958
       messages: 
       output: 
       stacktrace: 
@@ -1108,7 +1138,7 @@ MonoBehaviour:
       name: PigHerdedTest
       fullName: Tests.AnimalHerdedTests.PigHerdedTest
       resultStatus: 1
-      duration: 0.0003864
+      duration: 0.0008442
       messages: 
       output: 
       stacktrace: 
@@ -1125,7 +1155,7 @@ MonoBehaviour:
       name: SheepHerdedTest
       fullName: Tests.AnimalHerdedTests.SheepHerdedTest
       resultStatus: 1
-      duration: 0.0003404
+      duration: 0.0005374
       messages: 
       output: 
       stacktrace: 
@@ -1142,7 +1172,7 @@ MonoBehaviour:
       name: AnimalInitialStateTests
       fullName: Tests.AnimalInitialStateTests
       resultStatus: 1
-      duration: 0.0211777
+      duration: 0.0244904
       messages: 
       output: 
       stacktrace: 
@@ -1158,7 +1188,7 @@ MonoBehaviour:
       name: CowActive
       fullName: Tests.AnimalInitialStateTests.CowActive
       resultStatus: 1
-      duration: 0.0002618
+      duration: 0.00054
       messages: 
       output: 
       stacktrace: 
@@ -1175,7 +1205,7 @@ MonoBehaviour:
       name: PigActive
       fullName: Tests.AnimalInitialStateTests.PigActive
       resultStatus: 1
-      duration: 0.0001794
+      duration: 0.0002033
       messages: 
       output: 
       stacktrace: 
@@ -1192,7 +1222,7 @@ MonoBehaviour:
       name: SheepActive
       fullName: Tests.AnimalInitialStateTests.SheepActive
       resultStatus: 1
-      duration: 0.0002112
+      duration: 0.0001892
       messages: 
       output: 
       stacktrace: 
@@ -1209,7 +1239,7 @@ MonoBehaviour:
       name: AnimalUpdateTests
       fullName: Tests.AnimalUpdateTests
       resultStatus: 1
-      duration: 0.0092484
+      duration: 0.0128281
       messages: 
       output: 
       stacktrace: 
@@ -1225,7 +1255,7 @@ MonoBehaviour:
       name: CowUpdateTest
       fullName: Tests.AnimalUpdateTests.CowUpdateTest
       resultStatus: 1
-      duration: 0.0004254
+      duration: 0.0031925
       messages: 
       output: 
       stacktrace: 
@@ -1242,7 +1272,7 @@ MonoBehaviour:
       name: PigUpdateTest
       fullName: Tests.AnimalUpdateTests.PigUpdateTest
       resultStatus: 1
-      duration: 0.000277
+      duration: 0.0005815
       messages: 
       output: 
       stacktrace: 
@@ -1259,7 +1289,7 @@ MonoBehaviour:
       name: SheepUpdateTest
       fullName: Tests.AnimalUpdateTests.SheepUpdateTest
       resultStatus: 1
-      duration: 0.0002508
+      duration: 0.0003901
       messages: 
       output: 
       stacktrace: 
@@ -1271,13 +1301,106 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1009
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.AnimalUpdateTests][suite]
-    m_ResultText: AnimalUpdateTests (0.009s)
+    - id: 1013
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.RandomOrderTest][suite]
+      name: RandomOrderTest
+      fullName: Tests.RandomOrderTest
+      resultStatus: 1
+      duration: 0.0176457
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/Tests/RandomOrderTest/[EditMode][Tests.RandomOrderTest.RandomAnimalGenerator]
+      name: RandomAnimalGenerator
+      fullName: Tests.RandomOrderTest.RandomAnimalGenerator
+      resultStatus: 1
+      duration: 0.004062
+      messages: 
+      output: 'Pig selected first
+
+        1
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.RandomOrderTest][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/Tests/RandomOrderTest/[EditMode][Tests.RandomOrderTest.RandomAnimalInitialization]
+      name: RandomAnimalInitialization
+      fullName: Tests.RandomOrderTest.RandomAnimalInitialization
+      resultStatus: 1
+      duration: 0.0035318
+      messages: 
+      output: 'Cow selected first
+
+        2
+
+        Cow picked from RNG.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.RandomOrderTest][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.TimerTests][suite]
+      name: TimerTests
+      fullName: Tests.TimerTests
+      resultStatus: 1
+      duration: 0.0077678
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1019
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/Tests/TimerTests/[EditMode][Tests.TimerTests.TimerConfigTest]
+      name: TimerConfigTest
+      fullName: Tests.TimerTests.TimerConfigTest
+      resultStatus: 1
+      duration: 0.0007016
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.TimerTests][suite]
+    m_ResultText: TimerTests (0.008s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 865e0fb4
-      m_LastClickedID: -1274061178
-      m_ExpandedIDs: f571fc993cdc509e5d903ea5865e0fb4e8392ac1ff3d6cce49051af14fbb57ff4eb24f1c2e58ec2e5293554e1d16a25ebb17b4754b5ea47cffffff7f
+      m_SelectedIDs: 8407ec86
+      m_LastClickedID: -2031351932
+      m_ExpandedIDs: 3cdc509e5d903ea5e8392ac1ff3d6cce49051af1209542fe4fbb57ff2e58ec2e5293554e1d16a25ebb17b4754b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

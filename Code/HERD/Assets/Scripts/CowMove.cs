@@ -10,7 +10,8 @@ public class CowMove : MonoBehaviour
     public static bool CowisHerded;
     public static float forcePower = 50f;
     public float time;
-    public bool turnFlag;
+    public bool turnFlag = false;
+    bool soundPlayed = false;
 
 
 
@@ -27,8 +28,13 @@ public class CowMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((PigMove.PigisHerded == true) && !turnFlag)
+        if (RandomAnimal.cowTurn == true)
         {
+            if (soundPlayed == false)
+            {
+                CowMooAudio.Play();
+                soundPlayed = true;
+            }
             UpdateCow();
         }
 
@@ -46,19 +52,40 @@ public class CowMove : MonoBehaviour
     }
     public void StopCow()
     {
+        RandomAnimal.cowTurn = false;
         CowisHerded = true;
         rb.simulated = false;
+        turnFlag = false;
+        RandomAnimal.boolean = (Random.value > 0.5f);
+        if (RandomAnimal.animalCount == 1)
+        {
+            if (RandomAnimal.boolean)
+            {
+                RandomAnimal.sheepTurn = true;
+            }
+            else
+            {
+                RandomAnimal.pigTurn = true;
+            }
+        }
+        else if (RandomAnimal.animalCount == 2)
+        {
+            if (SheepMove.SheepisHerded == true && PigMove.PigisHerded == false)
+                RandomAnimal.pigTurn = true;
+            else if (SheepMove.SheepisHerded == false && PigMove.PigisHerded == true)
+                RandomAnimal.sheepTurn = true;
+        }
     }
 
     public void UpdateCow()
     {
-        CowMooAudio.Play();
         rb.simulated = true;
         turnFlag = true;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        RandomAnimal.animalCount++;
         StopCow();
         Debug.Log("Collision Detected from Cow.");
     }
