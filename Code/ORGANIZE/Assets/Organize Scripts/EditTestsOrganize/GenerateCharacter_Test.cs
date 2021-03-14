@@ -9,12 +9,12 @@ public class GenerateCharacter_Test : MonoBehaviour
     public Sprite Female;
 
     [Test]
-    public void NoTimeLosing()
+    public void GenerateMale()
     {
         GameObject character = new GameObject("Character_1");
         character.AddComponent<SpriteRenderer>();
         var rand = new System.Random();
-        int Gender = rand.Next() % 2;
+        int Gender = 1;
 
         if(Gender == 1)
         {
@@ -25,14 +25,27 @@ public class GenerateCharacter_Test : MonoBehaviour
             character.GetComponent<SpriteRenderer>().sprite = Female;
         }
 
+        Assert.IsTrue(character.GetComponent<SpriteRenderer>().sprite == Male);
+    }
+    
+    [Test]
+    public void GenerateFemale()
+    {
+        GameObject character = new GameObject("Character_1");
+        character.AddComponent<SpriteRenderer>();
+        var rand = new System.Random();
+        int Gender = 0;
+
         if(Gender == 1)
         {
-            Assert.IsTrue(character.GetComponent<SpriteRenderer>().sprite == Male);
+            character.GetComponent<SpriteRenderer>().sprite = Male;
         }
         else
         {
-            Assert.IsTrue(character.GetComponent<SpriteRenderer>().sprite == Female);
+            character.GetComponent<SpriteRenderer>().sprite = Female;
         }
+
+        Assert.IsTrue(character.GetComponent<SpriteRenderer>().sprite == Male);
     }
 
 }

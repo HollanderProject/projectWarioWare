@@ -1,5 +1,6 @@
 ﻿{
-    "name": "EditTests_POKE",
+    "name": "EditTests_NUDGE",
+    "references": [ "Unity.TextMeshPro" ],
     "optionalUnityReferences": [
         "TestAssemblies"
     ],

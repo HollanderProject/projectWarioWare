@@ -19,7 +19,7 @@ namespace Tests
             winText.SetActive(false);
             failText.SetActive(false);
             int time = 0;
-            Debug.Log(winText.activeSelf);
+            //Debug.Log(winText.activeSelf);
             if(time <= 0 && !winText.activeSelf)
             {
                 failText.SetActive(true);

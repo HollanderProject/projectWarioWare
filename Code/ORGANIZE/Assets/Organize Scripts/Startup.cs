@@ -13,7 +13,7 @@ public class Startup : MonoBehaviour
     public GameObject[] CharacterList;
     private int i = 0;
     private float fScale = 0.85f;
-    private float moveSpeed = 10;
+    private float moveSpeed = 15;
     private int k = 0;
     private bool moving = false;
 

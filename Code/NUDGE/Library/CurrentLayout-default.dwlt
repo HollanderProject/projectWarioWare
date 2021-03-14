@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 157
-    y: 90
-    width: 321
-    height: 567
+    x: 120
+    y: 94
+    width: 248
+    height: 471
   m_ShowMode: 0
   m_Title: 
   m_RootView: {fileID: 4}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &3
@@ -65,8 +65,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 321
-    height: 567
+    width: 248
+    height: 471
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -92,12 +92,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 321
-    height: 567
+    width: 248
+    height: 471
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 672
+  controlID: 4202
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 123
+  controlID: 90
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,8 +142,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 573
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 83
+  controlID: 91
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 58
+  controlID: 92
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,22 +367,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 157
-    y: 90
-    width: 321
-    height: 546
+    x: 120
+    y: 94
+    width: 248
+    height: 450
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 702
+    ID: 4232
     splitterInitialOffset: 0
     currentActiveSplitter: -1
-    realSizes: 6501000077000000
+    realSizes: 1d0100005f000000
     relativeSizes:
     - 0.75
     - 0.25
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 476
+    lastTotalSize: 380
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
       name: POKE
       fullName: POKE
       resultStatus: 1
-      duration: 0.1033651
+      duration: 0.1285167
       messages: 
       output: 
       stacktrace: 
@@ -440,12 +440,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1006
-      uniqueId: '[EditTests_POKE.dll][suite]'
-      name: EditTests_POKE.dll
-      fullName: C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_POKE.dll
+    - id: 1014
+      uniqueId: '[EditTests_NUDGE][C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_NUDGE.dll][suite]'
+      name: EditTests_NUDGE.dll
+      fullName: C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_NUDGE.dll
       resultStatus: 1
-      duration: 0.0583129
+      duration: 0.090669
       messages: 
       output: 
       stacktrace: 
@@ -456,12 +456,156 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[POKE][suite]'
+    - id: 1001
+      uniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][LifeCounter_Test][suite]
+      name: LifeCounter_Test
+      fullName: LifeCounter_Test
+      resultStatus: 1
+      duration: 0.0418692
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1014
+      parentUniqueId: '[EditTests_NUDGE][C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_NUDGE.dll][suite]'
+    - id: 1003
+      uniqueId: EditTests_NUDGE.dll/LifeCounter_Test/[EditTests_NUDGE][LifeCounter_Test.LifeAlreadyLost]
+      name: LifeAlreadyLost
+      fullName: LifeCounter_Test.LifeAlreadyLost
+      resultStatus: 1
+      duration: 0.0103364
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][LifeCounter_Test][suite]
+    - id: 1002
+      uniqueId: EditTests_NUDGE.dll/LifeCounter_Test/[EditTests_NUDGE][LifeCounter_Test.LifeLost]
+      name: LifeLost
+      fullName: LifeCounter_Test.LifeLost
+      resultStatus: 1
+      duration: 0.0004347
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][LifeCounter_Test][suite]
+    - id: 1004
+      uniqueId: EditTests_NUDGE.dll/LifeCounter_Test/[EditTests_NUDGE][LifeCounter_Test.LifeNotLost]
+      name: LifeNotLost
+      fullName: LifeCounter_Test.LifeNotLost
+      resultStatus: 1
+      duration: 0.0002209
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][LifeCounter_Test][suite]
+    - id: 1005
+      uniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][NudgeTests][suite]
+      name: NudgeTests
+      fullName: NudgeTests
+      resultStatus: 1
+      duration: 0.0199969
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1014
+      parentUniqueId: '[EditTests_NUDGE][C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_NUDGE.dll][suite]'
+    - id: 1008
+      uniqueId: EditTests_NUDGE.dll/NudgeTests/[EditTests_NUDGE][NudgeTests.GlassFall]
+      name: GlassFall
+      fullName: NudgeTests.GlassFall
+      resultStatus: 1
+      duration: 0.0003596
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][NudgeTests][suite]
     - id: 1007
-      uniqueId: EditTests_POKE.dll/[EditTests_POKE][Tests][suite]
+      uniqueId: EditTests_NUDGE.dll/NudgeTests/[EditTests_NUDGE][NudgeTests.NudgeFail]
+      name: NudgeFail
+      fullName: NudgeTests.NudgeFail
+      resultStatus: 1
+      duration: 0.0002034
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][NudgeTests][suite]
+    - id: 1006
+      uniqueId: EditTests_NUDGE.dll/NudgeTests/[EditTests_NUDGE][NudgeTests.NudgeSuccess]
+      name: NudgeSuccess
+      fullName: NudgeTests.NudgeSuccess
+      resultStatus: 1
+      duration: 0.0001937
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][NudgeTests][suite]
+    - id: 1015
+      uniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][Tests][suite]
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0553773
+      duration: 0.0218245
       messages: 
       output: 
       stacktrace: 
@@ -470,14 +614,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1006
-      parentUniqueId: '[EditTests_POKE.dll][suite]'
-    - id: 1001
-      uniqueId: EditTests_POKE.dll/Tests/[EditTests_POKE][Tests.Countdown][suite]
+      parentId: 1014
+      parentUniqueId: '[EditTests_NUDGE][C:/Users/Silent/git/projectWarioWare-master/NUDGE/Library/ScriptAssemblies/EditTests_NUDGE.dll][suite]'
+    - id: 1009
+      uniqueId: EditTests_NUDGE.dll/Tests/[EditTests_NUDGE][Tests.Countdown][suite]
       name: Countdown
       fullName: Tests.Countdown
       resultStatus: 1
-      duration: 0.0514285
+      duration: 0.0126445
       messages: 
       output: 
       stacktrace: 
@@ -486,18 +630,16 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
-      parentUniqueId: EditTests_POKE.dll/[EditTests_POKE][Tests][suite]
-    - id: 1002
-      uniqueId: EditTests_POKE.dll/Tests/Countdown/[EditTests_POKE][Tests.Countdown.NoTimeLosing]
+      parentId: 1015
+      parentUniqueId: EditTests_NUDGE.dll/[EditTests_NUDGE][Tests][suite]
+    - id: 1010
+      uniqueId: EditTests_NUDGE.dll/Tests/Countdown/[EditTests_NUDGE][Tests.Countdown.NoTimeLosing]
       name: NoTimeLosing
       fullName: Tests.Countdown.NoTimeLosing
       resultStatus: 1
-      duration: 0.0167844
+      duration: 0.0008971
       messages: 
-      output: 'False
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -505,14 +647,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditTests_POKE.dll/Tests/[EditTests_POKE][Tests.Countdown][suite]
-    - id: 1003
-      uniqueId: EditTests_POKE.dll/Tests/Countdown/[EditTests_POKE][Tests.Countdown.NoTimeWinning]
+      parentId: 1009
+      parentUniqueId: EditTests_NUDGE.dll/Tests/[EditTests_NUDGE][Tests.Countdown][suite]
+    - id: 1011
+      uniqueId: EditTests_NUDGE.dll/Tests/Countdown/[EditTests_NUDGE][Tests.Countdown.NoTimeWinning]
       name: NoTimeWinning
       fullName: Tests.Countdown.NoTimeWinning
       resultStatus: 1
-      duration: 0.0022021
+      duration: 0.0018196
       messages: 
       output: 'True
 
@@ -524,14 +666,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditTests_POKE.dll/Tests/[EditTests_POKE][Tests.Countdown][suite]
-    - id: 1004
-      uniqueId: EditTests_POKE.dll/Tests/Countdown/[EditTests_POKE][Tests.Countdown.OneSecondLosing]
+      parentId: 1009
+      parentUniqueId: EditTests_NUDGE.dll/Tests/[EditTests_NUDGE][Tests.Countdown][suite]
+    - id: 1012
+      uniqueId: EditTests_NUDGE.dll/Tests/Countdown/[EditTests_NUDGE][Tests.Countdown.OneSecondLosing]
       name: OneSecondLosing
       fullName: Tests.Countdown.OneSecondLosing
       resultStatus: 1
-      duration: 0.0019626
+      duration: 0.0012535
       messages: 
       output: 'False
 
@@ -543,14 +685,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditTests_POKE.dll/Tests/[EditTests_POKE][Tests.Countdown][suite]
-    - id: 1005
-      uniqueId: EditTests_POKE.dll/Tests/Countdown/[EditTests_POKE][Tests.Countdown.OneSecondWinning]
+      parentId: 1009
+      parentUniqueId: EditTests_NUDGE.dll/Tests/[EditTests_NUDGE][Tests.Countdown][suite]
+    - id: 1013
+      uniqueId: EditTests_NUDGE.dll/Tests/Countdown/[EditTests_NUDGE][Tests.Countdown.OneSecondWinning]
       name: OneSecondWinning
       fullName: Tests.Countdown.OneSecondWinning
       resultStatus: 1
-      duration: 0.0019386
+      duration: 0.0011614
       messages: 
       output: 'True
 
@@ -562,15 +704,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditTests_POKE.dll/Tests/[EditTests_POKE][Tests.Countdown][suite]
-    m_ResultText: 
+      parentId: 1009
+      parentUniqueId: EditTests_NUDGE.dll/Tests/[EditTests_NUDGE][Tests.Countdown][suite]
+    m_ResultText: GlassFall (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: e9b18fac636c93b45f0650b71c54e1d5ffffff7f
+      m_SelectedIDs: 89ed858d
+      m_LastClickedID: -1920602743
+      m_ExpandedIDs: 9126a0ac5f0650b7392eb9c47c78ddcf6a586b10540fb143ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -661,20 +803,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/EditTests_NUDGE
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/EditTests_NUDGE
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Silent\git\projectWarioWare-master\NUDGE
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe390000
-    m_LastClickedID: 14846
-    m_ExpandedIDs: 00000000fe39000000ca9a3b
+    m_SelectedIDs: 0e3c0000
+    m_LastClickedID: 15374
+    m_ExpandedIDs: 00000000083a0000123a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -702,7 +844,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe390000
+    m_ExpandedIDs: 00000000083a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,7 +888,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -825,9 +967,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 68390000
-      m_LastClickedID: 14696
-      m_ExpandedIDs: 4af5ffff64fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 54e2ffff82e5ffffa0e5ffff66e6ffff4ce8ffffdae8ffff6ee9ffff02eaffff9aeaffff32ebffffc0ebfffff8ebffffd2ecffff86edffffc0edffff14eeffffa2eeffff78efffff6af0ffff42f1ffff64fbffff56390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -887,9 +1029,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.6014899, y: -0.3493063, z: 173.16016}
+    m_Target: {x: 1.4233617, y: 0.6144128, z: 135.4595}
     speed: 2
-    m_Value: {x: 1.6014899, y: -0.3493063, z: 173.16016}
+    m_Value: {x: 1.4233617, y: 0.6144128, z: 135.4595}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -939,9 +1081,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.009437
+    m_Target: 7.593288
     speed: 2
-    m_Value: 10.009437
+    m_Value: 7.593288
   m_Ortho:
     m_Target: 1
     speed: 2
