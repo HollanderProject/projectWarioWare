@@ -1,2 +1,7 @@
+<<<<<<< HEAD
+Base path: 'E:/2019.4.18f1/Editor/Data', plugins path 'E:/2019.4.18f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+=======
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+>>>>>>> cca5b88496a9f85b36f500a3b4e32d86899fbc15

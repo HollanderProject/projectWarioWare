@@ -12,7 +12,7 @@ public class ChangeChannel : MonoBehaviour
     public VideoPlayer winVideo;
     public Transform videoPosition;
     public int currentChannel = 0; // start at channel 1, consider randomizing.
-    private int winChannel;
+    public int winChannel;
     public float minStayOnChannel = 2f;
     private float curHoldTime = 0f;
     public bool isPlayerOnRightChannel;
@@ -27,7 +27,7 @@ public class ChangeChannel : MonoBehaviour
         curHoldTime = minStayOnChannel;
         ActuallyChangeChannel(currentChannel);
         winVideo.enabled = false;
-        winChannel = Random.Range(5,8); 
+        RandomizeWinChannel();
         Debug.Log("The random channel is: " + (winChannel+1));
     }
 
@@ -110,6 +110,11 @@ public class ChangeChannel : MonoBehaviour
     {
         winVideo.Play();
         videoPosition.position = new Vector3(3.9f, 13.6f, -4);
+    }
+
+    public void RandomizeWinChannel()
+    {
+        winChannel = Random.Range(5,8);
     }
 
 }
