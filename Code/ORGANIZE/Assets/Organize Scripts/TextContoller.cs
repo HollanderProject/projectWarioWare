@@ -36,6 +36,10 @@ public class TextContoller : MonoBehaviour
         {
             organizeText.SetActive(false);
         }
+        if(time < 3)
+        {
+            timerText.color = new Color32(250, 50, 50, 255);
+        }
     }
 
     

@@ -1,0 +1,1 @@
+This folder has all the packages for each individual microgame. The packages include all assets, code, etc of each game & are essentially a zipped-up version of a Unity project. These packages are used to import all data from a microgame into another project file.
