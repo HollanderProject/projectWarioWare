@@ -77,7 +77,7 @@ public class Scissors : MonoBehaviour
         if (collision.tag == "Bamboo")
         {
             BladeCutAudio.Play();
-            ScoreScript.scoreValue += 1;
+            ScoreScriptCUT.scoreValue += 1;
             count++;
             Debug.Log(count);
         }
