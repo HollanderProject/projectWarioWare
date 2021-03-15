@@ -132,7 +132,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
-* [Product Demonstration]
+* [Product Demonstration](https://youtu.be/EXJ8r99QO_0)
 
 ## Task Allocation
 * Cameron Bernard - Refine CLIMB, NUDGE, and ORGANIZE to be more visually similar to other microgames. Create more tests for these microgames.
