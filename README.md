@@ -138,5 +138,5 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Cameron Bernard - Refine CLIMB, NUDGE, and ORGANIZE to be more visually similar to other microgames. Create more tests for these microgames.
 * Isaiah Nagac -
 * Jesse Jericho - Refined HERD microgame to meet better standards than a prototype. Added more automated tests to HERD following updates.
-* Noah Lang - Combined code for all microgames into one project & fixed compatibility issues between them. Also made prototype menus.
+* Noah Lang - Combined code for all microgames into one project & fixed compatibility issues between them. Also created prototype level selection screen.
 * Noah Law -
