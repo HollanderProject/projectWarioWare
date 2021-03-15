@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinCondition : MonoBehaviour
+public class WinConditionCUT : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

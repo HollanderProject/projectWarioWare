@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterControllerNUDGE : MonoBehaviour
 {
     public GameObject Arm;
     public GameObject Glass;

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameBehavior : MonoBehaviour
 {
 
-    private bool canPlayerShoot = false;
+    public bool canPlayerShoot = false;
     private bool showWinScreen = false;
     private bool showLoseScreen = false;
     private bool stopCounting = false;

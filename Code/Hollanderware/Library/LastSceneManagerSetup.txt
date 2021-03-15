@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Microgames/CATCH/Scenes/CATCH!.unity
+- path: Assets/Microgames/BROWSE/Scenes/Browse_Microgame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

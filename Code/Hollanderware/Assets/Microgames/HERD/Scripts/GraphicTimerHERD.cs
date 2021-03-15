@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GraphicTimer : MonoBehaviour
+public class GraphicTimerHERD : MonoBehaviour
 {
     public SpriteRenderer currentFrame;
     public Sprite[] batteryFrames; // NOTE: Set array animation in reverse.

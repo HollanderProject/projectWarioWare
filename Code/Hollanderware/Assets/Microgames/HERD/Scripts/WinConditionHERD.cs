@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinCondition : MonoBehaviour
+public class WinConditionHERD : MonoBehaviour
 {
     public GameObject winText;
     int counter = 0;

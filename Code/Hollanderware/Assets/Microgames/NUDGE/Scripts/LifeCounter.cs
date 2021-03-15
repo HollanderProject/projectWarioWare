@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class LifeCounter : MonoBehaviour
+public class LifeCounterNUDGE : MonoBehaviour
 {
     private bool failed = false;
     public TMP_Text lifeText;

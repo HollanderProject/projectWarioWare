@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TextContoller : MonoBehaviour
+public class TextContollerORGANIZE : MonoBehaviour
 {
     public TMP_Text timerText;
     public GameObject failText;

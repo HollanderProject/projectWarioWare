@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class Countdown : MonoBehaviour
+public class CountdownHERD : MonoBehaviour
 {
     public TMP_Text timerText;
     public GameObject failText;

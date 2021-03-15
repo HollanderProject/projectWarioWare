@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CowboyMouseInteraction : MonoBehaviour
 {
-    GameBehavior _gameManager;
+    public GameBehavior _gameManager;
 
     void Awake()
     {
