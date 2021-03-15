@@ -139,4 +139,4 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Isaiah Nagac -
 * Jesse Jericho - Refined HERD microgame to meet better standards than a prototype. Added more automated tests to HERD following updates.
 * Noah Lang - Combined code for all microgames into one project & fixed compatibility issues between them. Also created prototype level selection screen.
-* Noah Law -
+* Noah Law - Improved SPOT to meet better standards than the prototype
