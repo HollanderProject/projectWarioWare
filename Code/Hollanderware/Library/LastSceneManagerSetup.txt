@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Microgames/SHOOT/SHOOT Scene.unity
+- path: Assets/Microgames/CLIMB/CLIMB Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
