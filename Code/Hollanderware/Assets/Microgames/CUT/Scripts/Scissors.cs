@@ -6,7 +6,7 @@ public class Scissors : MonoBehaviour
 {
     public AudioSource BladeCutAudio;
     public int count = 0;
-    public float minCutVelocity = 0.1f;
+    public float minCutVelocity = 0.05f;
 
     public bool isCutting = false;
     Vector2 previousPosition;

@@ -18,5 +18,29 @@ public class ScoreScriptCUT : MonoBehaviour
     void Update()
     {
         score.text = "Cuts: " + scoreValue + " / 5";
+        if (scoreValue == 1)
+        {
+            score.color = new Color(1f, 0.3f, 0f, 1f);
+        }
+
+        if (scoreValue == 2)
+        {
+            score.color = new Color(1f, 1f, 0f, 1f);
+        }
+
+        if (scoreValue == 3)
+        {
+            score.color = new Color(0.2f, 0.5f, 0.9f, 1f);
+        }
+
+        if (scoreValue == 4)
+        {
+            score.color = new Color(0f, 0.6f, 0.1f, 1f);
+        }
+
+        if (scoreValue == 5)
+        {
+            score.color = new Color(0f, 1f, 0.2f, 1f);
+        }
     }
 }

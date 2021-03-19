@@ -7,8 +7,13 @@ public class CountdownHERD : MonoBehaviour
     public TMP_Text timerText;
     public GameObject failText;
     public GameObject winText;
+    SpriteRenderer loseScreen;
     public float time;
-
+    void Start()
+    {
+        loseScreen = GameObject.Find("CrossSprite").GetComponent<SpriteRenderer>();
+        loseScreen.enabled = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +34,8 @@ public class CountdownHERD : MonoBehaviour
         {
             // Creates a failure state if time hits 0
             failText.SetActive(true);
+            loseScreen.enabled = true;
+            GameManagerHERD.playerLose = true;
             SheepMove.forcePower = 0;
             PigMove.forcePower = 0;
             CowMove.forcePower = 0;

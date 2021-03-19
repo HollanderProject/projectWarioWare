@@ -9,9 +9,14 @@ public class Countdown : MonoBehaviour
     public GameObject winText;
     public GameObject scissors;
     public GameObject Bamboo;
+    SpriteRenderer loseScreen;
     public float time;
     public int count = 0;
-
+    void Start()
+    {
+        loseScreen = GameObject.Find("CrossSprite").GetComponent<SpriteRenderer>();
+        loseScreen.enabled = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +36,8 @@ public class Countdown : MonoBehaviour
         else if (time <= 0 && !winText.activeSelf)
         {
             // Creates a failure state if time hits 0
+            GameManagerCUT.playerLose = true;
+            loseScreen.enabled = true;
             failText.SetActive(true);
             Bamboo.SetActive(false);
         }

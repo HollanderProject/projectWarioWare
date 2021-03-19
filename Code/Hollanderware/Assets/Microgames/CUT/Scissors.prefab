@@ -45,7 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08017f799b996342902cd007b5a186b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCutVelocity: 0.05
+  BladeCutAudio: {fileID: 0}
+  count: 0
+  minCutVelocity: 0.005
+  isCutting: 0
+  circleCollider: {fileID: 0}
 --- !u!50 &7564507043862832436
 Rigidbody2D:
   serializedVersion: 4

@@ -5,6 +5,7 @@ using UnityEngine;
 public class WinConditionHERD : MonoBehaviour
 {
     public GameObject winText;
+    SpriteRenderer winScreen;
     int counter = 0;
     bool sheepFlag = true;
     bool pigFlag = true;
@@ -12,7 +13,8 @@ public class WinConditionHERD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        winScreen = GameObject.Find("CheckSprite").GetComponent<SpriteRenderer>();
+        winScreen.enabled = false;
     }
 
     // Update is called once per frame
@@ -37,6 +39,8 @@ public class WinConditionHERD : MonoBehaviour
         // Once all animals have been herded, show a victory and end the game.
         if (counter == 3)
         {
+            GameManagerHERD.playerWin = true;
+            winScreen.enabled = true;
             Debug.Log("Game end.");
             winText.SetActive(true);
             counter++;

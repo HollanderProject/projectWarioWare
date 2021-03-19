@@ -9,8 +9,9 @@ public class Spawner : MonoBehaviour
     public GameObject winText;
     public GameObject failText;
 
-    public float minDelay = .1f;
-    public float maxDelay = 1f;
+    public float minDelay = 0.8f;
+    public float maxDelay = 1.8f;
+    public int bambooCount = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -31,9 +32,13 @@ public class Spawner : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
             // Spawn the bamboo
-            GameObject spawnBamboo = Instantiate(bambooPrefab, spawnPoint.position, spawnPoint.rotation);
-            // Despawn after 2 seconds, to avoid clutter
-            Destroy(spawnBamboo, 2f);
+            if (bambooCount != 7)
+            {
+                GameObject spawnBamboo = Instantiate(bambooPrefab, spawnPoint.position, spawnPoint.rotation);
+                // Despawn after 2 seconds, to avoid clutter
+                Destroy(spawnBamboo, 4f);
+                bambooCount++;
+            }
         }
     }
 }
