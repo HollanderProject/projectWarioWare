@@ -8,13 +8,6 @@ public class DogSpawn : MonoBehaviour
     public GameObject Dog;
     public int count = 0;
 
-    //private AudioSource source;
-
-    void Start()
-    {
-        //source = GetComponent<AudioSource>();
-    }
-
     void Spawn()
     {
         Vector3 dogPosition = new Vector3(Random.Range(-5f, 5f), 10, 0);
@@ -28,11 +21,11 @@ public class DogSpawn : MonoBehaviour
         if (collision.collider.name != "Floor" && OhNoText.activate == false)
         {
             ScoreScript.scoreValue += 1;
-            //source.Play();
             if (ScoreScript.scoreValue <= ScoreScript.scoreGoal - 1)
             {
                 NiceCatchText.activate = true;
             }
+            BarkScript.playBark();
         }
         //else if (collision.collider.name == "Floor" && NiceCatchText.activate == false)
         //{

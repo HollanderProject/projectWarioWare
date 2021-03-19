@@ -61,6 +61,7 @@
      <Compile Include="Assets\Microgames\BROWSE\Scripts\GraphicTimer.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\PlayStatusSound.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\PlayTVStaticSound.cs" />
+     <Compile Include="Assets\Microgames\CATCH\Scripts\BarkScript.cs" />
      <Compile Include="Assets\Microgames\CATCH\Scripts\DogSpawn.cs" />
      <Compile Include="Assets\Microgames\CATCH\Scripts\FailScript.cs" />
      <Compile Include="Assets\Microgames\CATCH\Scripts\GameManagerCATCH.cs" />
