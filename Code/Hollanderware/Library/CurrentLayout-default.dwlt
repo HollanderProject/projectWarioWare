@@ -21,11 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-<<<<<<< Updated upstream
-  m_MinSize: {x: 875, y: 521}
-=======
   m_MinSize: {x: 875, y: 300}
->>>>>>> Stashed changes
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -116,14 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 709, y: 471}
-  m_MaxSize: {x: 18004, y: 14021}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-<<<<<<< Updated upstream
-  controlID: 51593
-=======
-  controlID: 16246
->>>>>>> Stashed changes
+  controlID: 96
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,16 +135,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1422
+    width: 1367
     height: 947
-  m_MinSize: {x: 433, y: 471}
-  m_MaxSize: {x: 14003, y: 14021}
-  vertical: 0
-<<<<<<< Updated upstream
-  controlID: 51599
-=======
-  controlID: 16194
->>>>>>> Stashed changes
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+  controlID: 135
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,7 +149,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -172,16 +160,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 427
-    height: 947
-  m_MinSize: {x: 231, y: 471}
-  m_MaxSize: {x: 10001, y: 14021}
-  vertical: 1
-<<<<<<< Updated upstream
-  controlID: 51666
-=======
-  controlID: 16254
->>>>>>> Stashed changes
+    width: 1367
+    height: 640
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 136
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,13 +183,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 427
-    height: 427
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+    width: 437
+    height: 640
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -216,24 +200,27 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
-    y: 427
-    width: 427
-    height: 520
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+    x: 437
+    y: 0
+    width: 930
+    height: 640
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
+  - {fileID: 17}
+  - {fileID: 15}
   - {fileID: 18}
+  - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,18 +238,14 @@ MonoBehaviour:
   - {fileID: 12}
   m_Position:
     serializedVersion: 2
-    x: 427
-    y: 0
-    width: 995
-    height: 947
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
-  vertical: 1
-<<<<<<< Updated upstream
-  controlID: 51600
-=======
-  controlID: 16195
->>>>>>> Stashed changes
+    x: 0
+    y: 640
+    width: 1367
+    height: 307
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
+  vertical: 0
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,28 +256,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 995
-    height: 685
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-<<<<<<< Updated upstream
-  m_ActualView: {fileID: 16}
-=======
+    width: 399
+    height: 307
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
->>>>>>> Stashed changes
   m_Panes:
   - {fileID: 19}
-  - {fileID: 16}
-  - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,52 +287,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
-    y: 685
-    width: 995
-    height: 262
-<<<<<<< Updated upstream
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
+    x: 399
+    y: 0
+    width: 968
+    height: 307
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
->>>>>>> Stashed changes
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 14}
-  - {fileID: 15}
-  m_Position:
-    serializedVersion: 2
-    x: 1422
-    y: 0
-    width: 498
-    height: 947
-  m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4001, y: 8042}
-  vertical: 1
-<<<<<<< Updated upstream
-  controlID: 51594
-=======
-  controlID: 16247
->>>>>>> Stashed changes
---- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,18 +313,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 1367
     y: 0
-    width: 498
-    height: 574
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 22}
+    width: 553
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,24 +333,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 574
-    width: 498
-    height: 373
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 23}
-  m_Panes:
-  - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &16
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 201
+    y: 73
+    width: 1164
+    height: 619
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -2397292571428893277, guid: e00115f9908728e4eae462cd451df3c6, type: 2}
+    - {fileID: 3787065264868312574, guid: d3bf1996559aecb4bb5852a14c25e190, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.76842105
+      e01: 0
+      e02: 0
+      e03: -23.421051
+      e10: 0
+      e11: 0.76842105
+      e12: 0
+      e13: 224.6842
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.76842105
+      e01: 0
+      e02: 0
+      e03: -23.421051
+      e10: 0
+      e11: 0.76842105
+      e12: 0
+      e13: 224.6842
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: e00115f9908728e4eae462cd451df3c6,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -2397292571428893277, guid: e00115f9908728e4eae462cd451df3c6,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,10 +426,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 427
+    x: 437
     y: 73
-    width: 993
-    height: 664
+    width: 928
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -441,7 +439,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 964, y: 643}
+  m_TargetSize: {x: 897, y: 598}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -456,10 +454,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -482
-    m_HBaseRangeMax: 482
-    m_VBaseRangeMin: -321.5
-    m_VBaseRangeMax: 321.5
+    m_HBaseRangeMin: -448.5
+    m_HBaseRangeMax: 448.5
+    m_VBaseRangeMin: -299
+    m_VBaseRangeMax: 299
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -477,29 +475,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 993
-      height: 643
+      width: 928
+      height: 598
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 496.5, y: 321.5}
+    m_Translation: {x: 464, y: 299}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -496.5
-      y: -321.5
-      width: 993
-      height: 643
+      x: -464
+      y: -299
+      width: 928
+      height: 598
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 993, y: 664}
+  m_LastWindowPixelSize: {x: 928, y: 619}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -522,21 +520,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 426
-    height: 406
+    width: 436
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< Updated upstream
-      m_SelectedIDs: 9a360000
-      m_LastClickedID: 0
-      m_ExpandedIDs: ae8effff5291ffff94b1ffffaab1ffff56b2ffff6ab2ffff4ab5ffff60b5ffff60d7ffff1cdbffff24dbffffe0dbffff0adcffff66ddffff62dfffffdee0ffff66e4ffff5ae8ffffa8e8ffffd0e8ffff5aeaffff72eaffff34ebffff6cedffff2eeeffff3aeeffff4ceeffffbaeeffff10efffff6cefffff54f0ffff6ef0ffffb4f0ffffb2f2ffffbef2ffffe6f2fffff2f2ffff88f3ffff94410000ae410000b2410000e6410000c24400008e4500002a460000a86700009e6c0000bc6c00003c8a0000
-=======
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8ee8ffff86ebffffb2faffff5efbffff5c3d0000
->>>>>>> Stashed changes
+      m_ExpandedIDs: 624dffff6e4dffffae4dffffd67dffff7c8bffffd6acffff4caeffffd0b2fffff4b3ffff00b4ffff20c2fffffcc2ffff36c5ffff1acfffff42d4ffff54d4ffffd2d4ffff86f2ffff5efbfffffa3a000086510000625700006e570000045f0000c45f0000466000001e6700007a690000726d00003c6e0000be6e00000a830000248300005a830000da830000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -559,158 +551,8 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: deded26740eee3c42ae50f9e9befd06e
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 500
-    width: 426
-    height: 499
-  m_ViewDataDictionary: {fileID: 0}
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_SoftLockControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-<<<<<<< Updated upstream
-    - Assets/Microgames/CUT/Scripts
-=======
-    - Assets/Microgames/CATCH/Images
->>>>>>> Stashed changes
-  m_ViewMode: 0
-  m_StartGridSize: 55
-  m_LastFolders: []
-  m_LastFoldersGridSize: 55
-  m_LastProjectPath: E:\Desktop\UpdatedPull\projectWarioWare\Code\Hollanderware
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f2760000
-    m_LastClickedID: 30450
-<<<<<<< Updated upstream
-    m_ExpandedIDs: ffffffff00000000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000ca3c0000cc3c0000ce3c0000d03c0000d23c0000d43c0000d63c0000d83c0000da3c0000dc3c0000de3c0000e03c0000e23c0000e43c0000e63c0000e83c0000ea3c0000ec3c0000ee3c0000f03c0000f63c0000263d0000443d0000e03d00000a3e0000
-=======
-    m_ExpandedIDs: ffffffff00000000523b00000c3c00000e3c0000103c0000123c0000143c0000163c0000183c00001a3c00001c3c00001e3c0000203c0000223c0000243c0000263c0000283c00002a3c00002c3c00002e3c0000303c0000323c0000343c0000363c0000383c00003a3c00003c3c00003e3c0000403c0000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000943c0000
->>>>>>> Stashed changes
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-<<<<<<< Updated upstream
-    scrollPos: {x: 0, y: 454}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000ca3c0000cc3c0000ce3c0000d03c0000d23c0000d43c0000d63c0000d83c0000da3c0000dc3c0000de3c0000e03c0000e23c0000e43c0000e63c0000e83c0000ea3c0000ec3c0000ee3c0000f03c0000f63c0000263d0000443d0000e03d00000a3e0000
-=======
-    scrollPos: {x: 0, y: 40}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000523b00000c3c00000e3c0000103c0000123c0000143c0000163c0000183c00001a3c00001c3c00001e3c0000203c0000223c0000243c0000263c0000283c00002a3c00002c3c00002e3c0000303c0000323c0000343c0000363c0000383c00003a3c00003c3c00003e3c0000403c0000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000943c0000
->>>>>>> Stashed changes
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 55
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
---- !u!114 &19
+  m_WindowGUID: 32fa5f98e105fb445a46305fbb1407a0
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -731,13 +573,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 427
+    x: 437
     y: 73
-    width: 993
-    height: 664
+    width: 928
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 71c50de33440da843a06c476c87ca97d
+  m_WindowGUID: a41ff6e7d0e998249bb91cafa8ac2bcd
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -746,15 +588,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< Updated upstream
-    m_Target: {x: 843.7704, y: 566.9018, z: -1915.1182}
+    m_Target: {x: 0.39512902, y: 0.09310995, z: 192.34473}
     speed: 2
-    m_Value: {x: 1433.4773, y: 38.952076, z: -1659.3044}
-=======
-    m_Target: {x: -2.1411788, y: 3.744956, z: -7348.6855}
-    speed: 2
-    m_Value: {x: -2.1411788, y: 3.744956, z: -7348.6855}
->>>>>>> Stashed changes
+    m_Value: {x: 0.39512902, y: 0.09310995, z: 192.34473}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -784,19 +620,19 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 0, y: 0}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -804,22 +640,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< Updated upstream
-    m_Target: 1305.2437
+    m_Target: 7.719267
     speed: 2
-    m_Value: 1788.005
-=======
-    m_Target: 15.189972
-    speed: 2
-    m_Value: 15.189972
->>>>>>> Stashed changes
+    m_Value: 7.719267
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
     m_Speed: 1
-    m_SpeedNormalized: 0.49748743
+    m_SpeedNormalized: 0.5
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -837,7 +667,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -858,12 +688,148 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 201
+    y: 73
+    width: 1164
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 713
+    width: 398
+    height: 286
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Microgames/CATCH/Audio
+  m_ViewMode: 0
+  m_StartGridSize: 49
+  m_LastFolders:
+  - Assets
+  m_LastFoldersGridSize: 49
+  m_LastProjectPath: C:\Users\Noah\Documents\GitHub\projectWarioWare\Code\Hollanderware
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 983d0000
+    m_LastClickedID: 15768
+    m_ExpandedIDs: 00000000703b0000ae3b0000b03b0000b23b0000b43b0000b63b0000b83b0000ba3b0000bc3b0000be3b0000c03b0000c23b0000c43b0000c63b0000c83b0000ca3b0000cc3b0000ce3b0000d03b0000d23b0000d43b0000d63b0000d83b0000da3b0000dc3b0000de3b0000e03b0000e23b0000e43b0000e63b0000e83b0000ea3b0000ec3b0000ee3b0000f03b0000f23b0000f43b0000f63b0000f83b0000fa3b0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000703b0000ae3b0000b03b0000b23b0000b43b0000b63b0000b83b0000ba3b0000bc3b0000be3b0000c03b0000c23b0000c43b0000c63b0000c83b0000ca3b0000cc3b0000ce3b0000d03b0000d23b0000d43b0000d63b0000d83b0000da3b0000dc3b0000de3b0000e23b0000e43b0000e63b0000e83b0000ea3b0000ec3b0000f03b0000f23b0000f43b0000f63b0000fa3b0000283c00002a3c0000463c0000683c0000c43c0000c63e0000c83e0000da3e0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: WinConditionCUT
+      m_OriginalName: WinConditionCUT
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 11492
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 11}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 49
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 270
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -884,12 +850,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 427
-    y: 758
-    width: 993
-    height: 241
+    x: 399
+    y: 713
+    width: 966
+    height: 286
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &22
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -910,10 +876,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1422
+    x: 1367
     y: 73
-    width: 497
-    height: 553
+    width: 552
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -921,553 +887,9 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -160
+    m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-<<<<<<< Updated upstream
-  m_LastVerticalScrollValue: 0
-=======
-  m_LastVerticalScrollValue: 787
->>>>>>> Stashed changes
---- !u!114 &23
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1422
-    y: 647
-    width: 497
-    height: 352
-  m_ViewDataDictionary: {fileID: 0}
-  m_Spl:
-<<<<<<< Updated upstream
-    ID: 51789
-=======
-    ID: 16274
->>>>>>> Stashed changes
-    splitterInitialOffset: 307
-    currentActiveSplitter: -1
-    realSizes: ed0000002d000000
-    relativeSizes:
-    - 0.84042555
-    - 0.15957445
-    minSizes: 2000000020000000
-    maxSizes: 0000000000000000
-    lastTotalSize: 282
-    splitSize: 6
-    xOffset: 0
-  m_TestTypeToolbarIndex: 1
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 23}
-    newResultList:
-    - id: 1000
-      uniqueId: '[Hollanderware][suite]'
-      name: Hollanderware
-      fullName: Hollanderware
-      resultStatus: 0
-      duration: 0.0999568
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: ORGANIZE_Button (0.040s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 69}
-      m_SelectedIDs: 3edfa878
-      m_LastClickedID: 2024333118
-      m_ExpandedIDs: 36a536823cdc509e9f5c62b6ba13502bbc805a6d4b5ea47cffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 23}
-    newResultList:
-    - id: 1006
-      uniqueId: '[Hollanderware][suite]'
-      name: Hollanderware
-      fullName: Hollanderware
-      resultStatus: 1
-      duration: 0.2321556
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1028
-      uniqueId: '[EditMode.dll][suite]'
-      name: EditMode.dll
-      fullName: C:/Users/Noah/Documents/GitHub/projectWarioWare/Code/Hollanderware/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 1
-      duration: 0.1818457
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1002
-      parentUniqueId: '[Hollanderware][suite]'
-    - id: 1029
-      uniqueId: EditMode.dll/[EditMode][Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 1
-      duration: 0.1679211
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1028
-      parentUniqueId: '[EditMode.dll][suite]'
-    - id: 1003
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.BROWSE_Button][suite]
-      name: BROWSE_Button
-      fullName: Tests.BROWSE_Button
-      resultStatus: 1
-      duration: 0.0401165
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/Tests/BROWSE_Button/[EditMode][Tests.BROWSE_Button.BROWSE_ButtonSimplePasses]
-      name: BROWSE_ButtonSimplePasses
-      fullName: Tests.BROWSE_Button.BROWSE_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0150544
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1003
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BROWSE_Button][suite]
-    - id: 1005
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.CATCH_Button][suite]
-      name: CATCH_Button
-      fullName: Tests.CATCH_Button
-      resultStatus: 1
-      duration: 0.0273601
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/Tests/CATCH_Button/[EditMode][Tests.CATCH_Button.CATCH_ButtonSimplePasses]
-      name: CATCH_ButtonSimplePasses
-      fullName: Tests.CATCH_Button.CATCH_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0005248
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.CATCH_Button][suite]
-    - id: 1007
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.CLIMB_Button][suite]
-      name: CLIMB_Button
-      fullName: Tests.CLIMB_Button
-      resultStatus: 1
-      duration: 0.010304
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1008
-      uniqueId: EditMode.dll/Tests/CLIMB_Button/[EditMode][Tests.CLIMB_Button.CLIMB_ButtonSimplePasses]
-      name: CLIMB_ButtonSimplePasses
-      fullName: Tests.CLIMB_Button.CLIMB_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0007482
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1007
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.CLIMB_Button][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.CONNECT_Button][suite]
-      name: CONNECT_Button
-      fullName: Tests.CONNECT_Button
-      resultStatus: 1
-      duration: 0.0104157
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/Tests/CONNECT_Button/[EditMode][Tests.CONNECT_Button.CONNECT_ButtonSimplePasses]
-      name: CONNECT_ButtonSimplePasses
-      fullName: Tests.CONNECT_Button.CONNECT_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0004109
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.CONNECT_Button][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.CUT_Button][suite]
-      name: CUT_Button
-      fullName: Tests.CUT_Button
-      resultStatus: 1
-      duration: 0.009935
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1012
-      uniqueId: EditMode.dll/Tests/CUT_Button/[EditMode][Tests.CUT_Button.CUT_ButtonSimplePasses]
-      name: CUT_ButtonSimplePasses
-      fullName: Tests.CUT_Button.CUT_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0003931
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1011
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.CUT_Button][suite]
-    - id: 1013
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.HERD_Button][suite]
-      name: HERD_Button
-      fullName: Tests.HERD_Button
-      resultStatus: 1
-      duration: 0.0098408
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1014
-      uniqueId: EditMode.dll/Tests/HERD_Button/[EditMode][Tests.HERD_Button.HERD_ButtonSimplePasses]
-      name: HERD_ButtonSimplePasses
-      fullName: Tests.HERD_Button.HERD_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.000439
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1013
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.HERD_Button][suite]
-    - id: 1015
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.NUDGE_Button][suite]
-      name: NUDGE_Button
-      fullName: Tests.NUDGE_Button
-      resultStatus: 1
-      duration: 0.0095595
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1016
-      uniqueId: EditMode.dll/Tests/NUDGE_Button/[EditMode][Tests.NUDGE_Button.NUDGE_ButtonSimplePasses]
-      name: NUDGE_ButtonSimplePasses
-      fullName: Tests.NUDGE_Button.NUDGE_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0004401
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.NUDGE_Button][suite]
-    - id: 1017
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.ORGANIZE_Button][suite]
-      name: ORGANIZE_Button
-      fullName: Tests.ORGANIZE_Button
-      resultStatus: 1
-      duration: 0.0103578
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1018
-      uniqueId: EditMode.dll/Tests/ORGANIZE_Button/[EditMode][Tests.ORGANIZE_Button.ORGANIZE_ButtonSimplePasses]
-      name: ORGANIZE_ButtonSimplePasses
-      fullName: Tests.ORGANIZE_Button.ORGANIZE_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0003965
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.ORGANIZE_Button][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.POKE_Button][suite]
-      name: POKE_Button
-      fullName: Tests.POKE_Button
-      resultStatus: 1
-      duration: 0.0088993
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1020
-      uniqueId: EditMode.dll/Tests/POKE_Button/[EditMode][Tests.POKE_Button.POKE_ButtonSimplePasses]
-      name: POKE_ButtonSimplePasses
-      fullName: Tests.POKE_Button.POKE_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0003904
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1019
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.POKE_Button][suite]
-    - id: 1022
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.SHOOT_Button][suite]
-      name: SHOOT_Button
-      fullName: Tests.SHOOT_Button
-      resultStatus: 1
-      duration: 0.0117903
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1023
-      uniqueId: EditMode.dll/Tests/SHOOT_Button/[EditMode][Tests.SHOOT_Button.SHOOT_ButtonSimplePasses]
-      name: SHOOT_ButtonSimplePasses
-      fullName: Tests.SHOOT_Button.SHOOT_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.0003791
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.SHOOT_Button][suite]
-    - id: 1025
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.SPOT_Button][suite]
-      name: SPOT_Button
-      fullName: Tests.SPOT_Button
-      resultStatus: 1
-      duration: 0.0084532
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1026
-      uniqueId: EditMode.dll/Tests/SPOT_Button/[EditMode][Tests.SPOT_Button.SPOT_ButtonSimplePasses]
-      name: SPOT_ButtonSimplePasses
-      fullName: Tests.SPOT_Button.SPOT_ButtonSimplePasses
-      resultStatus: 1
-      duration: 0.00038
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.SPOT_Button][suite]
-    m_ResultText: Hollanderware (0.232s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ba13502b
-      m_LastClickedID: 726668218
-      m_ExpandedIDs: 36a536823cdc509eba13502b2aea64774b5ea47cffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
+  m_LastVerticalScrollValue: 100

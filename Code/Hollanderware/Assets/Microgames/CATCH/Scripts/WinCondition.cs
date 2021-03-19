@@ -5,13 +5,17 @@ using UnityEngine.UI;
 
 public class WinCondition : MonoBehaviour
 {
-    Text winText;
+    //public Text winText;
     public static bool gameActive;
+    SpriteRenderer checkSprite;
 
     void Start()
     {
-        winText = GetComponent<Text>();
+        //winText = GetComponent<Text>();
         gameActive = true;
+        checkSprite = GameObject.Find("CheckSpriteCATCH").GetComponent<SpriteRenderer>();
+        Debug.Log(checkSprite);
+        checkSprite.enabled = false;
     }
 
     // Update is called once per frame
@@ -19,14 +23,21 @@ public class WinCondition : MonoBehaviour
     {
         if (ScoreScript.scoreValue >= ScoreScript.scoreGoal)
         {
-            winText.text = "You Win!";
+            //winText.text = "You Win!";
             gameActive = false;
+            GameManagerCATCH.playerWin = true;
+            checkSprite.enabled = true;
+            Debug.Log("Game Over: Victory");
+            GraphicTimerCATCH.keepCounting = false;
 
         }
-        else if (FailScript.failScoreValue >= FailScript.failGoal)
-        {
-            winText.text = "You Lose";
-            gameActive = false;
-        }
+        //else if (FailScript.failScoreValue >= FailScript.failGoal)
+        //{
+        //    //winText.text = "You Lose";
+        //    gameActive = false;
+        //    GameManagerCATCH.playerLose = true;
+        //    loseScreen.enabled = true;
+        //    Debug.Log("Game Over: Out of time");
+        //}
     }
 }

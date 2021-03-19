@@ -7,7 +7,7 @@ public class ScoreScript : MonoBehaviour
 {
     public static int scoreGoal = 10;
     public static int scoreValue = 0;
-    Text score;
+    public Text score;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,6 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "" + scoreValue + "/" + scoreGoal + " dogs caught";
+        score.text = "Dogs Caught: " + scoreValue + "/" + scoreGoal;
     }
 }
