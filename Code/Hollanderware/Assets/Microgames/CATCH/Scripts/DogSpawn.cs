@@ -10,7 +10,9 @@ public class DogSpawn : MonoBehaviour
 
     void Spawn()
     {
-        Instantiate(Dog, new Vector3(Random.Range(-6, 6), 10, 0), Quaternion.identity);
+        Vector3 dogPosition = new Vector3(Random.Range(-5f, 5f), 10, 0);
+        Debug.Log("Dog at " + dogPosition.x);
+        Instantiate(Dog, dogPosition, Quaternion.identity);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

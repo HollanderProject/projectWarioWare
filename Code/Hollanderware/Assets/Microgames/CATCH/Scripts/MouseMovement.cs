@@ -13,14 +13,18 @@ public class MouseMovement : MonoBehaviour
     {
         mousePosition.y = yPosition;
         mousePosition.x = 0;
+        transform.position = new Vector2(0, mousePosition.y);
     }
 
     // Update is called once per frame
     void Update()
     {
         mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        mousePosition.y = yPosition;
-        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+        if (WinCondition.gameActive == true)
+        {
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            mousePosition.y = yPosition;
+            transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+        }
     }
 }
