@@ -6,6 +6,7 @@ public class CarPlacement : MonoBehaviour
 {
     private bool done = false;
     private bool lastMovement = true; // true == up, false == down
+    public float buffer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class CarPlacement : MonoBehaviour
 
         if (done == false)
         {
-            transform.position = new Vector2(transform.position.x, PointPositions.startPointPositionY + .3f);
+            transform.position = new Vector2(transform.position.x, PointPositions.startPointPositionY + buffer);
             done = true;
         }
     }

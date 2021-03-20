@@ -18,7 +18,7 @@ public class GeneratePointPosition : MonoBehaviour
         float x = Random.Range(xMinDistance, xMaxDistance);
         float y = Random.Range(yMinDistance, yMaxDistance);
         transform.position = new Vector2(x, y);
-        //Debug.Log(circle.name + ": (" + x + ", " + y + ")");
+        Debug.Log(circle.name + ": (" + x + ", " + y + ")");
 
         if (startPoint == true)
         {

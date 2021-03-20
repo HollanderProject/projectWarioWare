@@ -10,18 +10,25 @@ public class GameManagerCATCH : MonoBehaviour
 
     void OnGUI()
     {
-        if (playerWin || playerLose)
+        if (playerWin == true)
         {
-            //if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Done"))
-            //{
-            //    RestartLevel();
-            //}
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Yay! Menu"))
+            {
+                RestartLevel();
+            }
+        }
+        if (playerLose == true)
+        {
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), " Aw... Menu"))
+            {
+                RestartLevel();
+            }
         }
     }
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(3); // 3 is the scene for CATCH
+        SceneManager.LoadScene(0); // 3 is the scene for CATCH
         Time.timeScale = 1.0f;
     }
 }
