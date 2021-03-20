@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Main Menu/Menu.unity
+    guid: af8d8d3b5e1b5b2409f3e022aafa0b9f
+  - enabled: 1
+    path: Assets/Game Selection/Game Selection.unity
+    guid: 9b752c3cb6fab154d832c70a527e31a3
+  - enabled: 1
+    path: Assets/Microgames/BROWSE/BROWSE Scene.unity
+    guid: f012867e4557bd148a88170c99ed7b32
+  - enabled: 1
+    path: Assets/Microgames/CATCH/CATCH Scene.unity
+    guid: 9e4ae2e9aa9a2544fb5288b4b70808a8
+  - enabled: 1
+    path: Assets/Microgames/CLIMB/CLIMB Scene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Microgames/CONNECT/CONNECT Scene.unity
+    guid: 80b5d4dc20bfd864dae0b000e0c8ecae
+  - enabled: 1
+    path: Assets/Microgames/CUT/CUT Scene.unity
+    guid: b3d89d58a1c7b8843b2ca2edb7b8c8cd
+  - enabled: 1
+    path: Assets/Microgames/HERD/HERD Scene.unity
+    guid: 5ab7894dedf53da45a2733c037434d73
+  - enabled: 1
+    path: Assets/Microgames/NUDGE/NUDGE Scene.unity
+    guid: d4c64aa89f1d69a4cb030b9a3878e6e4
+  - enabled: 1
+    path: Assets/Microgames/ORGANIZE/ORGANIZE Scene.unity
+    guid: 2f282633c70bd7b40a2c3a61d5267245
+  - enabled: 1
+    path: Assets/Microgames/POKE/POKE Scene (Placeholder).unity
+    guid: 752e8efd65779984aa9eff38f69d3d13
+  - enabled: 1
+    path: Assets/Microgames/SHOOT/SHOOT Scene.unity
+    guid: 4edaa41f13e83fa46bb945ee806dca44
+  - enabled: 1
+    path: Assets/Microgames/SPOT/SPOT Scene (Placeholder).unity
+    guid: 55233d20628e10b47aab9ef4069b1e1c
+  m_configObjects: {}
