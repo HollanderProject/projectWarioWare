@@ -157,7 +157,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * [Product Demonstration]
 
 ## Task Allocation
-* Cameron Bernard - 
+* Cameron Bernard - Updated UI components of CLIMB, NUDGE, and ORGANIZE to be consistant with other games (win/loss screen, timers, and GBA outline). Modified tests to work with these changes
 * Isaiah Nagac -
 * Jesse Jericho - Updated UI components of CUT and HERD to be consistent with other games (win/loss screen and timers). Added additional unit tests following these changes.
 * Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests.
