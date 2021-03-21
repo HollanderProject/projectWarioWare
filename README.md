@@ -160,5 +160,5 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Cameron Bernard - 
 * Isaiah Nagac -
 * Jesse Jericho - 
-* Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests
+* Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests.
 * Noah Law - 
