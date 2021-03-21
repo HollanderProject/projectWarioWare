@@ -5,17 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class PlayMicrogame : MonoBehaviour
 {
-    public static int browse = 2, 
-        catchGame = 3, 
-        climb = 4, 
-        connect = 5, 
-        cut = 6, 
-        herd = 7, 
-        nudge = 8,
-        organize = 9, 
-        poke = 10, 
-        shoot = 11, 
-        spot = 12;
+    public static int browse = 3, 
+        catchGame = 4, 
+        climb = 5, 
+        connect = 6, 
+        cut = 7, 
+        herd = 8, 
+        nudge = 9,
+        organize = 10, 
+        poke = 11, 
+        shoot = 12, 
+        spot = 13;
 
     public void PlayBROWSE()
     {

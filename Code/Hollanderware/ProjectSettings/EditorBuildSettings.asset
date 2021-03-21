@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Main Menu/Menu.unity
     guid: af8d8d3b5e1b5b2409f3e022aafa0b9f
   - enabled: 1
+    path: Assets/Level Select/LevelSelect.unity
+    guid: 109fefac71e02f24b9f0d7d02c3c18b6
+  - enabled: 1
     path: Assets/Game Selection/Game Selection.unity
     guid: 9b752c3cb6fab154d832c70a527e31a3
   - enabled: 1
