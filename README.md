@@ -140,3 +140,25 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Jesse Jericho - Refined HERD microgame to meet better standards than a prototype. Added more automated tests to HERD following updates.
 * Noah Lang - Combined code for all microgames into one project & fixed compatibility issues between them. Also created prototype level selection screen.
 * Noah Law - Improved SPOT to meet better standards than the prototype
+
+# Sprint 7
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
+
+* [Product Demonstration]
+
+## Task Allocation
+* Cameron Bernard - 
+* Isaiah Nagac -
+* Jesse Jericho - 
+* Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests
+* Noah Law - 
