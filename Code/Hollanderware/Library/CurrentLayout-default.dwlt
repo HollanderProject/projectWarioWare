@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 138
+  controlID: 147
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 139
+  controlID: 148
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,8 +262,8 @@ MonoBehaviour:
     y: 0
     width: 992
     height: 572
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 19}
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_MinSize: {x: 331, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 108
+  controlID: 63
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,7 +401,7 @@ MonoBehaviour:
     height: 448
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 186
+    ID: 195
     splitterInitialOffset: 360
     currentActiveSplitter: -1
     realSizes: 2201000058000000
@@ -968,12 +968,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1022
       parentUniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.StatusIconTests][suite]
-    m_ResultText: TimerTest (0.009s)
+    m_ResultText: currentTime (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 18}
-      m_SelectedIDs: 6970844e
-      m_LastClickedID: 1317302377
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 09e77961
+      m_LastClickedID: 1635378953
       m_ExpandedIDs: 6e666a9711b0da9b26c19ca048eff4a48149cdb2553a1cbbb626c8c21c9f6be0b16a2cea2cd20709c2516214574460173d5ce823ba13502b6970844ee32cba5fe447c767ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1567,9 +1567,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1c3d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: ccd1ffffded1ffffd8d2ffff00d3ffff78d3ffff8ad3ffff1ad4ffff20d4ffff32d4ffffded4ffffead4fffffcd4fffff6d5fffffcd5ffff0ed6ffff08d7ffff14d7ffff26d7ffffb6d7ffffbcd7ffffced7ffff7ad8ffff84d8ffffaed8ffffb4d9ffffdad9ffffecd9ffffe6daffffb6dbffffc8dbffffc2dcffffecdcfffffedcffffaaddffffceddffffe0ddffff70deffff94deffffa6deffffa0dfffffc8dfffff4ce0ffff76e0ffff08e1ffff32e1ffffbce1ffffd2e2ffffe8e6fffff0e7ffff30ecffff42ecffffd2ecfffff6ecffff08edffffb4edffff4cefffff5eefffffe6effffff4f3ffff06f4ffffa2f4ffff1af5ffff2cf5ffffc8f5ffff3ef6ffff50f6ffffecf6ffffbaf7ffffccf7ffff5af8ffffd0f8ffffe2f8ffff6ef9ffff08fbffff
+      m_ExpandedIDs: a2e7ffffa4eaffffa4ebffffd4f6ffffd4f7ffffe0f8ffff5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1853,19 +1853,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Microgames/HERD
   m_ViewMode: 0
   m_StartGridSize: 49
   m_LastFolders: []
   m_LastFoldersGridSize: 49
-  m_LastProjectPath: E:\Desktop\NewlyPulled\projectWarioWare\Code\Hollanderware
+  m_LastProjectPath: E:\Desktop\projectWarioWare\projectWarioWare\Code\Hollanderware
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 983d0000
     m_LastClickedID: 15768
-    m_ExpandedIDs: 000000004e3b0000943b0000983b00007c3c00007e3c0000803c0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000
+    m_ExpandedIDs: 00000000543b00009a3b00009e3b0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000ca3c0000cc3c0000ce3c0000d03c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1893,7 +1894,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000004e3b0000943b0000983b00007c3c00007e3c0000803c0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c43c0000c63c0000c83c00007c43000080430000
+    m_ExpandedIDs: ffffffff00000000543b00009a3b00009e3b0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000ca3c0000cc3c0000ce3c0000d03c0000123d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
