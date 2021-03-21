@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 75772096}
   - component: {fileID: 75772095}
   - component: {fileID: 75772094}
+  - component: {fileID: 75772098}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -487,6 +488,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &75772098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75772093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd14c60877ac24b4691ff939bd547ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131993042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,6 +2191,7 @@ GameObject:
   - component: {fileID: 1292606437}
   - component: {fileID: 1292606436}
   - component: {fileID: 1292606435}
+  - component: {fileID: 1292606438}
   m_Layer: 0
   m_Name: BatteryTimer
   m_TagString: Untagged
@@ -2211,8 +2225,6 @@ MonoBehaviour:
   - {fileID: -7867542121703049625, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 8767405525207788773, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   winText: {fileID: 1740146542}
-  allottedTime: 11
-  currentTime: 0
 --- !u!212 &1292606436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2278,6 +2290,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292606438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292606434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05b7dfa5625c1448f6bf7c85997cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battery: {fileID: 1292606434}
 --- !u!1 &1325648607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +2653,7 @@ GameObject:
   - component: {fileID: 1410841486}
   - component: {fileID: 1410841485}
   - component: {fileID: 1410841484}
+  - component: {fileID: 1410841489}
   m_Layer: 0
   m_Name: CheckSpriteCATCH
   m_TagString: Untagged
@@ -2839,6 +2865,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1410841489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410841482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23be2668398e41c4d9505b8200578b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkMarkThing: {fileID: 1410841482}
+  checkSprite: {fileID: 1410841488}
 --- !u!1 &1502584239
 GameObject:
   m_ObjectHideFlags: 0

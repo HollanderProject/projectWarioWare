@@ -7,11 +7,12 @@ public class GraphicTimerCATCH : MonoBehaviour
     public SpriteRenderer currentFrame;
     public Sprite[] batteryFrames; // NOTE: Set array animation in reverse.
     public GameObject winText;
+    public static Sprite[] batteryFramesStatic;
 
     SpriteRenderer loseScreen;
 
-    public float allottedTime;
-    public float currentTime = 0f;
+    public float allottedTime = 11;
+    public static float currentTime = 0f;
 
     public static bool keepCounting = true;
 
@@ -22,6 +23,11 @@ public class GraphicTimerCATCH : MonoBehaviour
 
         loseScreen = GameObject.Find("CrossSpriteCATCH").GetComponent<SpriteRenderer>();
         loseScreen.enabled = false;
+
+        for (int i = 0; i < batteryFrames.Length; i++)
+        {
+            batteryFramesStatic[i] = batteryFrames[i];
+        }
     }
 
     void Update()
@@ -47,6 +53,16 @@ public class GraphicTimerCATCH : MonoBehaviour
         int roundedIndex = (int)Mathf.Ceil(index);
         if (roundedIndex <= 9)
             currentFrame.sprite = batteryFrames[roundedIndex];
+    }
+
+    public float GetAllottedTime()
+    {
+        return allottedTime;
+    }
+
+    public float GetArrayLength()
+    {
+        return batteryFrames.Length;
     }
 
 

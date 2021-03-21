@@ -61,19 +61,6 @@
      <Compile Include="Assets\Microgames\BROWSE\Scripts\GraphicTimer.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\PlayStatusSound.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\PlayTVStaticSound.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\BarkScript.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\DogSpawn.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\FailScript.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\GameManagerCATCH.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\GraphicTimerCATCH.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\MouseMovement.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\NiceCatchText.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\OhNoText.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\PlayGoodSound.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\Rotate.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\ScoreScript.cs" />
-     <Compile Include="Assets\Microgames\CATCH\Scripts\WinCondition.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\CharacterController.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\LifeCounter.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\Popup.cs" />
@@ -791,6 +778,10 @@
     <ProjectReference Include="LevelSelectScripts.csproj">
       <Project>{5EC76166-8B3C-205E-E3A1-768A76EF1FF2}</Project>
       <Name>LevelSelectScripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="CATCHScripts.csproj">
+      <Project>{25E487C6-6D1B-7B46-A7A4-1A39DE9B6B3A}</Project>
+      <Name>CATCHScripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
