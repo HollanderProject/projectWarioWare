@@ -6,8 +6,8 @@ public class CharacterController : MonoBehaviour
 {
     public GameObject Arm;
     public GameObject Glass;
-    public GameObject winText;
-    public GameObject failText;
+    public GameObject check;
+    public GameObject cross;
     public GameObject gameText;
     public BoxCollider2D BackHitbox;
     public BoxCollider2D GlassBox;
@@ -21,7 +21,7 @@ public class CharacterController : MonoBehaviour
     {
         if(time < 0)
         {
-            if(!failText.activeSelf && !winText.activeSelf)
+            if(!cross.activeSelf && !check.activeSelf)
             {
                 float pos = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
                 Arm.transform.position = new Vector2(pos, -0.522f);
@@ -30,7 +30,7 @@ public class CharacterController : MonoBehaviour
             {
                 Win();
             }
-            if(winText.activeSelf)
+            if(check.activeSelf)
             {
                 Glass.transform.position += new Vector3(0, -0.5f , 0);
             }
@@ -57,13 +57,13 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
-
+            
         }
     }
 
     private void Win()
     {
         gameText.SetActive(false);
-        winText.SetActive(true);
+        check.SetActive(true);
     }
 }

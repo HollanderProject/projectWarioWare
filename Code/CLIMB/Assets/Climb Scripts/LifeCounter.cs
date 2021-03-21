@@ -8,7 +8,7 @@ public class LifeCounter : MonoBehaviour
 {
     private bool failed = false;
     public TMP_Text lifeText;
-    public GameObject failText;
+    public GameObject cross;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class LifeCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(failText.activeSelf && !failed)
+        if(cross.activeSelf && !failed)
         {
             failed = true;
             lifeText.text = Convert.ToString(Int32.Parse(lifeText.GetParsedText()) - 1);

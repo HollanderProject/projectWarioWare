@@ -5,8 +5,8 @@ using System;
 
 public class Startup : MonoBehaviour
 {
-    public GameObject failText;
-    public GameObject winText;
+    public GameObject cross;
+    public GameObject check;
     public GameObject organizeText;
     public Sprite Male;
     public Sprite Female;
@@ -40,8 +40,8 @@ public class Startup : MonoBehaviour
     void Start()
     {
         var rand = new System.Random();
-        failText.SetActive(false);
-        winText.SetActive(false);
+        cross.SetActive(false);
+        check.SetActive(false);
         int Gender;
         CharacterList = new GameObject[3];
         for(i = 0; i < 3; i++)
@@ -73,7 +73,7 @@ public class Startup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(i <= 3 && !failText.activeSelf && !winText.activeSelf && !moving)
+        if(i <= 3 && !cross.activeSelf && !check.activeSelf && !moving)
         {
             //Left Click
             if(Input.GetMouseButtonDown(0))
@@ -110,7 +110,7 @@ public class Startup : MonoBehaviour
             if(i == 3)
             {
                 organizeText.SetActive(false);
-                winText.SetActive(true);
+                check.SetActive(true);
             }
         }
         if(moving)
@@ -147,7 +147,7 @@ public class Startup : MonoBehaviour
     }
     void Lose()
     {
-        failText.SetActive(true);
+        cross.SetActive(true);
     }
 
 }
