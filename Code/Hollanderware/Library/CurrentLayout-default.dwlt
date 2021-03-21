@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 1077
+  controlID: 101
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,9 +164,9 @@ MonoBehaviour:
     width: 1920
     height: 947
   m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 121
+  controlID: 100
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,9 +189,9 @@ MonoBehaviour:
     width: 1402
     height: 947
   m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 20
+  controlID: 138
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 21
+  controlID: 139
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,8 +236,8 @@ MonoBehaviour:
     y: 0
     width: 410
     height: 572
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -262,8 +262,8 @@ MonoBehaviour:
     y: 0
     width: 992
     height: 572
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 19}
@@ -293,10 +293,10 @@ MonoBehaviour:
     y: 572
     width: 1402
     height: 375
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 84
+  controlID: 108
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 989
     height: 375
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -368,8 +368,8 @@ MonoBehaviour:
     y: 0
     width: 518
     height: 478
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -401,13 +401,13 @@ MonoBehaviour:
     height: 448
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 1154
-    splitterInitialOffset: 301
+    ID: 186
+    splitterInitialOffset: 360
     currentActiveSplitter: -1
-    realSizes: e900000091000000
+    realSizes: 2201000058000000
     relativeSizes:
-    - 0.6164021
-    - 0.3835979
+    - 0.76719576
+    - 0.23280424
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
     lastTotalSize: 378
@@ -422,7 +422,7 @@ MonoBehaviour:
       name: Hollanderware
       fullName: Hollanderware
       resultStatus: 1
-      duration: 0.2023481
+      duration: 0.2838282
       messages: 
       output: 
       stacktrace: 
@@ -438,7 +438,7 @@ MonoBehaviour:
       name: CATCHEditMode.dll
       fullName: C:/Users/Noah/Documents/GitHub/projectWarioWare/Code/Hollanderware/Library/ScriptAssemblies/CATCHEditMode.dll
       resultStatus: 1
-      duration: 0.1481368
+      duration: 0.1702815
       messages: 
       output: 
       stacktrace: 
@@ -454,7 +454,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.134388
+      duration: 0.1561724
       messages: 
       output: 
       stacktrace: 
@@ -470,7 +470,7 @@ MonoBehaviour:
       name: BatteryTimeSet
       fullName: Tests.BatteryTimeSet
       resultStatus: 1
-      duration: 0.043372
+      duration: 0.062537
       messages: 
       output: 
       stacktrace: 
@@ -486,7 +486,7 @@ MonoBehaviour:
       name: BatteryTimeSetSimplePasses
       fullName: Tests.BatteryTimeSet.BatteryTimeSetSimplePasses
       resultStatus: 1
-      duration: 0.0186047
+      duration: 0.0256575
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -508,7 +508,7 @@ MonoBehaviour:
       name: CheckInvisible
       fullName: Tests.CheckInvisible
       resultStatus: 1
-      duration: 0.0327798
+      duration: 0.0291165
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -529,7 +529,7 @@ MonoBehaviour:
       name: CheckInvisibleWithEnumeratorPasses
       fullName: Tests.CheckInvisible.CheckInvisibleWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0268193
+      duration: 0.0212666
       messages: 
       output: 
       stacktrace: 
@@ -546,7 +546,7 @@ MonoBehaviour:
       name: FramesAndTimeAllottedAreEqual
       fullName: Tests.FramesAndTimeAllottedAreEqual
       resultStatus: 1
-      duration: 0.0177664
+      duration: 0.0271152
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -567,7 +567,7 @@ MonoBehaviour:
       name: CheckInvisibleWithEnumeratorPasses
       fullName: Tests.FramesAndTimeAllottedAreEqual.CheckInvisibleWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0128686
+      duration: 0.0151161
       messages: 
       output: 
       stacktrace: 
@@ -584,7 +584,7 @@ MonoBehaviour:
       name: PlayerAtZeroX
       fullName: Tests.PlayerAtZeroX
       resultStatus: 1
-      duration: 0.0100365
+      duration: 0.0065636
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -605,7 +605,7 @@ MonoBehaviour:
       name: PlayerAtZeroXSimplePasses
       fullName: Tests.PlayerAtZeroX.PlayerAtZeroXSimplePasses
       resultStatus: 1
-      duration: 0.0004455
+      duration: 0.0005
       messages: 
       output: 
       stacktrace: 
@@ -622,7 +622,7 @@ MonoBehaviour:
       name: TimerGivesPlayerEnoughTime
       fullName: Tests.TimerGivesPlayerEnoughTime
       resultStatus: 1
-      duration: 0.0088558
+      duration: 0.0053523
       messages: 
       output: 
       stacktrace: 
@@ -638,7 +638,7 @@ MonoBehaviour:
       name: TimerGivesPlayerEnoughTimeSimplePasses
       fullName: Tests.TimerGivesPlayerEnoughTime.TimerGivesPlayerEnoughTimeSimplePasses
       resultStatus: 1
-      duration: 0.0013056
+      duration: 0.0012922
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -660,7 +660,7 @@ MonoBehaviour:
       name: XVisible
       fullName: Tests.XVisible
       resultStatus: 1
-      duration: 0.0062627
+      duration: 0.0068224
       messages: 
       output: 
       stacktrace: 
@@ -676,7 +676,7 @@ MonoBehaviour:
       name: XVisibleSimplePasses
       fullName: Tests.XVisible.XVisibleSimplePasses
       resultStatus: 1
-      duration: 0.0004506
+      duration: 0.0004546
       messages: 
       output: 
       stacktrace: 
@@ -688,13 +688,293 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: CATCHEditMode.dll/Tests/[CATCHEditMode][Tests.XVisible][suite]
-    m_ResultText: CheckInvisibleWithEnumeratorPasses (0.013s)
+    - id: 1045
+      uniqueId: '[CUTEditMode.dll][suite]'
+      name: CUTEditMode.dll
+      fullName: E:/Desktop/NewlyPulled/projectWarioWare/Code/Hollanderware/Library/ScriptAssemblies/CUTEditMode.dll
+      resultStatus: 1
+      duration: 0.0435985
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
+      parentUniqueId: '[Hollanderware][suite]'
+    - id: 1046
+      uniqueId: CUTEditMode.dll/[CUTEditMode][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.032304
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[CUTEditMode.dll][suite]'
+    - id: 1015
+      uniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.CUTgm][suite]
+      name: CUTgm
+      fullName: Tests.CUTgm
+      resultStatus: 1
+      duration: 0.0062615
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: CUTEditMode.dll/[CUTEditMode][Tests][suite]
+    - id: 1017
+      uniqueId: CUTEditMode.dll/Tests/CUTgm/[CUTEditMode][Tests.CUTgm.CUTInitialLoseState]
+      name: CUTInitialLoseState
+      fullName: Tests.CUTgm.CUTInitialLoseState
+      resultStatus: 1
+      duration: 0.0008173
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.CUTgm][suite]
+    - id: 1016
+      uniqueId: CUTEditMode.dll/Tests/CUTgm/[CUTEditMode][Tests.CUTgm.CUTInitialWinState]
+      name: CUTInitialWinState
+      fullName: Tests.CUTgm.CUTInitialWinState
+      resultStatus: 1
+      duration: 0.0003189
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.CUTgm][suite]
+    - id: 1015
+      uniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.StatusIconTest][suite]
+      name: StatusIconTest
+      fullName: Tests.StatusIconTest
+      resultStatus: 1
+      duration: 0.006784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: CUTEditMode.dll/[CUTEditMode][Tests][suite]
+    - id: 1016
+      uniqueId: CUTEditMode.dll/Tests/StatusIconTest/[CUTEditMode][Tests.StatusIconTest.IconInitialStates]
+      name: IconInitialStates
+      fullName: Tests.StatusIconTest.IconInitialStates
+      resultStatus: 1
+      duration: 0.0007972
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.StatusIconTest][suite]
+    - id: 1017
+      uniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.TimerTest][suite]
+      name: TimerTest
+      fullName: Tests.TimerTest
+      resultStatus: 1
+      duration: 0.0091065
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: CUTEditMode.dll/[CUTEditMode][Tests][suite]
+    - id: 1019
+      uniqueId: CUTEditMode.dll/Tests/TimerTest/[CUTEditMode][Tests.TimerTest.currentTime]
+      name: currentTime
+      fullName: Tests.TimerTest.currentTime
+      resultStatus: 1
+      duration: 0.00097
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.TimerTest][suite]
+    - id: 1018
+      uniqueId: CUTEditMode.dll/Tests/TimerTest/[CUTEditMode][Tests.TimerTest.startingTime]
+      name: startingTime
+      fullName: Tests.TimerTest.startingTime
+      resultStatus: 1
+      duration: 0.0004178
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: CUTEditMode.dll/Tests/[CUTEditMode][Tests.TimerTest][suite]
+    - id: 1025
+      uniqueId: '[HERDEditMode.dll][suite]'
+      name: HERDEditMode.dll
+      fullName: E:/Desktop/NewlyPulled/projectWarioWare/Code/Hollanderware/Library/ScriptAssemblies/HERDEditMode.dll
+      resultStatus: 1
+      duration: 0.0225385
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Hollanderware][suite]'
+    - id: 1026
+      uniqueId: HERDEditMode.dll/[HERDEditMode][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.0160434
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1025
+      parentUniqueId: '[HERDEditMode.dll][suite]'
+    - id: 1022
+      uniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.HERDgm][suite]
+      name: HERDgm
+      fullName: Tests.HERDgm
+      resultStatus: 1
+      duration: 0.0052051
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: HERDEditMode.dll/[HERDEditMode][Tests][suite]
+    - id: 1027
+      uniqueId: HERDEditMode.dll/Tests/HERDgm/[HERDEditMode][Tests.HERDgm.HERDInitialLoseState]
+      name: HERDInitialLoseState
+      fullName: Tests.HERDgm.HERDInitialLoseState
+      resultStatus: 1
+      duration: 0.0004545
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.HERDgm][suite]
+    - id: 1023
+      uniqueId: HERDEditMode.dll/Tests/HERDgm/[HERDEditMode][Tests.HERDgm.HERDInitialWinState]
+      name: HERDInitialWinState
+      fullName: Tests.HERDgm.HERDInitialWinState
+      resultStatus: 1
+      duration: 0.0002951
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.HERDgm][suite]
+    - id: 1022
+      uniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.StatusIconTests][suite]
+      name: StatusIconTests
+      fullName: Tests.StatusIconTests
+      resultStatus: 1
+      duration: 0.0065185
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1026
+      parentUniqueId: HERDEditMode.dll/[HERDEditMode][Tests][suite]
+    - id: 1023
+      uniqueId: HERDEditMode.dll/Tests/StatusIconTests/[HERDEditMode][Tests.StatusIconTests.IconInitialStates]
+      name: IconInitialStates
+      fullName: Tests.StatusIconTests.IconInitialStates
+      resultStatus: 1
+      duration: 0.0005633
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: HERDEditMode.dll/Tests/[HERDEditMode][Tests.StatusIconTests][suite]
+    m_ResultText: TimerTest (0.009s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 11}
-      m_SelectedIDs: c35a2764
-      m_LastClickedID: 1680300739
-      m_ExpandedIDs: 6e666a9711b0da9b48eff4a4c2516214574460173d5ce823ba13502b249fa13a84b7f059ffffff7f
+      scrollPos: {x: 0, y: 18}
+      m_SelectedIDs: 6970844e
+      m_LastClickedID: 1317302377
+      m_ExpandedIDs: 6e666a9711b0da9b26c19ca048eff4a48149cdb2553a1cbbb626c8c21c9f6be0b16a2cea2cd20709c2516214574460173d5ce823ba13502b6970844ee32cba5fe447c767ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1134,12 +1414,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1021
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.SPOT_Button][suite]
-    m_ResultText: 
+    m_ResultText: Tests (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: 3cdc509e
+      m_LastClickedID: -1638867908
       m_ExpandedIDs: 3cdc509eba15bcc3c767b5dae7ca1af3514f92f6068c21009acf0b07ba13502bf7a0ce381e66033a5ae8db60fc94a0723edfa8784b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1287,9 +1567,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 80460000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aeb0ffffbab0ffff3cb1ffff44b1ffff56b1fffff8b1ffff14b4ffff26b4ffffd0b4ffff28b5ffff3ab5ffffdcb5ffff5eb6ffff70b6fffff2b6ffff9cb7ffffaeb7ffff52b8ffffb6b8ffffc8b8ffff6ab9ffffceb9ffffe0b9ffff02baffff5ebbffff70bbffff1abcffff92bcffffa4bcffff4ebdffff32beffff44beffffe6beffff9ebfffffb0bfffff52c0fffffcc0ffff0ec1ffffa8c1ffff00c2ffff12c2ffffb4c2ffff0cc3ffff1ec3ffffc0c3ffffa4c4ffffb6c4ffff58c5ffff04c6ffff16c6ffffc0c6ffff18c7ffff2ac7ffffccc7ffffcec9ffffe0c9ffff82caffffe0cafffff2caffff94cbffffdcccffffeeccffff90cdffffe8cdfffffacdffff9ccefffff8d1ffff0ad2ffffacd2ffff84d4ffff96d4ffff38d5ffffead5fffffcd5ffff9ed6ffff36d8ffff48d8ffffead8ffffa6d9ffffb8d9ffff5adaffff86dbffff98dbffff3adcffff92dcffffa4dcffff46ddffffacddffffbeddffff60deffff42dfffff54dffffff6dfffff02e2ffff14e2ffffaee2ffff34e4ffff46e4ffffd8e4ffff8ce6ffff9ee6ffff30e7ffff88e7ffff9ae7ffff2ce8ffffe6e8fffff8e8ffff82e9ffff7aebffff8cebffff0eecffff6cecffff7eecffff00edffff58edffff6aedffffecedffff44eeffff56eeffffd8eeffffccefffff4cf1ffff5ef1ffffe0f1ffff92f2ffffa4f2ffff1ef3ffff76f3ffff88f3ffff0af4ffff68f4ffff7af4fffff4f4ffff6af7ffff7cf7ffff06f8ffff50f8ffffa2f8ffff5efbffffc6450000ec490000d84d000002510000ca7600009c7a0000d27f0000fc84000052860000a68700004e8a0000
+      m_ExpandedIDs: ccd1ffffded1ffffd8d2ffff00d3ffff78d3ffff8ad3ffff1ad4ffff20d4ffff32d4ffffded4ffffead4fffffcd4fffff6d5fffffcd5ffff0ed6ffff08d7ffff14d7ffff26d7ffffb6d7ffffbcd7ffffced7ffff7ad8ffff84d8ffffaed8ffffb4d9ffffdad9ffffecd9ffffe6daffffb6dbffffc8dbffffc2dcffffecdcfffffedcffffaaddffffceddffffe0ddffff70deffff94deffffa6deffffa0dfffffc8dfffff4ce0ffff76e0ffff08e1ffff32e1ffffbce1ffffd2e2ffffe8e6fffff0e7ffff30ecffff42ecffffd2ecfffff6ecffff08edffffb4edffff4cefffff5eefffffe6effffff4f3ffff06f4ffffa2f4ffff1af5ffff2cf5ffffc8f5ffff3ef6ffff50f6ffffecf6ffffbaf7ffffccf7ffff5af8ffffd0f8ffffe2f8ffff6ef9ffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1334,10 +1614,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 326
+    x: 410
     y: 73
-    width: 1039
-    height: 619
+    width: 990
+    height: 551
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: a41ff6e7d0e998249bb91cafa8ac2bcd
@@ -1349,9 +1629,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.48295143, y: -0.49897626, z: 114.62402}
+    m_Target: {x: 324.27423, y: 88.50279, z: 4972.0615}
     speed: 2
-    m_Value: {x: 0.48295143, y: -0.49897626, z: 114.62402}
+    m_Value: {x: 324.27423, y: 88.50279, z: 4972.0615}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1401,9 +1681,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.077004
+    m_Target: 371.07294
     speed: 2
-    m_Value: 5.077004
+    m_Value: 371.07294
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1573,20 +1853,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Microgames/CONNECT
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 49
   m_LastFolders: []
   m_LastFoldersGridSize: 49
-  m_LastProjectPath: C:\Users\Noah\Documents\GitHub\projectWarioWare\Code\Hollanderware
+  m_LastProjectPath: E:\Desktop\NewlyPulled\projectWarioWare\Code\Hollanderware
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 983d0000
     m_LastClickedID: 15768
-    m_ExpandedIDs: 00000000b63b0000b83b0000083c00000a3c00000c3c00000e3c0000103c0000123c0000143c0000163c0000183c00001a3c00001c3c00001e3c0000203c0000223c0000243c0000263c0000283c00002a3c00002c3c00002e3c0000303c0000323c0000343c0000363c0000383c00003a3c00003c3c00003e3c0000403c0000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000543c0000
+    m_ExpandedIDs: 000000004e3b0000943b0000983b00007c3c00007e3c0000803c0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1611,10 +1890,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 627}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b63b0000b83b0000083c00000a3c00000c3c00000e3c0000103c0000123c0000143c0000163c0000183c00001a3c00001c3c00001e3c0000203c0000223c0000243c0000263c0000283c00002a3c00002c3c00002e3c0000303c0000323c0000343c0000363c0000383c00003a3c00003c3c00003e3c0000403c0000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000543c00008e3c0000
+    m_ExpandedIDs: ffffffff000000004e3b0000943b0000983b00007c3c00007e3c0000803c0000823c0000843c0000863c0000883c00008a3c00008c3c00008e3c0000903c0000923c0000943c0000963c0000983c00009a3c00009c3c00009e3c0000a03c0000a23c0000a43c0000a63c0000a83c0000aa3c0000ac3c0000ae3c0000b03c0000b23c0000b43c0000b63c0000b83c0000ba3c0000bc3c0000be3c0000c03c0000c43c0000c63c0000c83c00007c43000080430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

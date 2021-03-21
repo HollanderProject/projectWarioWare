@@ -27,7 +27,7 @@ public class GraphicTimerHERD : MonoBehaviour
             changeBatteryFrame(currentTime);
         }
 
-        if (currentTime <= 0 || winText.activeSelf)
+        if (currentTime <= 0)
         {
             keepCounting = false;
         }
