@@ -161,4 +161,4 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Isaiah Nagac - Added level select screen. Connected components together. Made additional UI assets for collection
 * Jesse Jericho - Updated UI components of CUT and HERD to be consistent with other games (win/loss screen and timers). Added additional unit tests following these changes.
 * Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests.
-* Noah Law - 
+* Noah Law - Worked on SPOT to make it consistent with the other microgames in UI
