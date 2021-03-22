@@ -154,7 +154,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
-* [Product Demonstration]
+* [Product Demonstration](https://youtu.be/SkCD8laenkE)
 
 ## Task Allocation
 * Cameron Bernard - Updated UI components of CLIMB, NUDGE, and ORGANIZE to be consistant with other games (win/loss screen, timers, and GBA outline). Modified tests to work with these changes
