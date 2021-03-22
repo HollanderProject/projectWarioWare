@@ -132,7 +132,7 @@ public class GameBehavior : MonoBehaviour
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
     }
 
@@ -140,7 +140,7 @@ public class GameBehavior : MonoBehaviour
     {
         if (showWinScreen)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "Retry?"))
+            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "Level Select"))
             {
                 RestartLevel();
             }
@@ -148,7 +148,7 @@ public class GameBehavior : MonoBehaviour
         
         if (showLoseScreen)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "Retry"))
+            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "Level Select"))
             {
                 RestartLevel();
             }

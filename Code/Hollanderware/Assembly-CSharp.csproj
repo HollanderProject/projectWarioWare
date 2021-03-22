@@ -38,7 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Level Select\Scripts\DiagonalScroll.cs" />
      <Compile Include="Assets\Level Select\Scripts\LoadSceneViaButtons.cs" />
-     <Compile Include="Assets\Main Menu\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\ChangeChannel.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\GameManagerBrowse.cs" />
      <Compile Include="Assets\Microgames\BROWSE\Scripts\GraphicTimer.cs" />

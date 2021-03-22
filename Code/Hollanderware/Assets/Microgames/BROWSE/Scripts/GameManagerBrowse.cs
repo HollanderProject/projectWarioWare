@@ -36,7 +36,7 @@ public class GameManagerBrowse : MonoBehaviour
     {
         if (playerWin || playerLose)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Retry?"))
+            if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Level Select"))
             {
                 RestartLevel();
             }
@@ -45,7 +45,7 @@ public class GameManagerBrowse : MonoBehaviour
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
     }
 
