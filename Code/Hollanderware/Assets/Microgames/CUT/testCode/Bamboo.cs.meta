@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0730728784c000b49a57481dd35dc234
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - winText: {fileID: 7724281820272403688, guid: 8a4655a58974e6043b9d4bb7ba9fd023,
+      type: 3}
+  - failText: {fileID: 4260675820368161107, guid: 3004b386bcf1f9f4387d9d91db252b82,
+      type: 3}
+  - bamboo: {fileID: 6574512365474013250, guid: b03e105cb7f564247b33761dee27e4bb,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

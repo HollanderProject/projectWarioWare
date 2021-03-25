@@ -36,14 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Microgames\HERD\Scripts\CowMove.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\GameManagerHERD.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\GraphicTimerHERD.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\PigMove.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\RandomAnimal.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\SheepMove.cs" />
-     <Compile Include="Assets\Microgames\HERD\Scripts\WinConditionHERD.cs" />
-     <None Include="Assets\Microgames\HERD\Scripts\HERDscripts.asmdef" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\CowMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\GameManagerHERD.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\GraphicTimerHERD.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\PigMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\RandomAnimal.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\SheepMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Tests\TestCode\WinConditionHERD.cs" />
+     <None Include="Assets\Microgames\HERD\Tests\TestCode\HERDscripts.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

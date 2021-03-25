@@ -36,6 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Collection#1\Scripts\CollectionGameController.cs" />
+     <Compile Include="Assets\Collection#1\Scripts\CollectionGameLoader.cs" />
+     <Compile Include="Assets\Collection#1\Scripts\RandomGameSelector.cs" />
      <Compile Include="Assets\Level Select\Scripts\DiagonalScroll.cs" />
      <Compile Include="Assets\Level Select\Scripts\LoadSceneViaButtons.cs" />
      <Compile Include="Assets\MainMenu.cs" />
@@ -62,14 +65,31 @@
      <Compile Include="Assets\Microgames\CONNECT\Scripts\PointPositions.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\WinText.cs" />
      <Compile Include="Assets\Microgames\CUT\Countdown.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\Bamboo.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\CutPrompt.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\GameManagerCUT.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\Prompts.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\Scissors.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\ScoreScriptCUT.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\WinCon.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\WinConditionCUT.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\followCursor.cs" />
+     <Compile Include="Assets\Microgames\CUT\Scripts\uiFollowMouse.cs" />
      <Compile Include="Assets\Microgames\HERD\CountdownHERD.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\CowMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\GameManagerHERD.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\GraphicTimerHERD.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\PigMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\RandomAnimal.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\SheepMove.cs" />
+     <Compile Include="Assets\Microgames\HERD\Scripts\WinConditionHERD.cs" />
      <Compile Include="Assets\Microgames\NUDGE\Scripts\CharacterControllerNUDGE.cs" />
      <Compile Include="Assets\Microgames\NUDGE\Scripts\LifeCounterNUDGE.cs" />
      <Compile Include="Assets\Microgames\NUDGE\Scripts\TextContoller.cs" />
      <Compile Include="Assets\Microgames\ORGANIZE\Organize Scripts\LifeCounterORGANIZE.cs" />
      <Compile Include="Assets\Microgames\ORGANIZE\Organize Scripts\Startup.cs" />
      <Compile Include="Assets\Microgames\ORGANIZE\Organize Scripts\TextContollerORGANIZE.cs" />
-     <Compile Include="Assets\Microgames\SHOOT\CowboyMouseInteraction.cs" />
      <Compile Include="Assets\Microgames\SHOOT\EndAnimation.cs" />
      <Compile Include="Assets\Microgames\SHOOT\GameBehavior.cs" />
      <Compile Include="Assets\Microgames\SHOOT\MouseInput.cs" />
@@ -113,6 +133,7 @@
      <Compile Include="Assets\Tutorial\Scripts\ExitToLevelSelect.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Collection#1\Scripts\CollectionRef.asmref" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -757,14 +778,14 @@
       <Name>LevelSelectScripts</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="CUTEditMode.csproj">
+      <Project>{33478905-5111-92f6-9c6c-6e538e796ed3}</Project>
+      <Name>CUTEditMode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="HERDscripts.csproj">
       <Project>{e0ca6ac5-01bd-4ad0-2565-1f6fbff18e77}</Project>
       <Name>HERDscripts</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="CATCHScripts.csproj">
-      <Project>{c687e425-1b6d-467b-a7a4-1a39de9b6b3a}</Project>
-      <Name>CATCHScripts</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Scripts.csproj">
@@ -772,9 +793,9 @@
       <Name>Scripts</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="CUTEditMode.csproj">
-      <Project>{33478905-5111-92f6-9c6c-6e538e796ed3}</Project>
-      <Name>CUTEditMode</Name>
+    <ProjectReference Include="CATCHScripts.csproj">
+      <Project>{c687e425-1b6d-467b-a7a4-1a39de9b6b3a}</Project>
+      <Name>CATCHScripts</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

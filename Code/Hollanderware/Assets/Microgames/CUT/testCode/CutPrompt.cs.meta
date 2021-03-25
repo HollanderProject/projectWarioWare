@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: cf79694e04990f044a7bf856322b3921
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cutPrompt: {fileID: 1108453115776570492, guid: 4ae8fcc6ac1a9834283e99edb1bc1538,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

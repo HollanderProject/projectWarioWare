@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using mainController;
 
 public class GameBehavior : MonoBehaviour
 {
-
     public bool canPlayerShoot = false;
     private bool showWinScreen = false;
     private bool showLoseScreen = false;
@@ -34,7 +34,10 @@ public class GameBehavior : MonoBehaviour
 
     AudioSource gunSound;
 
-    void Awake()
+    mainController.CollectionGameController _gameController;
+    Scene CollectionScene;
+
+    void Start()
     {
         randomDrawTime = Random.Range(minDraw,maxDraw);
         drawWindowWithRandomTime = randomDrawTime - drawWindow;
@@ -50,8 +53,17 @@ public class GameBehavior : MonoBehaviour
         shotRender = GameObject.Find("ShotAnimation").GetComponent<SpriteRenderer>();
         neutralStance = GameObject.Find("CowboyNeutral");
         attackStance = GameObject.Find("CowboyFire");
-
         gunSound = GameObject.Find("GunSound").GetComponent<AudioSource>();
+        
+        try
+        {
+            _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();         
+        }
+        catch (System.Exception)
+        {
+            _gameController = null;
+        }
+        CollectionScene = SceneManager.GetSceneByBuildIndex(15);
     }
 
     void Update()
@@ -79,6 +91,11 @@ public class GameBehavior : MonoBehaviour
             Debug.Log("You shot too early!");
             showLoseScreen = true;
             stopCounting = true;
+
+            if (CollectionScene.isLoaded)
+            {
+                StartCoroutine(WaitBeforeUnloadingHealthDecrease());
+            }
         }
 
         // Shot at the right time
@@ -88,6 +105,12 @@ public class GameBehavior : MonoBehaviour
             Debug.Log("You got him!");
             showWinScreen = true;
             stopCounting = true;
+            
+            if (CollectionScene.isLoaded)
+            {
+                StartCoroutine(WaitBeforeUnloadingScoreIncrement());
+            }
+            
         }
 
         // Shot too late
@@ -97,6 +120,11 @@ public class GameBehavior : MonoBehaviour
             Debug.Log("You were too late!");
             showLoseScreen = true;
             stopCounting = true;
+
+            if (CollectionScene.isLoaded)
+            {
+                StartCoroutine(WaitBeforeUnloadingHealthDecrease());
+            }
         }
 
     }
@@ -138,20 +166,43 @@ public class GameBehavior : MonoBehaviour
 
      void OnGUI()
     {
-        if (showWinScreen)
+        if (!CollectionScene.isLoaded)
         {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "Level Select"))
+            if (showWinScreen)
             {
-                RestartLevel();
+                if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 - 50, 200, 100), "Level Select"))
+                {
+                    RestartLevel();
+                }
+            }
+            
+            if (showLoseScreen)
+            {
+                if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "Level Select"))
+                {
+                    RestartLevel();
+                }
             }
         }
-        
-        if (showLoseScreen)
-        {
-            if (GUI.Button(new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200, 100), "Level Select"))
-            {
-                RestartLevel();
-            }
-        }
+    }
+
+    IEnumerator WaitBeforeUnloadingHealthDecrease()
+    {
+        yield return new WaitForSeconds(1);
+
+        _gameController.decrementPlayerHealth();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
+    }
+
+    IEnumerator WaitBeforeUnloadingScoreIncrement()
+    {
+        yield return new WaitForSeconds(1);
+
+        _gameController.incrementPlayerScore();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
     }
 }

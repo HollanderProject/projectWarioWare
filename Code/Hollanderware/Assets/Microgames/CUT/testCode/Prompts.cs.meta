@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3cf04d297ce09304eba6843652e5be69
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - WinText: {fileID: 7724281820272403688, guid: 8a4655a58974e6043b9d4bb7ba9fd023,
+      type: 3}
+  - FailText: {fileID: 4260675820368161107, guid: 3004b386bcf1f9f4387d9d91db252b82,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

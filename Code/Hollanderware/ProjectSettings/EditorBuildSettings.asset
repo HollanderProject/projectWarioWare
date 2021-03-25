@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tutorial/Tutorial_Level.unity
     guid: 77a285a5d4297ee4a94e3ae542f92cf4
+  - enabled: 1
+    path: Assets/Collection#1/Collection#1.unity
+    guid: dce801ece27bd70428dd2567d8831830
   m_configObjects: {}
