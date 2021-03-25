@@ -6,8 +6,8 @@ using mainController;
 
 public class GameManagerHERD : MonoBehaviour
 {
-    public static bool playerWin = false;
-    public static bool playerLose = false;
+    public bool playerWin = false;
+    public bool playerLose = false;
 
     mainController.CollectionGameController _gameController;
     Scene CollectionScene;
@@ -62,6 +62,15 @@ public class GameManagerHERD : MonoBehaviour
     {
         SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
+    }
+    public void setPlayerWinToTrue()
+    {
+        playerWin = true;
+    }
+
+    public void setPlayerLoseTrue()
+    {
+        playerLose = true;
     }
 
     IEnumerator WaitBeforeUnloadingHealthDecrease()

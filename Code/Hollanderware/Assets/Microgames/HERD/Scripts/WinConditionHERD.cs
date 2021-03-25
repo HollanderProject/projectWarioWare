@@ -6,6 +6,7 @@ public class WinConditionHERD : MonoBehaviour
 {
     public GameObject winText;
     SpriteRenderer winScreen;
+    GameManagerHERD _gameManager;
     int counter = 0;
     bool sheepFlag = true;
     bool pigFlag = true;
@@ -14,6 +15,7 @@ public class WinConditionHERD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _gameManager = GameObject.Find("GameManagerHerd").GetComponent<GameManagerHERD>();
         winScreen = GameObject.Find("CheckSprite").GetComponent<SpriteRenderer>();
         winScreen.enabled = false;
     }
@@ -40,11 +42,18 @@ public class WinConditionHERD : MonoBehaviour
         // Once all animals have been herded, show a victory and end the game.
         if (counter == 3)
         {
-            GameManagerHERD.playerWin = true;
+            _gameManager.setPlayerWinToTrue();
             winScreen.enabled = true;
             Debug.Log("Game end.");
             winText.SetActive(true);
             counter++;
+            SheepMove.SheepisHerded = false;
+            PigMove.PigisHerded = false;
+            CowMove.CowisHerded = false;
+            RandomAnimal.animalCount = 0;
+            RandomAnimal.sheepTurn = false;
+            RandomAnimal.pigTurn = false;
+            RandomAnimal.cowTurn = false;
         }
     }
 }

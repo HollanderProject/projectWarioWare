@@ -32,10 +32,10 @@ public class Spawner : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
             // Spawn the bamboo
-            if (bambooCount != 8)
+            if (bambooCount != 8 && !winText.activeSelf && !failText.activeSelf)
             {
                 GameObject spawnBamboo = Instantiate(bambooPrefab, spawnPoint.position, spawnPoint.rotation);
-                // Despawn after 2 seconds, to avoid clutter
+                // Despawn after 4 seconds, to avoid clutter
                 Destroy(spawnBamboo, 4f);
                 bambooCount++;
             }

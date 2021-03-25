@@ -6,8 +6,10 @@ public class WinCon : MonoBehaviour
 {
     public GameObject winText;
     SpriteRenderer winScreen;
+    GameManagerCUT _gameManager;
     void Start()
     {
+        _gameManager = GameObject.Find("GameManagerCut").GetComponent<GameManagerCUT>();
         winScreen = GameObject.Find("CheckSprite").GetComponent<SpriteRenderer>();
         winScreen.enabled = false;
     }
@@ -20,11 +22,15 @@ public class WinCon : MonoBehaviour
         // If the blade has cut 5 or more bamboo within the session, end the game with a win
         if (scissors.count >= 5)
         {
-            GameManagerCUT.playerWin = true;
+            _gameManager.setPlayerWinToTrue();
             winScreen.enabled = true;
             Debug.Log("Game end");
             Destroy(gameObject);
             winText.SetActive(true);
+            foreach (var gameObj in GameObject.FindGameObjectsWithTag("Bamboo"))
+            {
+                Destroy(gameObj);
+            }
         }
     }
 }

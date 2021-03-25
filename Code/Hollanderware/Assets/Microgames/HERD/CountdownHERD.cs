@@ -8,9 +8,11 @@ public class CountdownHERD : MonoBehaviour
     public GameObject failText;
     public GameObject winText;
     SpriteRenderer loseScreen;
+    GameManagerHERD _gameManager;
     public float time;
     void Start()
     {
+        _gameManager = GameObject.Find("GameManagerHerd").GetComponent<GameManagerHERD>();
         loseScreen = GameObject.Find("CrossSprite").GetComponent<SpriteRenderer>();
         loseScreen.enabled = false;
     }
@@ -35,10 +37,14 @@ public class CountdownHERD : MonoBehaviour
             // Creates a failure state if time hits 0
             failText.SetActive(true);
             loseScreen.enabled = true;
-            GameManagerHERD.playerLose = true;
-            SheepMove.forcePower = 0;
-            PigMove.forcePower = 0;
-            CowMove.forcePower = 0;
+            _gameManager.setPlayerLoseTrue();
+            SheepMove.SheepisHerded = false;
+            PigMove.PigisHerded = false;
+            CowMove.CowisHerded = false;
+            RandomAnimal.animalCount = 0;
+            RandomAnimal.sheepTurn = false;
+            RandomAnimal.pigTurn = false;
+            RandomAnimal.cowTurn = false;
         }
     }
 

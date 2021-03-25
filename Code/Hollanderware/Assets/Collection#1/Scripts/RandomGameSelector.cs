@@ -9,6 +9,7 @@ public class RandomGameSelector : MonoBehaviour
     public Sprite[] titlesArray;
     private static List<int> gameHistory = new List<int>(10);
     int randomGame;
+    int actualGame;
 
     public int PsuedoRandomGameSelection()
     {   
@@ -19,9 +20,10 @@ public class RandomGameSelector : MonoBehaviour
         }
 
         randomGame = Random.Range(0, gameHistory.Count);
-        gameHistory.Remove(randomGame);
+        actualGame = gameHistory[randomGame];
+        gameHistory.RemoveAt(randomGame);
 
-        return randomGame;
+        return actualGame;
     }
 
     void updateSplashScreen(int spriteIndex)
@@ -34,7 +36,7 @@ public class RandomGameSelector : MonoBehaviour
     {
         Debug.Log("Resetting List...");
         gameHistory.Clear();
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 5; i++)
         {
             gameHistory.Add(i);
         }

@@ -6,8 +6,8 @@ using mainController;
 
 public class GameManagerCUT : MonoBehaviour
 {
-    public static bool playerWin = false;
-    public static bool playerLose = false;
+    public bool playerWin = false;
+    public bool playerLose = false;
 
     mainController.CollectionGameController _gameController;
     Scene CollectionScene;
@@ -63,11 +63,22 @@ public class GameManagerCUT : MonoBehaviour
         SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
     }
+    public void setPlayerWinToTrue()
+    {
+        playerWin = true;
+        Debug.Log("Setting win");
+    }
+
+    public void setPlayerLoseTrue()
+    {
+        playerLose = true;
+    }
 
     IEnumerator WaitBeforeUnloadingHealthDecrease()
     {
         yield return new WaitForSeconds(1);
         _gameController.decrementPlayerHealth();
+        _gameController.gameIsLoaded = false;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(7);
     }
@@ -77,6 +88,7 @@ public class GameManagerCUT : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         _gameController.incrementPlayerScore();
+        _gameController.gameIsLoaded = false;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(7);
     }

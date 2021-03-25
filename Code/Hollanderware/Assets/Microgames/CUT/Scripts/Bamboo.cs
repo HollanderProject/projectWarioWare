@@ -9,7 +9,7 @@ public class Bamboo : MonoBehaviour
     public GameObject bamboo;
     public GameObject bambooSlicedPrefab;
     public float startForce = 150f;
-    public Vector3 offset = new Vector3(10, 0, 0);
+    public Vector3 offset = new Vector3(0, 0, 0);
     Rigidbody2D rb;
 
     void start()
@@ -25,9 +25,9 @@ public class Bamboo : MonoBehaviour
         // When the blade collides with the bamboo, remove the bamboo and instantiate the bambooSlicedPrefab
         if (collision.tag == "Scissors")
         {
-            Vector3 direction = (collision.transform.position - transform.position).normalized;
+            Vector3 direction = (collision.transform.position - transform.position.normalized);
             Quaternion rotation = Quaternion.LookRotation(direction);
-            Instantiate(bambooSlicedPrefab, (transform.position - offset), transform.rotation);
+            Instantiate(bambooSlicedPrefab, direction, transform.rotation);
             Destroy(this.gameObject);
             Debug.Log("Collision detected.");
         }

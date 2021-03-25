@@ -158,17 +158,27 @@ namespace mainController {
         {
             if (num == 0)
             {
-                return 3;
+                return 3; // BROWSE
             }
 
             else if (num == 1)
             {
-                return 12;
+                return 12; // SHOOT
             }
 
             else if (num == 2)
             {
-                return 8;
+                return 8; // HERD
+            }
+
+            else if (num == 3)
+            {
+                return 7; // CUT
+            }
+
+            else if (num == 4)
+            {
+                return 4; // CATCH
             }
             else
                 return 4;
