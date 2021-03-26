@@ -14,7 +14,7 @@ public class CharacterController : MonoBehaviour
 
     private bool pokable = true;
     private int nudgeCount = 0;
-    private float time = 1;
+    private float time = 0.25f;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +24,7 @@ public class CharacterController : MonoBehaviour
             if(!cross.activeSelf && !check.activeSelf)
             {
                 float pos = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-                Arm.transform.position = new Vector2(pos, -0.522f);
+                Arm.transform.position = new Vector2(pos, -1.05f);
             }
             if(nudgeCount >= 4)
             {
@@ -46,6 +46,7 @@ public class CharacterController : MonoBehaviour
     {
         Glass.transform.position += new Vector3(1f, 0, 0);
         nudgeCount++;
+        pokable = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,11 +54,17 @@ public class CharacterController : MonoBehaviour
         Debug.Log("HIT DETECTED");
         if(other == GlassBox)
         {
-            Nudge();
+            if(pokable)
+                Nudge();
         }
         else
-        {
-            
+        {  
+            if(!pokable)
+            {
+                pokable = true;
+                Debug.Log("HIT OTHER");
+                other.transform.Translate(Vector3.right);
+            }
         }
     }
 
