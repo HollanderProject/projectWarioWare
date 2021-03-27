@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661c2e21e1d829b4b9be7b28be514450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
   score: {fileID: 168041603}
 --- !u!114 &168041603
 MonoBehaviour:
@@ -2873,12 +2874,12 @@ PrefabInstance:
     - target: {fileID: 6574512365474013249, guid: b03e105cb7f564247b33761dee27e4bb,
         type: 3}
       propertyPath: m_Size.y
-      value: 67.59595
+      value: 81.6985
       objectReference: {fileID: 0}
     - target: {fileID: 6574512365474013249, guid: b03e105cb7f564247b33761dee27e4bb,
         type: 3}
       propertyPath: m_Offset.y
-      value: 206.69104
+      value: 204.46625
       objectReference: {fileID: 0}
     - target: {fileID: 6574512365474013249, guid: b03e105cb7f564247b33761dee27e4bb,
         type: 3}
@@ -2959,7 +2960,7 @@ PrefabInstance:
     - target: {fileID: 6574512365474013255, guid: b03e105cb7f564247b33761dee27e4bb,
         type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6574512365474013255, guid: b03e105cb7f564247b33761dee27e4bb,
         type: 3}
@@ -3048,17 +3049,32 @@ PrefabInstance:
     - target: {fileID: 7564507043862832433, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
         type: 3}
       propertyPath: m_Offset.x
-      value: -1.297032
+      value: 0.050164256
       objectReference: {fileID: 0}
     - target: {fileID: 7564507043862832433, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
         type: 3}
       propertyPath: m_Radius
-      value: 8.613316
+      value: 3.3456118
       objectReference: {fileID: 0}
     - target: {fileID: 7564507043862832433, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.09883091
+      value: -0.06115247
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564507043862832436, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564507043862832436, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564507043862832436, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7564507043862832437, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
         type: 3}
@@ -3143,7 +3159,12 @@ PrefabInstance:
     - target: {fileID: 7564507043862832439, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
         type: 3}
       propertyPath: minCutVelocity
-      value: 0.001
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564507043862832439, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88,
+        type: 3}
+      propertyPath: isCutting
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b206cb2d3b4d6e49882cc47bc5cdd88, type: 3}

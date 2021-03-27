@@ -9,7 +9,7 @@ public class SheepMove : MonoBehaviour
     public CircleCollider2D circleCollider;
     public static bool SheepisHerded;
     public bool turnFlag = false;
-    public static float forcePower = 75f;
+    public static float forcePower = 125f;
     public float time;
     public Vector2 dir;
     bool soundPlayed = false;

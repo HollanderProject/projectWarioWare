@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BladeCutAudio: {fileID: 0}
   count: 0
-  minCutVelocity: 0.005
+  minCutVelocity: 0.001
   isCutting: 0
   circleCollider: {fileID: 0}
 --- !u!50 &7564507043862832436

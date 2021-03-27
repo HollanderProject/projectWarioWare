@@ -6,7 +6,7 @@ public class Scissors : MonoBehaviour
 {
     public AudioSource BladeCutAudio;
     public int count = 0;
-    public float minCutVelocity = 0.05f;
+    public float minCutVelocity = 0.0001f;
 
     public bool isCutting = false;
     Vector2 previousPosition;
@@ -64,7 +64,7 @@ public class Scissors : MonoBehaviour
     public void StartCutting()
     {
         isCutting = true;
-        circleCollider.enabled = false;
+        circleCollider.enabled = true;
     }
 
     public void StopCutting()
