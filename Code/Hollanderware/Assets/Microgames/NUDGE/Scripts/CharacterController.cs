@@ -22,9 +22,17 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
-        CollectionScene = SceneManager.GetActiveScene();
-        Debug.Log("build index: " + CollectionScene.buildIndex);
+        try
+        {
+            _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
+        }
+        catch (System.Exception)
+        {
+            
+            _gameController = null;
+        }
+        CollectionScene = SceneManager.GetSceneByBuildIndex(15);
+        Debug.Log("build index: " + SceneManager.GetActiveScene().buildIndex);
     }
     // Update is called once per frame
     void Update()
@@ -57,6 +65,26 @@ public class CharacterController : MonoBehaviour
 
     }
 
+    void OnGUI()
+    {
+        if (!CollectionScene.isLoaded)
+        {
+            if (cross.activeSelf || check.activeSelf)
+            {
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
+                {
+                    RestartLevel();
+                }
+            }
+        }
+    }
+
+    void RestartLevel()
+    {
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1.0f;
+    }
+
     private void Nudge()
     {
         Glass.transform.position += new Vector3(1f, 0, 0);
@@ -85,7 +113,7 @@ public class CharacterController : MonoBehaviour
     {
         gameText.SetActive(false);
         check.SetActive(true);
-        if (CollectionScene.isLoaded)
+        if (CollectionScene.isLoaded && _gameController != null)
         {
             StartCoroutine(WaitBeforeUnloadingScoreIncrement());
         }
@@ -93,7 +121,7 @@ public class CharacterController : MonoBehaviour
 
     private void Lose()
     {
-        if (CollectionScene.isLoaded)
+        if (CollectionScene.isLoaded && _gameController != null)
         {
             StartCoroutine(WaitBeforeUnloadingHealthDecrease());
         }

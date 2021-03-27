@@ -44,8 +44,17 @@ public class Startup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //_gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
-        CollectionScene = SceneManager.GetActiveScene();
+        try
+        {
+            _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
+        }
+        catch (System.Exception)
+        {
+            
+            _gameController = null;
+        }
+        CollectionScene = SceneManager.GetSceneByBuildIndex(15);
+        Debug.Log("build index: " + SceneManager.GetActiveScene().buildIndex);
         var rand = new System.Random();
         cross.SetActive(false);
         check.SetActive(false);
@@ -157,9 +166,30 @@ public class Startup : MonoBehaviour
         }
 
     }
+
+    void OnGUI()
+    {
+        if (!CollectionScene.isLoaded)
+        {
+            if (cross.activeSelf || check.activeSelf)
+            {
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
+                {
+                    RestartLevel();
+                }
+            }
+        }
+    }
+
+    void RestartLevel()
+    {
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1.0f;
+    }
+
     private void Win()
     {
-        if (CollectionScene.isLoaded)
+        if (CollectionScene.isLoaded && _gameController != null)
         {
             StartCoroutine(WaitBeforeUnloadingScoreIncrement());
         }
@@ -168,7 +198,7 @@ public class Startup : MonoBehaviour
     private void Lose()
     {
         cross.SetActive(true);
-        if (CollectionScene.isLoaded)
+        if (CollectionScene.isLoaded && _gameController != null)
         {
             StartCoroutine(WaitBeforeUnloadingHealthDecrease());
         }

@@ -66,6 +66,7 @@
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\CharacterControllerCLIMB.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\GraphicTimerCLIMB.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\Popup.cs" />
+     <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\WinConCLIMB.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\WinLose.cs" />
      <Compile Include="Assets\Microgames\CLIMB\Climb Scripts\audioControlCLIMB.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\BridgeGravity.cs" />
