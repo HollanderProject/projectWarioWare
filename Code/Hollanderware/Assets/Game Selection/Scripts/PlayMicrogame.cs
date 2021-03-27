@@ -73,4 +73,9 @@ public class PlayMicrogame : MonoBehaviour
         //Debug.Log("SPOT is currently unavailable");
         SceneManager.LoadScene(spot);
     }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
