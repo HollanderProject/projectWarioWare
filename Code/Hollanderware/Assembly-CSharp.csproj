@@ -118,7 +118,8 @@
      <Compile Include="Assets\Microgames\SHOOT\SoundPlayer.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\GameManagerSpot.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\GemSpawn.cs" />
-     <Compile Include="Assets\Microgames\SPOT\Scripts\SpawnerSPOT.cs" />
+     <Compile Include="Assets\Microgames\SPOT\Scripts\MouseFollow.cs" />
+     <Compile Include="Assets\Microgames\SPOT\Scripts\SpotGraphicTimer.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\checkPlaySound.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\triggerCollisionForWhenLightTouchesGem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -813,6 +814,10 @@
     <ProjectReference Include="CATCHScripts.csproj">
       <Project>{25E487C6-6D1B-7B46-A7A4-1A39DE9B6B3A}</Project>
       <Name>CATCHScripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="NewAssembly.csproj">
+      <Project>{AD410F2C-0BA5-95B7-9510-DBB201F5C753}</Project>
+      <Name>NewAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="CUTEditMode.csproj">
       <Project>{05894733-1151-F692-9C6C-6E538E796ED3}</Project>
