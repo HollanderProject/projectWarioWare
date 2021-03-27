@@ -12,6 +12,8 @@ public class FailScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        failGoal = 5;
+        failScoreValue = 0;
         failScore = GetComponent<Text>();
     }
 

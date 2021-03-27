@@ -9,8 +9,6 @@ public class GraphicTimerCATCH : MonoBehaviour
     public GameObject winText;
     public static Sprite[] batteryFramesStatic;
 
-    SpriteRenderer loseScreen;
-
     public float allottedTime = 11;
     public static float currentTime = 0f;
 
@@ -18,11 +16,10 @@ public class GraphicTimerCATCH : MonoBehaviour
 
     void Start()
     {
+        keepCounting = true;
+        currentTime = 0;
         currentFrame = gameObject.GetComponent<SpriteRenderer>();
         currentTime = allottedTime;
-
-        loseScreen = GameObject.Find("CrossSpriteCATCH").GetComponent<SpriteRenderer>();
-        loseScreen.enabled = false;
 
         for (int i = 0; i < batteryFrames.Length; i++)
         {
@@ -43,7 +40,6 @@ public class GraphicTimerCATCH : MonoBehaviour
             keepCounting = false;
             WinCondition.gameActive = false;
             GameManagerCATCH.playerLose = true;
-            loseScreen.enabled = true;
             Debug.Log("Game Over: Out of time");
         }
     }

@@ -12,8 +12,17 @@ public class GameManagerCATCH : MonoBehaviour
     mainController.CollectionGameController _gameController;
     Scene CollectionScene;
 
+    SpriteRenderer loseScreen;
+    SpriteRenderer winScreen;
+
     void Start()
     {
+        playerWin = false;
+        playerLose = false;
+        winScreen = GameObject.Find("CheckSpriteCATCH").GetComponent<SpriteRenderer>();
+        loseScreen = GameObject.Find("CrossSpriteCATCH").GetComponent<SpriteRenderer>();
+        winScreen.enabled = false;
+        loseScreen.enabled = false;
         try
         {
             _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
@@ -33,11 +42,13 @@ public class GameManagerCATCH : MonoBehaviour
         {
             if (playerWin && !playerLose)
             {
+                
                 StartCoroutine(WaitBeforeUnloadingScoreIncrement());
             }
 
             if (!playerWin && playerLose)
             {
+                
                 StartCoroutine(WaitBeforeUnloadingHealthDecrease());
             }
         }
@@ -49,14 +60,16 @@ public class GameManagerCATCH : MonoBehaviour
         {
             if (playerWin == true)
             {
-                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Yay! Menu"))
+                winScreen.enabled = true;
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
                 }
             }
             if (playerLose == true)
             {
-                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), " Aw... Menu"))
+                loseScreen.enabled = true;
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
                 }
@@ -66,7 +79,7 @@ public class GameManagerCATCH : MonoBehaviour
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(2); // 3 is the scene for CATCH
+        SceneManager.LoadScene(2); // 4 is the scene for CATCH
         Time.timeScale = 1.0f;
     }
 

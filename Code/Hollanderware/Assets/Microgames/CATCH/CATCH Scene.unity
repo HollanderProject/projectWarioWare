@@ -2652,8 +2652,8 @@ GameObject:
   - component: {fileID: 1410841487}
   - component: {fileID: 1410841486}
   - component: {fileID: 1410841485}
-  - component: {fileID: 1410841484}
   - component: {fileID: 1410841489}
+  - component: {fileID: 1410841484}
   m_Layer: 0
   m_Name: CheckSpriteCATCH
   m_TagString: Untagged

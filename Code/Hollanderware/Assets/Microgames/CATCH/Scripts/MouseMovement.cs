@@ -11,6 +11,7 @@ public class MouseMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mousePosition = new Vector3(0, 0, 0);
         mousePosition.y = yPosition;
         mousePosition.x = 0;
         transform.position = new Vector2(0, mousePosition.y);

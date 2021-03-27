@@ -19,7 +19,6 @@ public class GameManagerCONNECT : MonoBehaviour
     {
         playerWin = false;
         playerLose = false;
-        Debug.Log("STATRT");
         winScreen = GameObject.Find("CheckSpriteCONNECT").GetComponent<SpriteRenderer>();
         loseScreen = GameObject.Find("CrossSpriteCONNECT").GetComponent<SpriteRenderer>();
         winScreen.enabled = false;
@@ -62,7 +61,7 @@ public class GameManagerCONNECT : MonoBehaviour
             if (playerWin == true)
             {
                 winScreen.enabled = true;
-                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Yay! Menu"))
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
 
@@ -71,7 +70,7 @@ public class GameManagerCONNECT : MonoBehaviour
             if (playerLose == true)
             {
                 loseScreen.enabled = true;
-                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), " Aw... Menu"))
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
                 }
