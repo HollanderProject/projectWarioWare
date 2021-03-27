@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using mainController;
 
 public class CharacterController : MonoBehaviour
 {
@@ -11,14 +13,23 @@ public class CharacterController : MonoBehaviour
     public GameObject gameText;
     public BoxCollider2D BackHitbox;
     public BoxCollider2D GlassBox;
+    mainController.CollectionGameController _gameController;
+    Scene CollectionScene;
 
     private bool pokable = true;
     private int nudgeCount = 0;
     private float time = 0.25f;
 
+    void Start()
+    {
+        _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
+        CollectionScene = SceneManager.GetActiveScene();
+        Debug.Log("build index: " + CollectionScene.buildIndex);
+    }
     // Update is called once per frame
     void Update()
     {
+        //gives grace period of 1/4 a second so the arm doesnt move immediately
         if(time < 0)
         {
             if(!cross.activeSelf && !check.activeSelf)
@@ -33,6 +44,10 @@ public class CharacterController : MonoBehaviour
             if(check.activeSelf)
             {
                 Glass.transform.position += new Vector3(0, -0.5f , 0);
+            }
+            if(cross.activeSelf)
+            {
+                Lose();
             }
         }
         else
@@ -51,7 +66,6 @@ public class CharacterController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("HIT DETECTED");
         if(other == GlassBox)
         {
             if(pokable)
@@ -62,7 +76,6 @@ public class CharacterController : MonoBehaviour
             if(!pokable)
             {
                 pokable = true;
-                Debug.Log("HIT OTHER");
                 other.transform.Translate(Vector3.right);
             }
         }
@@ -72,5 +85,38 @@ public class CharacterController : MonoBehaviour
     {
         gameText.SetActive(false);
         check.SetActive(true);
+        if (CollectionScene.isLoaded)
+        {
+            StartCoroutine(WaitBeforeUnloadingScoreIncrement());
+        }
     }
+
+    private void Lose()
+    {
+        if (CollectionScene.isLoaded)
+        {
+            StartCoroutine(WaitBeforeUnloadingHealthDecrease());
+        }
+    }
+
+    IEnumerator WaitBeforeUnloadingHealthDecrease()
+    {
+        yield return new WaitForSeconds(1);
+        _gameController.decrementPlayerHealth();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
+    }
+
+    IEnumerator WaitBeforeUnloadingScoreIncrement()
+    {
+
+        yield return new WaitForSeconds(1);
+        _gameController.incrementPlayerScore();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
+    }
+
+
 }

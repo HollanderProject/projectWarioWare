@@ -8,7 +8,6 @@ public class audioControlORGANIZE : MonoBehaviour
     public AudioSource failJingle;
     public GameObject check;
     public GameObject cross;
-    private float time = 2f;
     private bool played = false;
 
     // Update is called once per frame

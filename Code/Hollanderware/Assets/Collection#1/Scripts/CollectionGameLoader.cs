@@ -8,6 +8,7 @@ public class CollectionGameLoader : MonoBehaviour
     public void loadGame(int gamenumber)
     {
         Debug.Log("Loading new game....");
+        Debug.Log(gamenumber);
         SceneManager.LoadScene(gamenumber,LoadSceneMode.Additive);
 
     }

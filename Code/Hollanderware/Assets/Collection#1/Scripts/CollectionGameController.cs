@@ -163,7 +163,7 @@ namespace mainController {
 
             else if (num == 1)
             {
-                return 12; // SHOOT
+                return 12; // NUDGE
             }
 
             else if (num == 2)

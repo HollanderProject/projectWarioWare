@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+using mainController;
 
 public class Startup : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class Startup : MonoBehaviour
     public Sprite Male;
     public Sprite Female;
     public GameObject[] CharacterList;
+    mainController.CollectionGameController _gameController;
+    Scene CollectionScene;
+
     private int i = 0;
     private float fScale = 0.7f;
     private float mScale = 0.6f;
@@ -39,6 +44,8 @@ public class Startup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //_gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
+        CollectionScene = SceneManager.GetActiveScene();
         var rand = new System.Random();
         cross.SetActive(false);
         check.SetActive(false);
@@ -74,6 +81,10 @@ public class Startup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(check.activeSelf)
+        {
+            Win();
+        }
         if(i <= 3 && !cross.activeSelf && !check.activeSelf && !moving)
         {
             //Left Click
@@ -146,9 +157,40 @@ public class Startup : MonoBehaviour
         }
 
     }
-    void Lose()
+    private void Win()
+    {
+        if (CollectionScene.isLoaded)
+        {
+            StartCoroutine(WaitBeforeUnloadingScoreIncrement());
+        }
+    }
+
+    private void Lose()
     {
         cross.SetActive(true);
+        if (CollectionScene.isLoaded)
+        {
+            StartCoroutine(WaitBeforeUnloadingHealthDecrease());
+        }
+    }
+
+    IEnumerator WaitBeforeUnloadingHealthDecrease()
+    {
+        yield return new WaitForSeconds(1);
+        _gameController.decrementPlayerHealth();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
+    }
+
+    IEnumerator WaitBeforeUnloadingScoreIncrement()
+    {
+
+        yield return new WaitForSeconds(1);
+        _gameController.incrementPlayerScore();
+        _gameController.gameIsLoaded = false;
+        // NOTE: INDEX VARIES BETWEEN GAMES.
+        SceneManager.UnloadSceneAsync(12);
     }
 
 }
