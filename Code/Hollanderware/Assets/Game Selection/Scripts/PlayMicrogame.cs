@@ -59,8 +59,8 @@ public class PlayMicrogame : MonoBehaviour
 
     public void PlayPOKE()
     {
-        Debug.Log("POKE is currently unavailable");
-        //SceneManager.LoadScene(poke);
+        //Debug.Log("POKE is currently unavailable");
+        SceneManager.LoadScene(poke);
     }
 
     public void PlaySHOOT()
