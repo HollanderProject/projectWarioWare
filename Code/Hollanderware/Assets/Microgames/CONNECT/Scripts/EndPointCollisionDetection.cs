@@ -33,17 +33,19 @@ public class EndPointCollisionDetection : MonoBehaviour
             if (xPosDiff <= buffer && yPosDiff <= buffer)
             {
                 //Debug.Log("Win");
-                WinText.MakeVisible();
+                //WinText.MakeVisible();
                 //Application.Quit();
+                GameManagerCONNECT.playerWin = true;
             }
             else
             {
                 //Debug.Log("Lose");
-                LoseText.MakeVisible();
+                GameManagerCONNECT.playerLose = true;
+                //LoseText.MakeVisible();
                 //Application.Quit();
             }
 
-            BridgeGravity.enableGravity();
+            //BridgeGravity.enableGravity();
         }
     }
 }
