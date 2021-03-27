@@ -11,10 +11,10 @@ public class PlayMicrogame : MonoBehaviour
         connect = 6, 
         cut = 7, 
         herd = 8, 
-        nudge = 9,
-        organize = 10, 
-        poke = 11, 
-        shoot = 12, 
+        nudge = 12,
+        organize = 9, 
+        poke = 10, 
+        shoot = 11, 
         spot = 13;
 
     public void PlayBROWSE()
@@ -70,7 +70,7 @@ public class PlayMicrogame : MonoBehaviour
 
     public void PlaySPOT()
     {
-        Debug.Log("SPOT is currently unavailable");
-        //SceneManager.LoadScene(spot);
+        //Debug.Log("SPOT is currently unavailable");
+        SceneManager.LoadScene(spot);
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Win : MonoBehaviour
 {
-    public GameObject winText;
-    public GameObject failText;
+    public GameObject check;
+    public GameObject cross;
     public GameObject climber;
     public GameObject victoryPose;
     public BoxCollider2D failBox;
@@ -14,8 +14,8 @@ public class Win : MonoBehaviour
     void Start()
     {
         // Hides the win text and victory pose
-        winText.SetActive(false);
-        failText.SetActive(false);
+        check.SetActive(false);
+        cross.SetActive(false);
         victoryPose.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,12 +26,12 @@ public class Win : MonoBehaviour
         climber.SetActive(false);
         if(other == winBox)
         {
-            winText.SetActive(true);
+            check.SetActive(true);
             victoryPose.SetActive(true); 
         }
         else if(other == failBox)
         {
-            failText.SetActive(true);
+            cross.SetActive(true);
         }
         
     }

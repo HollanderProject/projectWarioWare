@@ -12,21 +12,23 @@ public class GraphicTimer : MonoBehaviour
 
     private bool keepCounting = true;
 
-    GameManagerBrowse _gameManager;
+    GameManagerSpot _gameManager;
 
     void Start()
     {
         currentFrame = gameObject.GetComponent<SpriteRenderer>();
-        _gameManager = GameObject.Find("GameManager").GetComponent<GameManagerBrowse>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManagerSpot>();
         currentTime = startingTime;
     }
 
     void Update()
     {
+        
         if (_gameManager.playerWin)
         {
             keepCounting = false;
         }
+        
 
         if (keepCounting)
         {

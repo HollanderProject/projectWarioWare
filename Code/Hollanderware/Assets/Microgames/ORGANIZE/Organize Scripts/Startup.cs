@@ -5,14 +5,15 @@ using System;
 
 public class Startup : MonoBehaviour
 {
-    public GameObject failText;
-    public GameObject winText;
+    public GameObject cross;
+    public GameObject check;
     public GameObject organizeText;
     public Sprite Male;
     public Sprite Female;
     public GameObject[] CharacterList;
     private int i = 0;
-    private float fScale = 0.85f;
+    private float fScale = 0.7f;
+    private float mScale = 0.6f;
     private float moveSpeed = 15;
     private int k = 0;
     private bool moving = false;
@@ -24,15 +25,14 @@ public class Startup : MonoBehaviour
         };
 
     private Vector3[] FemalePos = new Vector3[3]{
-        new Vector3(9.63f, -2.6f, -1f), 
-        new Vector3(7.48f, -2.48f, -1f), 
-        new Vector3(5.28f, -2.43f, -1f)
-        };
+        new Vector3(6.58f, -2.4f, -1f), 
+        new Vector3(5f, -2.4f, -1f), 
+        new Vector3(3.14f, -2.4f, -1f)        };
 
     private Vector3[] MalePos = new Vector3[3]{
-        new Vector3(-9.03f, -2.43f, -1f), 
-        new Vector3(-7.08f, -2.33f, -1f), 
-        new Vector3(-4.81f, -2.45f, -1f)
+        new Vector3(-6.5f, -2.4f, -1f), 
+        new Vector3(-4.94f, -2.4f, -1f), 
+        new Vector3(-3.44f, -2.4f, -1f)
         };
 
 
@@ -40,8 +40,8 @@ public class Startup : MonoBehaviour
     void Start()
     {
         var rand = new System.Random();
-        failText.SetActive(false);
-        winText.SetActive(false);
+        cross.SetActive(false);
+        check.SetActive(false);
         int Gender;
         CharacterList = new GameObject[3];
         for(i = 0; i < 3; i++)
@@ -61,6 +61,7 @@ public class Startup : MonoBehaviour
         if(Gender == 1)
         {
             character.GetComponent<SpriteRenderer>().sprite = Male;
+            character.transform.localScale = new Vector3(mScale, mScale, mScale);
         }
         else
         {
@@ -73,7 +74,7 @@ public class Startup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(i <= 3 && !failText.activeSelf && !winText.activeSelf && !moving)
+        if(i <= 3 && !cross.activeSelf && !check.activeSelf && !moving)
         {
             //Left Click
             if(Input.GetMouseButtonDown(0))
@@ -110,7 +111,7 @@ public class Startup : MonoBehaviour
             if(i == 3)
             {
                 organizeText.SetActive(false);
-                winText.SetActive(true);
+                check.SetActive(true);
             }
         }
         if(moving)
@@ -147,7 +148,7 @@ public class Startup : MonoBehaviour
     }
     void Lose()
     {
-        failText.SetActive(true);
+        cross.SetActive(true);
     }
 
 }
