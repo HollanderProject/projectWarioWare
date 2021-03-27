@@ -9,4 +9,12 @@ public class PointPositions : MonoBehaviour
 
     public static float endPointPositionX;
     public static float endPointPositionY;
+
+    void Start()
+    {
+        startPointPositionX = 0;
+        startPointPositionY = 0;
+        endPointPositionX = 0;
+        endPointPositionY = 0;
+    }
 }

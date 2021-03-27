@@ -11,6 +11,7 @@ public class BridgeGravity : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.simulated = false;
+        fallWhenDoneDrawing = false;
     }
 
     public static void enableGravity()

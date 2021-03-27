@@ -15,8 +15,11 @@ public class BridgeResize : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.sortingLayerName = "Not Background";
-        lineRenderer.sortingOrder = 1;
+        mousePosition = new Vector3(0, 0, 0);
+        bridgeBuilt = false;
+        finalEndPoint = new Vector2(0, 0);
+        //lineRenderer.sortingLayerName = "Not Background";
+        //lineRenderer.sortingOrder = 1;
     }
 
     // Update is called once per frame

@@ -15,6 +15,15 @@ public class EndPointCollisionDetection : MonoBehaviour
     public static float yPosDiff;
     private float buffer = .075f;
 
+    void Start()
+    {
+        finalMousePos = new Vector3(0, 0, 0);
+        finalMousePosX = 0;
+        finalMousePosY = 0;
+        xPosDiff = 0;
+        yPosDiff = 0;
+    }
+
     // Update is called once per frame
     void Update()
     {
