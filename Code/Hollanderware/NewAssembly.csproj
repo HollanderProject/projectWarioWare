@@ -60,6 +60,7 @@
      <Compile Include="Assets\Microgames\POKE\Scripts\GameManagerPoke.cs" />
      <Compile Include="Assets\Microgames\POKE\Scripts\GraphicTimer.cs" />
      <Compile Include="Assets\Microgames\POKE\Scripts\MouseFollow.cs" />
+     <Compile Include="Assets\Microgames\POKE\Scripts\PokeGraphicTimer.cs" />
      <None Include="Assets\Microgames\POKE\Scripts\Scripts.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
