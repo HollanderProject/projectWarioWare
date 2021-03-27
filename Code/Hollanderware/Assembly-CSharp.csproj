@@ -815,6 +815,10 @@
       <Project>{25E487C6-6D1B-7B46-A7A4-1A39DE9B6B3A}</Project>
       <Name>CATCHScripts</Name>
     </ProjectReference>
+    <ProjectReference Include="NewAssembly.csproj">
+      <Project>{AD410F2C-0BA5-95B7-9510-DBB201F5C753}</Project>
+      <Name>NewAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="CUTEditMode.csproj">
       <Project>{05894733-1151-F692-9C6C-6E538E796ED3}</Project>
       <Name>CUTEditMode</Name>
