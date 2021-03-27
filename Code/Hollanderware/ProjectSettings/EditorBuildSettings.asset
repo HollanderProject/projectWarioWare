@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Microgames/NUDGE/NUDGE Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Microgames/SPOT/SPOT Scene.unity
+    path: Assets/Microgames/SPOT/Spot.unity
     guid: 7bb64c3e36bc3dc4baf031109e400a5f
   - enabled: 1
     path: Assets/Tutorial/Tutorial_Level.unity

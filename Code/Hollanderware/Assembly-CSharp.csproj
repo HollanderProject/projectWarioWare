@@ -118,7 +118,8 @@
      <Compile Include="Assets\Microgames\SHOOT\SoundPlayer.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\GameManagerSpot.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\GemSpawn.cs" />
-     <Compile Include="Assets\Microgames\SPOT\Scripts\SpawnerSPOT.cs" />
+     <Compile Include="Assets\Microgames\SPOT\Scripts\MouseFollow.cs" />
+     <Compile Include="Assets\Microgames\SPOT\Scripts\SpotGraphicTimer.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\checkPlaySound.cs" />
      <Compile Include="Assets\Microgames\SPOT\Scripts\triggerCollisionForWhenLightTouchesGem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

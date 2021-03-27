@@ -9,7 +9,7 @@ public class GraphicTimerCATCH : MonoBehaviour
     public GameObject winText;
     public static Sprite[] batteryFramesStatic;
 
-    public float allottedTime = 11;
+    public float allottedTime = 16;
     public static float currentTime = 0f;
 
     public static bool keepCounting = true;

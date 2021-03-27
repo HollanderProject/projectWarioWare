@@ -1,5 +1,5 @@
 sceneSetups:
-- path: C:/Users/Noah/Documents/projectWarioWare69/Code/SPOT/SPOT/Hollanderware/Assets/Scenes/SPOT/Scenes/Spot.unity
+- path: Assets/Game Selection/Game Selection.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

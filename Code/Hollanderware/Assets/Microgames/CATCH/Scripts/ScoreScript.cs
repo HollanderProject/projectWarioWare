@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public static int scoreGoal = 10;
+    public static int scoreGoal = 5;
     public static int scoreValue = 0;
     public Text score;
 
@@ -13,7 +13,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         scoreValue = 0;
-        scoreGoal = 10;
+        scoreGoal = 5;
         score = GetComponent<Text>();
     }
 
