@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreScriptCUT : MonoBehaviour
 {
-    public static int scoreValue = 0;
+    public int scoreValue = 0;
     public Text score;
 
     // Start is called before the first frame update
@@ -42,5 +42,9 @@ public class ScoreScriptCUT : MonoBehaviour
         {
             score.color = new Color(0f, 1f, 0.2f, 1f);
         }
+    }
+    public void increaseScore()
+    {
+        scoreValue = scoreValue + 1;
     }
 }

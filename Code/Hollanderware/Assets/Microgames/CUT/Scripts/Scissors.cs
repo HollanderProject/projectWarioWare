@@ -14,9 +14,11 @@ public class Scissors : MonoBehaviour
     Rigidbody2D rb;
     Camera cam;
     public CircleCollider2D circleCollider;
+    ScoreScriptCUT score;
 
     void Start()
     {
+        score = GameObject.Find("ScoreText").GetComponent<ScoreScriptCUT>();
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         circleCollider = GetComponent<CircleCollider2D>();
@@ -77,7 +79,7 @@ public class Scissors : MonoBehaviour
         if (collision.tag == "Bamboo")
         {
             BladeCutAudio.Play();
-            ScoreScriptCUT.scoreValue += 1;
+            score.increaseScore();
             count++;
             Debug.Log(count);
         }
