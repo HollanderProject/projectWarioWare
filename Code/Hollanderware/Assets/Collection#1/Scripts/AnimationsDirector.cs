@@ -12,6 +12,7 @@ public class AnimationsDirector : MonoBehaviour
     SpriteRenderer SlimeVictory;
     SpriteRenderer EnemyIdle;
     SpriteRenderer EnemyDamaged;
+    public GameObject Heart1Spr;
     SpriteRenderer Heart1;
     SpriteRenderer Heart2;
     SpriteRenderer Heart3;
@@ -35,10 +36,18 @@ public class AnimationsDirector : MonoBehaviour
         SlimeVictory = GameObject.Find("Slime_Victory").GetComponent<SpriteRenderer>();
         EnemyIdle = GameObject.Find("Enemy_Slime_Idle").GetComponent<SpriteRenderer>();
         EnemyDamaged = GameObject.Find("Enemy_Slime_Damaged").GetComponent<SpriteRenderer>();
-        Heart1 = GameObject.Find("Heart1").GetComponent<SpriteRenderer>();
+
+        //Heart1 = GameObject.Find("Heart1").GetComponent<SpriteRenderer>();
+        Heart1 = gameObject.GetComponent<SpriteRenderer>();
         Heart2 = GameObject.Find("Heart2").GetComponent<SpriteRenderer>();
         Heart3 = GameObject.Find("Heart3").GetComponent<SpriteRenderer>();
         Heart4 = GameObject.Find("Heart4").GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if (_gameController.playerHealth <= 0)
+            Heart1Spr.SetActive(false);
     }
 
     public void playIdleAnimations()
@@ -107,6 +116,7 @@ public class AnimationsDirector : MonoBehaviour
         {
             heart1Rendered = false;
             Heart1.enabled = false;
+            Debug.Log("Yeah......");
         }
     }
 
