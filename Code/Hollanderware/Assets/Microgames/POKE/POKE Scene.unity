@@ -401,6 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c34d926b37c5414aa2fcffaac18a66a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noseClicks: 0
+  winCheck: 0
   noseClickNoise: {fileID: 8300000, guid: 0d3a2532e06fa384b8429fe270d3506c, type: 3}
 --- !u!61 &464025424
 BoxCollider2D:
@@ -658,7 +660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1151473045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1402,7 +1404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2090366208
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ namespace mainController {
         GameObject CollectionScreen;
         GameObject exitButton;
         public Text scoreText;
+        public Text microgameName;
 
         public SpriteRenderer renderedTitle;
         public Sprite[] titlesArray;
@@ -46,6 +47,7 @@ namespace mainController {
         // Collection #1 has started
         void Start()
         {
+            microgameName.enabled = false;
             minGamesWon = 10;
             initalizeStartOfCollection();
             CollectionScreen = GameObject.Find("CollectionScreen");
@@ -57,10 +59,10 @@ namespace mainController {
 
         void Update()
         {
-            if (playerScore >= 11)
-            {
-                collectionWin = true;
-            }
+            //if (playerScore >= 11)
+            //{
+            //    collectionWin = true;
+            //}
 
             if (playerHealth <= 0)
             {
@@ -173,6 +175,33 @@ namespace mainController {
             }
         }
 
+        void displayGameName(int gameIndex)
+        {
+            microgameName.enabled = true;
+            if (gameIndex == 3)
+                microgameName.text = "BROWSE!";
+            else if (gameIndex == 4)
+                microgameName.text = "CATCH!";
+            else if (gameIndex == 5)
+                microgameName.text = "CLIMB!";
+            else if (gameIndex == 6)
+                microgameName.text = "CONNECT!";
+            else if (gameIndex == 7)
+                microgameName.text = "CUT!";
+            else if (gameIndex == 8)
+                microgameName.text = "HERD!";
+            else if (gameIndex == 9)
+                microgameName.text = "ORGANIZE!";
+            else if (gameIndex == 10)
+                microgameName.text = "POKE!";
+            else if (gameIndex == 11)
+                microgameName.text = "SHOOT!";
+            else if (gameIndex == 12)
+                microgameName.text = "NUDGE!";
+            else
+                microgameName.text = "SPOT!";
+        }
+
         void initalizeThenLoad()
         {
             gameToBeLoaded = numberGenerator.PsuedoRandomGameSelection();
@@ -180,8 +209,11 @@ namespace mainController {
             // Unload title?????
             renderedTitle.sprite = titlesArray[4];
             gameToBeLoaded = actualGame(gameToBeLoaded);
+            displayGameName(gameToBeLoaded);
             gameLoader.loadGame(gameToBeLoaded);
             CollectionScreen.SetActive(false);
+            StartCoroutine(WaitToRemoveText(1.5f));
+            //microgameName.enabled = false;
         }
 
         IEnumerator WaitThenLoad()
@@ -190,24 +222,32 @@ namespace mainController {
             initalizeThenLoad();
         }
 
+        IEnumerator WaitToRemoveText(float time)
+        {
+            yield return new WaitForSeconds(time);
+            microgameName.enabled = false;
+        }
+
         // Expected to be called by microgame's manager
         public void decrementPlayerHealth()
         {
+            microgameName.enabled = false;
             Debug.Log("Player has taken damage");
             playerHealth -= 1;
 
             displayDamageAnimation = true;
-            scoreText.text = "SCORE: " + playerScore + "/11";
+            scoreText.text = "SCORE: " + playerScore;
         }
 
         // Expected to be called by microgame's manager
         public void incrementPlayerScore()
         {
+            microgameName.enabled = false;
             Debug.Log("Player has score");
             playerScore += 1;
 
             displayScoreAnimation = true;
-            scoreText.text = "SCORE: " + playerScore + "/11";
+            scoreText.text = "SCORE: " + playerScore;
         }
 
     }
