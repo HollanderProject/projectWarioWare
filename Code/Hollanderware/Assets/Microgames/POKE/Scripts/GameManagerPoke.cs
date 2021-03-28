@@ -47,7 +47,7 @@ public class GameManagerPoke : MonoBehaviour
 
     void RestartLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(10);
         Time.timeScale = 1.0f;
     }
 
