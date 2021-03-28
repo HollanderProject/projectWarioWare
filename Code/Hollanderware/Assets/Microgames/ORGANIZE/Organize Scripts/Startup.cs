@@ -184,6 +184,7 @@ public class Startup : MonoBehaviour
 
     void RestartLevel()
     {
+        destroyCharacters();
         SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
     }
@@ -212,6 +213,7 @@ public class Startup : MonoBehaviour
         _gameController.gameIsLoaded = false;
         _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
+        destroyCharacters();
         SceneManager.UnloadSceneAsync(9);
     }
 
@@ -223,7 +225,16 @@ public class Startup : MonoBehaviour
         _gameController.gameIsLoaded = false;
         _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
+        destroyCharacters();
         SceneManager.UnloadSceneAsync(9);
+    }
+
+    private void destroyCharacters()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            Destroy(CharacterList[i]);
+        }
     }
 
 }

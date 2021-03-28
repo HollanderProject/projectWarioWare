@@ -43,7 +43,7 @@ public class CharacterController : MonoBehaviour
             if(!cross.activeSelf && !check.activeSelf)
             {
                 float pos = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-                Arm.transform.position = new Vector2(pos, -1.05f);
+                Arm.transform.position = new Vector2(Mathf.Clamp(pos, -6f, -1f), -1.05f);
             }
             if(nudgeCount >= 4)
             {

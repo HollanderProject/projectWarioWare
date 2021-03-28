@@ -6,7 +6,7 @@ public class CharacterControllerCLIMB : MonoBehaviour
 {
   private Rigidbody2D rb;
   private Vector2 velocity;
-
+  
   public SpriteRenderer spriteRenderer;
   public Sprite movingSprite1;
   public Sprite movingSprite2;
@@ -20,6 +20,7 @@ public class CharacterControllerCLIMB : MonoBehaviour
     {
         // Initializes rb to be the Rigidbody
         rb = GetComponent<Rigidbody2D>();
+        rb.transform.position = new Vector2(-2.87f, -2.73f);
     }
 
     // Update is called once per frame
