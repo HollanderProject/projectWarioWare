@@ -41,6 +41,7 @@ namespace mainController {
         // Collection #1 has started
         void Start()
         {
+            minGamesWon = 10;
             initalizeStartOfCollection();
             numberGenerator = gameObject.GetComponent<RandomGameSelector>();
             gameLoader = gameObject.GetComponent<CollectionGameLoader>();
@@ -48,7 +49,7 @@ namespace mainController {
 
         void Update()
         {
-            if (playerScore >= 4)
+            if (playerScore >= 11)
             {
                 collectionWin = true;
             }
@@ -157,38 +158,34 @@ namespace mainController {
         int actualGame(int num)
         {
             if (num == 0)
-            {
                 return 3; // BROWSE
-            }
-
             else if (num == 1)
-            {
-                return 12; // NUDGE
-            }
-
-            else if (num == 2)
-            {
-                return 8; // HERD
-            }
-
-            else if (num == 3)
-            {
-                return 7; // CUT
-            }
-
-            else if (num == 4)
-            {
                 return 4; // CATCH
-            }
-            else
-                return 4;
+            else if (num == 2)
+                return 5; // CLIMB
+            else if (num == 3)
+                return 6; // CONNECT
+            else if (num == 4)
+                return 7; // CUT
+            else if (num == 5)
+                return 8; // HERD
+            else if (num == 6)
+                return 9; // ORGANIZE
+            else if (num == 7)
+                return 10; // POKE
+            else if (num == 8)
+                return 11; // SHOOT
+            else if (num == 9)
+                return 12; // NUDGE
+            else // Aka it returns 10
+                return 13; // SPOT
         }
 
         void OnGUI()
         {   
             if (collectionWin || collectionLost)
             {
-                if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Return to Home"))
+                if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Level Select"))
                 {
                     SceneManager.LoadScene(1);
                 }

@@ -193,7 +193,7 @@ public class GameBehavior : MonoBehaviour
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
         // NOTE: INDEX VARIES BETWEEN GAMES.
-        SceneManager.UnloadSceneAsync(12);
+        SceneManager.UnloadSceneAsync(11);
     }
 
     IEnumerator WaitBeforeUnloadingScoreIncrement()
@@ -203,6 +203,6 @@ public class GameBehavior : MonoBehaviour
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
         // NOTE: INDEX VARIES BETWEEN GAMES.
-        SceneManager.UnloadSceneAsync(12);
+        SceneManager.UnloadSceneAsync(11);
     }
 }
