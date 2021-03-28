@@ -28,9 +28,12 @@ namespace mainController {
         CollectionGameLoader gameLoader;
         AnimationsDirector aniDirector;
         GameObject CollectionScreen;
+        GameObject exitButton;
 
         public SpriteRenderer renderedTitle;
         public Sprite[] titlesArray;
+
+        float counter = 0;
         
 
         // Keep this Object ALIVEEEEE!
@@ -64,15 +67,14 @@ namespace mainController {
 
             if (collectionWin && !collectionLost)
             {
-                Debug.Log("YOU'VE WON!!");
+                CollectionScreen.SetActive(true);
                 aniDirector.playCollectionVictoryAnimation();
             }
 
             else if (collectionLost && !collectionWin)
             {
-                Debug.Log("YOU'VE LOST ;(");
+                CollectionScreen.SetActive(true);
                 aniDirector.playCollectionLoseAnimation();
-                // Display Exit Button back to Level Select or Restart by recalling this scene?
             }
 
             else if (displayScoreAnimation)
@@ -90,15 +92,8 @@ namespace mainController {
             // If non of these conditions are met, load another game.
             else if (!gameIsLoaded)
             {
-                gameToBeLoaded = numberGenerator.PsuedoRandomGameSelection();
-                loadSplash(gameToBeLoaded);
-                // Unload title?????
-                renderedTitle.sprite = titlesArray[4];
-                gameToBeLoaded = actualGame(gameToBeLoaded);
-
-                gameLoader.loadGame(gameToBeLoaded);
-                CollectionScreen.SetActive(false);
                 gameIsLoaded = true;
+                StartCoroutine(WaitThenLoad());
             }
         }
 
@@ -169,8 +164,26 @@ namespace mainController {
                 {
                     SceneManager.LoadScene(1);
                     SceneManager.UnloadSceneAsync(15);
+                    Destroy(this.gameObject);
                 }
             }
+        }
+
+        void initalizeThenLoad()
+        {
+            gameToBeLoaded = numberGenerator.PsuedoRandomGameSelection();
+            loadSplash(gameToBeLoaded);
+            // Unload title?????
+            renderedTitle.sprite = titlesArray[4];
+            gameToBeLoaded = actualGame(gameToBeLoaded);
+            gameLoader.loadGame(gameToBeLoaded);
+            CollectionScreen.SetActive(false);
+        }
+
+        IEnumerator WaitThenLoad()
+        {
+            yield return new WaitForSeconds(2.5f);
+            initalizeThenLoad();
         }
 
         // Expected to be called by microgame's manager

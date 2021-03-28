@@ -53,24 +53,22 @@ public class AnimationsDirector : MonoBehaviour
 
     public void playSlimeHappyAnimation()
     {
+        _gameController.displayScoreAnimation = false;
         SlimeIdle.enabled = false;
         SlimeHappy.enabled = true;
         EnemyIdle.enabled = false;
         EnemyDamaged.enabled = false;
         StartCoroutine(AnimationDelay());
-        playIdleAnimations();
-        _gameController.displayScoreAnimation = false;
     }
 
     public void playSlimeDamagedAnimation()
     {
+        _gameController.displayDamageAnimation = false;
         SlimeIdle.enabled = false;
         EnemyIdle.enabled = true;
         SlimeDamaged.enabled = true;
         takeDamageAnimation();
         StartCoroutine(AnimationDelay());
-        playIdleAnimations();
-        _gameController.displayDamageAnimation = false;
     }
 
     public void playCollectionVictoryAnimation()
@@ -79,7 +77,6 @@ public class AnimationsDirector : MonoBehaviour
         EnemyIdle.enabled = false;
         SlimeVictory.enabled = true;
         EnemyDamaged.enabled = true;
-        StartCoroutine(AnimationDelay());
     }
 
     public void playCollectionLoseAnimation()
@@ -87,7 +84,6 @@ public class AnimationsDirector : MonoBehaviour
         SlimeIdle.enabled = false;
         EnemyIdle.enabled = true;
         SlimeDefeated.enabled = true;
-        StartCoroutine(AnimationDelay());
     }
 
     public void takeDamageAnimation()
@@ -116,6 +112,7 @@ public class AnimationsDirector : MonoBehaviour
 
     IEnumerator AnimationDelay()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(1.5f);
+        playIdleAnimations();
     }
 }
