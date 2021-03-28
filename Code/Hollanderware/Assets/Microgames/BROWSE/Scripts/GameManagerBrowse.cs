@@ -38,7 +38,6 @@ public class GameManagerBrowse : MonoBehaviour
         if (playerWin && !playerLose)
         {
             winScreen.enabled = true;
-            Debug.Log("Hey?");
 
             if (CollectionScene.isLoaded)
             {
@@ -94,6 +93,7 @@ public class GameManagerBrowse : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(3);
     }
@@ -104,6 +104,7 @@ public class GameManagerBrowse : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(3);
     }

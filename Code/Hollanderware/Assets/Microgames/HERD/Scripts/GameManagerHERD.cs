@@ -79,6 +79,7 @@ public class GameManagerHERD : MonoBehaviour
         _gameController.decrementPlayerHealth();
         // NOTE: INDEX VARIES BETWEEN GAMES.
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         SceneManager.UnloadSceneAsync(8);
     }
 
@@ -89,6 +90,7 @@ public class GameManagerHERD : MonoBehaviour
         _gameController.incrementPlayerScore();
         // NOTE: INDEX VARIES BETWEEN GAMES.
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         SceneManager.UnloadSceneAsync(8);
     }
 }

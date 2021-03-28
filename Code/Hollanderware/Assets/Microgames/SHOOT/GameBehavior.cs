@@ -192,6 +192,7 @@ public class GameBehavior : MonoBehaviour
 
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(11);
     }
@@ -202,6 +203,7 @@ public class GameBehavior : MonoBehaviour
 
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(11);
     }

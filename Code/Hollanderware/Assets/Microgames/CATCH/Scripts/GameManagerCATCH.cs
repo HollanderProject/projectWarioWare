@@ -42,13 +42,13 @@ public class GameManagerCATCH : MonoBehaviour
         {
             if (playerWin && !playerLose)
             {
-                
+                winScreen.enabled = true;
                 StartCoroutine(WaitBeforeUnloadingScoreIncrement());
             }
 
             if (!playerWin && playerLose)
             {
-                
+                loseScreen.enabled = true;
                 StartCoroutine(WaitBeforeUnloadingHealthDecrease());
             }
         }
@@ -89,6 +89,7 @@ public class GameManagerCATCH : MonoBehaviour
         _gameController.decrementPlayerHealth();
         // NOTE: INDEX VARIES BETWEEN GAMES.
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         SceneManager.UnloadSceneAsync(4);
     }
 
@@ -99,6 +100,7 @@ public class GameManagerCATCH : MonoBehaviour
         _gameController.incrementPlayerScore();
         // NOTE: INDEX VARIES BETWEEN GAMES.
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         SceneManager.UnloadSceneAsync(4);
     }
 }

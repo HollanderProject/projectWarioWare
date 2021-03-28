@@ -10,13 +10,12 @@ using UnityEngine.SceneManagement;
 // Provides functions for microgame's manager to call to edit hearts/score.
 // Call RandomGameSelector to prepare next game.
 // Provides a status to game selectors, instead of displaying retry, to return back to collection.
-//
 
 namespace mainController {
     public class CollectionGameController : MonoBehaviour
     {
-        public bool displayDamageAnimation;
-        public bool displayScoreAnimation;
+        public bool displayDamageAnimation = false;
+        public bool displayScoreAnimation = false;
         public bool collectionWin = false;
         public bool collectionLost = false;
         public int playerScore; 
@@ -27,6 +26,8 @@ namespace mainController {
 
         RandomGameSelector numberGenerator;
         CollectionGameLoader gameLoader;
+        AnimationsDirector aniDirector;
+        GameObject CollectionScreen;
 
         public SpriteRenderer renderedTitle;
         public Sprite[] titlesArray;
@@ -43,8 +44,10 @@ namespace mainController {
         {
             minGamesWon = 10;
             initalizeStartOfCollection();
+            CollectionScreen = GameObject.Find("CollectionScreen");
             numberGenerator = gameObject.GetComponent<RandomGameSelector>();
             gameLoader = gameObject.GetComponent<CollectionGameLoader>();
+            aniDirector = gameObject.GetComponent<AnimationsDirector>();
         }
 
         void Update()
@@ -62,12 +65,26 @@ namespace mainController {
             if (collectionWin && !collectionLost)
             {
                 Debug.Log("YOU'VE WON!!");
+                aniDirector.playCollectionVictoryAnimation();
             }
 
             else if (collectionLost && !collectionWin)
             {
                 Debug.Log("YOU'VE LOST ;(");
+                aniDirector.playCollectionLoseAnimation();
                 // Display Exit Button back to Level Select or Restart by recalling this scene?
+            }
+
+            else if (displayScoreAnimation)
+            {
+                CollectionScreen.SetActive(true);
+                aniDirector.playSlimeHappyAnimation();
+            }
+
+            else if (displayDamageAnimation)
+            {
+                CollectionScreen.SetActive(true);
+                aniDirector.playSlimeDamagedAnimation();
             }
 
             // If non of these conditions are met, load another game.
@@ -75,51 +92,14 @@ namespace mainController {
             {
                 gameToBeLoaded = numberGenerator.PsuedoRandomGameSelection();
                 loadSplash(gameToBeLoaded);
-                StartCoroutine(WaitABit());
                 // Unload title?????
                 renderedTitle.sprite = titlesArray[4];
                 gameToBeLoaded = actualGame(gameToBeLoaded);
+
                 gameLoader.loadGame(gameToBeLoaded);
+                CollectionScreen.SetActive(false);
                 gameIsLoaded = true;
             }
-
-            /*
-            if (Input.GetKeyDown("3"))
-            {
-                // Test Load. Testing is 3.
-                gameLoader.loadGame(3);
-            }
-
-            if (Input.GetKeyDown("4"))
-            {
-                gameLoader.loadGame(12);
-            }
-
-            if (Input.GetKeyDown("5"))
-            {
-                gameLoader.loadGame(8);
-            }
-
-            // CUT DOES NOT WORK PROPERLY
-            if (Input.GetKeyDown("6"))
-            {
-                gameLoader.loadGame(7);
-            }
-
-            if (Input.GetKeyDown("7"))
-            {
-                gameLoader.loadGame(4);
-            }
-
-            // DEBUG
-            if (Input.GetKeyDown("d"))
-            {
-                Debug.Log("(CALLED)Current Health = " + playerHealth);
-                Debug.Log("(CALLED)Current Score = " + playerScore);
-                Debug.Log("(CALLED) Did Player win? " + collectionWin);
-                Debug.Log("(CALLED) Did Player lose? " + collectionLost);
-            }
-            */
         }
 
         // Start of game. Call function
@@ -188,13 +168,9 @@ namespace mainController {
                 if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Level Select"))
                 {
                     SceneManager.LoadScene(1);
+                    SceneManager.UnloadSceneAsync(15);
                 }
             }
-        }
-
-        IEnumerator WaitABit()
-        {
-            yield return new WaitForSeconds(3);
         }
 
         // Expected to be called by microgame's manager

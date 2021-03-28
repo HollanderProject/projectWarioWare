@@ -132,6 +132,7 @@ public class CharacterController : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(12);
     }
@@ -142,6 +143,7 @@ public class CharacterController : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(12);
     }

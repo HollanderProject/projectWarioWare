@@ -36,7 +36,7 @@ public class RandomGameSelector : MonoBehaviour
     {
         Debug.Log("Resetting List...");
         gameHistory.Clear();
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i <= 10; i++)
         {
             gameHistory.Add(i);
         }

@@ -44,7 +44,6 @@ public class WinLose : MonoBehaviour
         {
             if (cross.activeSelf || check.activeSelf)
             {
-                Debug.Log("here2");
                 if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
@@ -80,6 +79,7 @@ public class WinLose : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(5);
     }
@@ -90,6 +90,7 @@ public class WinLose : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
         SceneManager.UnloadSceneAsync(5);
     }

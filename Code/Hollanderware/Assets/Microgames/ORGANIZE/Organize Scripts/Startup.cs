@@ -54,6 +54,7 @@ public class Startup : MonoBehaviour
             _gameController = null;
         }
         CollectionScene = SceneManager.GetSceneByBuildIndex(15);
+
         Debug.Log("build index: " + SceneManager.GetActiveScene().buildIndex);
         var rand = new System.Random();
         cross.SetActive(false);
@@ -209,8 +210,9 @@ public class Startup : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.decrementPlayerHealth();
         _gameController.gameIsLoaded = false;
+        _gameController.displayDamageAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
-        SceneManager.UnloadSceneAsync(12);
+        SceneManager.UnloadSceneAsync(9);
     }
 
     IEnumerator WaitBeforeUnloadingScoreIncrement()
@@ -219,8 +221,9 @@ public class Startup : MonoBehaviour
         yield return new WaitForSeconds(1);
         _gameController.incrementPlayerScore();
         _gameController.gameIsLoaded = false;
+        _gameController.displayScoreAnimation = true;
         // NOTE: INDEX VARIES BETWEEN GAMES.
-        SceneManager.UnloadSceneAsync(12);
+        SceneManager.UnloadSceneAsync(9);
     }
 
 }
