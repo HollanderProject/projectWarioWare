@@ -23,11 +23,18 @@ public class Startup : MonoBehaviour
     private int k = 0;
     private bool moving = false;
 
+    // Some characters would be off screen, these are there original positions
+    //private Vector3[] StartPos = new Vector3[3]{
+    //    new Vector3(-0.14f, -0.09f, -1f), 
+    //    new Vector3(-0.19f, 2.25f, -0.9f), 
+    //    new Vector3(-0.21f, 3.82f, -0.8f)
+    //   };
+
     private Vector3[] StartPos = new Vector3[3]{
-        new Vector3(-0.14f, -0.09f, -1f), 
-        new Vector3(-0.19f, 2.25f, -0.9f), 
-        new Vector3(-0.21f, 3.82f, -0.8f)
-        };
+        new Vector3(-0.14f, -0.32f, -1f), 
+        new Vector3(-0.19f, 1.52f, -0.9f), 
+        new Vector3(-0.21f, 3.03f, -0.8f)
+    };
 
     private Vector3[] FemalePos = new Vector3[3]{
         new Vector3(6.58f, -2.4f, -1f), 

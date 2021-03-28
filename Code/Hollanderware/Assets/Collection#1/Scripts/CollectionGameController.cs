@@ -29,6 +29,7 @@ namespace mainController {
         AnimationsDirector aniDirector;
         GameObject CollectionScreen;
         GameObject exitButton;
+        public Text scoreText;
 
         public SpriteRenderer renderedTitle;
         public Sprite[] titlesArray;
@@ -51,6 +52,7 @@ namespace mainController {
             numberGenerator = gameObject.GetComponent<RandomGameSelector>();
             gameLoader = gameObject.GetComponent<CollectionGameLoader>();
             aniDirector = gameObject.GetComponent<AnimationsDirector>();
+            scoreText.text = "Lets go!";
         }
 
         void Update()
@@ -69,12 +71,14 @@ namespace mainController {
             {
                 CollectionScreen.SetActive(true);
                 aniDirector.playCollectionVictoryAnimation();
+                scoreText.text = "YOU WIN!";
             }
 
             else if (collectionLost && !collectionWin)
             {
                 CollectionScreen.SetActive(true);
                 aniDirector.playCollectionLoseAnimation();
+                scoreText.text = "YOU LOSE";
             }
 
             else if (displayScoreAnimation)
@@ -160,7 +164,7 @@ namespace mainController {
         {   
             if (collectionWin || collectionLost)
             {
-                if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Level Select"))
+                if (GUI.Button(new Rect(Screen.width/2 - 50, Screen.height/2 - 50, 100, 100), "Main Menu"))
                 {
                     SceneManager.LoadScene(1);
                     SceneManager.UnloadSceneAsync(15);
@@ -193,6 +197,7 @@ namespace mainController {
             playerHealth -= 1;
 
             displayDamageAnimation = true;
+            scoreText.text = "SCORE: " + playerScore + "/11";
         }
 
         // Expected to be called by microgame's manager
@@ -202,6 +207,7 @@ namespace mainController {
             playerScore += 1;
 
             displayScoreAnimation = true;
+            scoreText.text = "SCORE: " + playerScore + "/11";
         }
 
     }
