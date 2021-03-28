@@ -10,6 +10,7 @@ public class GameManagerSpot : MonoBehaviour
 
     SpriteRenderer winScreen;
     SpriteRenderer loseScreen;
+    GameObject searchGem;
 
     mainController.CollectionGameController _gameController;
     Scene CollectionScene;
@@ -29,6 +30,7 @@ public class GameManagerSpot : MonoBehaviour
         {
             _gameController = null;
         }
+        searchGem = GameObject.Find("searchGem(Clone)");
         CollectionScene = SceneManager.GetSceneByBuildIndex(15);
     }
 
@@ -40,6 +42,7 @@ public class GameManagerSpot : MonoBehaviour
             Debug.Log("Sprite shall appear");
             if (CollectionScene.isLoaded)
             {
+                Destroy(searchGem);
                 StartCoroutine(WaitBeforeUnloadingScoreIncrement());
             }
         }
@@ -50,6 +53,7 @@ public class GameManagerSpot : MonoBehaviour
             Debug.Log("Sprite shall appear");
             if (CollectionScene.isLoaded)
             {
+                Destroy(searchGem);
                 StartCoroutine(WaitBeforeUnloadingHealthDecrease());
             }
         }

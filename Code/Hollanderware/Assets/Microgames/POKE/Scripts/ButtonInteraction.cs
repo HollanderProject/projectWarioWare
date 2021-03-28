@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class ButtonInteraction : MonoBehaviour
 {
     // Create variables for how the number of nose clicks the player has (zero) and the ammount they must get (ten)
-    public static int noseClicks = 0;
+    public int noseClicks = 0;
     public static int clicksRequired = 10;
-    public static bool winCheck = false;
+    public bool winCheck = false;
     
 
     public AudioClip noseClickNoise;
