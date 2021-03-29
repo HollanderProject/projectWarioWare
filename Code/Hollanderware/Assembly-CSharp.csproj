@@ -79,6 +79,7 @@
      <Compile Include="Assets\Microgames\CONNECT\Scripts\EndPointCollisionDetection.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\GameManagerCONNECT.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\GeneratePointPosition.cs" />
+     <Compile Include="Assets\Microgames\CONNECT\Scripts\GraphicTimerCONNECT.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\LoseText.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\MousePosition.cs" />
      <Compile Include="Assets\Microgames\CONNECT\Scripts\PointPositions.cs" />
