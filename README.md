@@ -182,5 +182,5 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Cameron Bernard - Added CLIMB, ORGANIZE, and NUDGE to the collection. Made all microgames on level with standard.
 * Isaiah Nagac - Added foundation for collection, added SHOOT and BROWSE to the collection, created animations for collection.
 * Jesse Jericho - Added CUT and HERD to the collection. Adjustments to microgames CUT and HERD. Added music to the game.
-* Noah Lang - Added CATCH and CONNECT to the collection. Refined multiple aspects of the collection functionality.
+* Noah Lang - Added CATCH and CONNECT to the collection. Refined multiple aspects of the collection functionality. Recorded & edited product demonstration.
 * Noah Law - Added POKE and SPOT to the collection.
