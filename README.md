@@ -162,3 +162,25 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 * Jesse Jericho - Updated UI components of CUT and HERD to be consistent with other games (win/loss screen and timers). Added additional unit tests following these changes.
 * Noah Lang - Made significant graphical improvements to CATCH and CONNECT, added timer and "standard" win/loss screen to CATCH, along with unit tests.
 * Noah Law - Worked on SPOT to make it consistent with the other microgames in UI
+
+# Sprint 8
+* [Trello Board (Backlogs and Requirements)](https://trello.com/b/jtsmfnkz/stuff-to-do)
+
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1KS1JAGUvksctNao-YIUDpaPESjrc84cxSsQW1u5nAa8/edit?usp=sharing)
+
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/11vcohYbFJNGEILUxfn7gYudHtuWF15Xw2oqAP-XRw84/edit?usp=sharing)
+
+* [System Architecture](https://github.com/HollanderProject/projectWarioWare/blob/main/architecture.md)
+
+* [Source Code](https://github.com/HollanderProject/projectWarioWare/tree/main/Code)
+
+* [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
+
+* [Product Demonstration]
+
+## Task Allocation
+* Cameron Bernard - Added CLIMB, ORGANIZE, and NUDGE to the collection. Made all microgames on level with standard.
+* Isaiah Nagac - Added foundation for collection, added SHOOT and BROWSE to the collection, created animations for collection.
+* Jesse Jericho - Added CUT and HERD to the collection. Adjustments to microgames CUT and HERD. Added music to the game.
+* Noah Lang - Added CATCH and CONNECT to the collection. Refined multiple aspects of the collection functionality.
+* Noah Law - Added POKE and SPOT to the collection.
