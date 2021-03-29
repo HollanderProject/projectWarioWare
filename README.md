@@ -176,7 +176,7 @@ Since the rise of mobile phone, people across all ages have been captivated by g
 
 * [Tests](https://github.com/HollanderProject/projectWarioWare/tree/main/Tests)
 
-* [Product Demonstration]
+* [Product Demonstration](https://youtu.be/bksjld1CA9Q)
 
 ## Task Allocation
 * Cameron Bernard - Added CLIMB, ORGANIZE, and NUDGE to the collection. Made all microgames on level with standard.
