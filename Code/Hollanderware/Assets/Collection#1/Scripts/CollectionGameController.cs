@@ -80,7 +80,8 @@ namespace mainController {
             {
                 CollectionScreen.SetActive(true);
                 aniDirector.playCollectionLoseAnimation();
-                scoreText.text = "YOU LOSE";
+                aniDirector.SlimeIdle.enabled = false;
+                scoreText.text = "GAME OVER. SCORE: " + playerScore;
             }
 
             else if (displayScoreAnimation)

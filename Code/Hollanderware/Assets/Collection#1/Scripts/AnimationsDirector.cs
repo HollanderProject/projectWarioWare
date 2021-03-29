@@ -5,7 +5,7 @@ using mainController;
 
 public class AnimationsDirector : MonoBehaviour
 {
-    SpriteRenderer SlimeIdle;
+    public SpriteRenderer SlimeIdle;
     SpriteRenderer SlimeHappy;
     SpriteRenderer SlimeDamaged;
     SpriteRenderer SlimeDefeated;
