@@ -239,7 +239,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14598}
     - Class: 114
-      Script: {instanceID: 16856}
+      Script: {instanceID: 21500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1227,6 +1227,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13798}
     - Class: 114
+      Script: {instanceID: 13844}
+    - Class: 114
       Script: {instanceID: 13916}
     - Class: 114
       Script: {instanceID: 14598}
@@ -1713,7 +1715,7 @@ ScriptsOnlyBuild:
     className: RandomAnimal
   - hash:
       serializedVersion: 2
-      Hash: 1607c6e64a6e3515ec2ef5f05c0e0212
+      Hash: 7c84874dee0ffc23a4cfe63f2350ee7e
     assemblyName: CATCHScripts.dll
     namespaceName: mainController
     className: CollectionGameController
@@ -2641,4 +2643,5 @@ ScriptsOnlyBuild:
   - Assets/Microgames/SPOT/SPOT Scene.unity
   - Assets/Tutorial/Tutorial_Level.unity
   - Assets/Collection#1/Collection#1.unity
-  playerPath: C:/Users/Noah/Desktop/Hollanderware Build/Hollanderware.exe
+  playerPath: C:/Users/rinri/Desktop/HollanderWare/projectWarioWare/Runnable Game
+    Builds/4.07.21/Hollanderware.exe

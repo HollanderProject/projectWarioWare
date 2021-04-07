@@ -17,7 +17,6 @@ public class LoadSceneViaButtons : MonoBehaviour
 
     public void collectionsButton()
     {
-        Debug.Log("Current version does not support collections");
         SceneManager.LoadScene(15);
     }
     

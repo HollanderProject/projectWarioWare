@@ -29,13 +29,14 @@ namespace mainController {
         AnimationsDirector aniDirector;
         GameObject CollectionScreen;
         GameObject exitButton;
+
         public Text scoreText;
         public Text microgameName;
+        public Text fasterText;
 
-        public SpriteRenderer renderedTitle;
-        public Sprite[] titlesArray;
-
-        float counter = 0;
+        public float gameSpeed;
+        public float defaultSpeed = 1.0f;
+        public int scoreThreshold = 5;
         
 
         // Keep this Object ALIVEEEEE!
@@ -47,7 +48,11 @@ namespace mainController {
         // Collection #1 has started
         void Start()
         {
+            gameSpeed = defaultSpeed;
+            Time.timeScale = gameSpeed;
             microgameName.enabled = false;
+            fasterText = GameObject.Find("Faster Text").GetComponent<Text>();
+            fasterText.enabled = false;
             minGamesWon = 10;
             initalizeStartOfCollection();
             CollectionScreen = GameObject.Find("CollectionScreen");
@@ -59,11 +64,6 @@ namespace mainController {
 
         void Update()
         {
-            //if (playerScore >= 11)
-            //{
-            //    collectionWin = true;
-            //}
-
             if (playerHealth <= 0)
             {
                 collectionLost = true;
@@ -80,8 +80,20 @@ namespace mainController {
             {
                 CollectionScreen.SetActive(true);
                 aniDirector.playCollectionLoseAnimation();
-                aniDirector.SlimeIdle.enabled = false;
+                //aniDirector.SlimeIdle.enabled = false;
                 scoreText.text = "GAME OVER. SCORE: " + playerScore;
+                Time.timeScale = defaultSpeed;
+            }
+
+            else if (playerScore == scoreThreshold)
+            {
+                fasterText.enabled = true;
+                Debug.Log("going faster!");
+                gameSpeed += 0.20f;
+                Time.timeScale = gameSpeed;
+                scoreThreshold += 5;
+                fasterText.text = "FASTER!";
+                StartCoroutine(WaitToRemoveFaster());
             }
 
             else if (displayScoreAnimation)
@@ -111,30 +123,6 @@ namespace mainController {
             playerHealth = 4;
             collectionLost = false;
             collectionWin = false;
-        }
-
-        void loadSplash(int gameNumber)
-        {
-            // Load Browse
-            if (gameNumber == 1)
-            {
-                renderedTitle.sprite = titlesArray[1];
-            }
-            // Load Shoot
-            else if (gameNumber == 0)
-            {
-                renderedTitle.sprite = titlesArray[0];
-            }
-            // load herd
-            else if (gameNumber == 2)
-            {
-                renderedTitle.sprite = titlesArray[2];
-            }
-            // load catch
-            else if (gameNumber == 3)
-            {
-                renderedTitle.sprite = titlesArray[3];
-            }
         }
 
         int actualGame(int num)
@@ -206,15 +194,17 @@ namespace mainController {
         void initalizeThenLoad()
         {
             gameToBeLoaded = numberGenerator.PsuedoRandomGameSelection();
-            loadSplash(gameToBeLoaded);
-            // Unload title?????
-            renderedTitle.sprite = titlesArray[4];
             gameToBeLoaded = actualGame(gameToBeLoaded);
             displayGameName(gameToBeLoaded);
             gameLoader.loadGame(gameToBeLoaded);
             CollectionScreen.SetActive(false);
             StartCoroutine(WaitToRemoveText(1.5f));
-            //microgameName.enabled = false;
+        }
+
+        IEnumerator WaitToRemoveFaster()
+        {
+            yield return new WaitForSeconds(1.5f);
+            fasterText.enabled = false;
         }
 
         IEnumerator WaitThenLoad()
@@ -233,7 +223,6 @@ namespace mainController {
         public void decrementPlayerHealth()
         {
             microgameName.enabled = false;
-            Debug.Log("Player has taken damage");
             playerHealth -= 1;
 
             displayDamageAnimation = true;
@@ -244,7 +233,6 @@ namespace mainController {
         public void incrementPlayerScore()
         {
             microgameName.enabled = false;
-            Debug.Log("Player has score");
             playerScore += 1;
 
             displayScoreAnimation = true;

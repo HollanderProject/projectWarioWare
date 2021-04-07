@@ -66,7 +66,7 @@ public class AnimationsDirector : MonoBehaviour
         SlimeIdle.enabled = false;
         SlimeHappy.enabled = true;
         EnemyIdle.enabled = false;
-        EnemyDamaged.enabled = false;
+        EnemyDamaged.enabled = true;
         StartCoroutine(AnimationDelay());
     }
 
@@ -93,6 +93,7 @@ public class AnimationsDirector : MonoBehaviour
         SlimeIdle.enabled = false;
         EnemyIdle.enabled = true;
         SlimeDefeated.enabled = true;
+        StartCoroutine(LoseDelay());
     }
 
     public void takeDamageAnimation()
@@ -116,8 +117,12 @@ public class AnimationsDirector : MonoBehaviour
         {
             heart1Rendered = false;
             Heart1.enabled = false;
-            Debug.Log("Yeah......");
         }
+    }
+
+    IEnumerator LoseDelay()
+    {
+        yield return new WaitForSeconds(3.0f);
     }
 
     IEnumerator AnimationDelay()

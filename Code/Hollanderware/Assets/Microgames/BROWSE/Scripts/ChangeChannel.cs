@@ -27,7 +27,7 @@ public class ChangeChannel : MonoBehaviour
         curHoldTime = minStayOnChannel;
         ActuallyChangeChannel(currentChannel);
         winVideo.enabled = false;
-        winChannel = Random.Range(5,8); 
+        winChannel = Random.Range(3,8); 
         Debug.Log("The random channel is: " + (winChannel+1));
     }
 
