@@ -2718,13 +2718,14 @@ MonoBehaviour:
   batteryFrames:
   - {fileID: -5448222160341416206, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 1157984307808430682, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
+  - {fileID: -5448222160341416206, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 1157984307808430682, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 2511806749234173222, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
-  - {fileID: 2511806749234173222, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 2825778730781308544, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 2825778730781308544, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: -7867542121703049625, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: -7867542121703049625, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
+  - {fileID: 8767405525207788773, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   - {fileID: 8767405525207788773, guid: 7c1b77988a16e2b43bf5864fd56bd44f, type: 3}
   winText: {fileID: 596849906}
   startingTime: 10

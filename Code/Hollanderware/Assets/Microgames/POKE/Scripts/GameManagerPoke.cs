@@ -65,7 +65,7 @@ public class GameManagerPoke : MonoBehaviour
         {
             if (playerWin || playerLose)
             {
-                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select?"))
+                if (GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 50, 100, 100), "Level Select"))
                 {
                     RestartLevel();
                 }

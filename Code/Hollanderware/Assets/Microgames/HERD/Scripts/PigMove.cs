@@ -8,7 +8,7 @@ public class PigMove : MonoBehaviour
     public AudioSource PigOinkAudio;
     public CircleCollider2D circleCollider;
     public static bool PigisHerded;
-    public static float forcePower = 175f;
+    public static float forcePower = 200f;
     public float time;
     public bool turnFlag = false;
     bool soundPlayed = false;

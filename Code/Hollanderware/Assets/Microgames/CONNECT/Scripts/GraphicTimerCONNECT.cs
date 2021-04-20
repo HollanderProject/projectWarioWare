@@ -11,7 +11,7 @@ public class GraphicTimerCONNECT : MonoBehaviour
 
     public float allottedTime = 6;
     public static float currentTime = 0f;
-
+    GameManagerCONNECT _gameManager;
     public static bool keepCounting = true;
 
     void Start()
@@ -20,6 +20,7 @@ public class GraphicTimerCONNECT : MonoBehaviour
         currentTime = 0;
         currentFrame = gameObject.GetComponent<SpriteRenderer>();
         currentTime = allottedTime;
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManagerCONNECT>();
 
         for (int i = 0; i < batteryFrames.Length; i++)
         {
@@ -29,6 +30,11 @@ public class GraphicTimerCONNECT : MonoBehaviour
 
     void Update()
     {
+        if (GameManagerCONNECT.playerWin)
+        {
+            keepCounting = false;
+        }
+
         if (keepCounting)
         {
             currentTime -= 1 * Time.deltaTime;
