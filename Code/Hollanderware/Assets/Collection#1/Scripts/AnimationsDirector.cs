@@ -5,7 +5,8 @@ using mainController;
 
 public class AnimationsDirector : MonoBehaviour
 {
-    public SpriteRenderer SlimeIdle;
+    SpriteRenderer SlimeIdle;
+    public GameObject SlimeIdleObject;
     SpriteRenderer SlimeHappy;
     SpriteRenderer SlimeDamaged;
     SpriteRenderer SlimeDefeated;
@@ -29,7 +30,8 @@ public class AnimationsDirector : MonoBehaviour
     void Start()
     {
         _gameController = GameObject.Find("CollectionGameController").GetComponent<mainController.CollectionGameController>();
-        SlimeIdle = GameObject.Find("Slime_Idle").GetComponent<SpriteRenderer>();
+        SlimeIdleObject = GameObject.Find("Slime_Idle");
+        SlimeIdle = SlimeIdleObject.GetComponent<SpriteRenderer>();
         SlimeHappy = GameObject.Find("Slime_Happy").GetComponent<SpriteRenderer>();
         SlimeDamaged = GameObject.Find("Slime_Damaged").GetComponent<SpriteRenderer>();
         SlimeDefeated = GameObject.Find("Slime_Defeated").GetComponent<SpriteRenderer>();
@@ -90,7 +92,11 @@ public class AnimationsDirector : MonoBehaviour
 
     public void playCollectionLoseAnimation()
     {
-        SlimeIdle.enabled = false;
+        Destroy(SlimeIdleObject);
+        Destroy(Heart1);
+        Destroy(Heart2);
+        Destroy(Heart3);
+        Destroy(Heart4);
         EnemyIdle.enabled = true;
         SlimeDefeated.enabled = true;
         StartCoroutine(LoseDelay());
@@ -122,7 +128,7 @@ public class AnimationsDirector : MonoBehaviour
 
     IEnumerator LoseDelay()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSecondsRealtime(10.0f);
     }
 
     IEnumerator AnimationDelay()

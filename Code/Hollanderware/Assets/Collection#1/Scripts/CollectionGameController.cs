@@ -20,7 +20,6 @@ namespace mainController {
         public bool collectionLost = false;
         public int playerScore; 
         public int playerHealth;
-        public static int minGamesWon = 10;
         public bool gameIsLoaded;
         private int gameToBeLoaded;
 
@@ -53,12 +52,11 @@ namespace mainController {
             microgameName.enabled = false;
             fasterText = GameObject.Find("Faster Text").GetComponent<Text>();
             fasterText.enabled = false;
-            minGamesWon = 10;
-            initalizeStartOfCollection();
             CollectionScreen = GameObject.Find("CollectionScreen");
             numberGenerator = gameObject.GetComponent<RandomGameSelector>();
             gameLoader = gameObject.GetComponent<CollectionGameLoader>();
             aniDirector = gameObject.GetComponent<AnimationsDirector>();
+            initalizeStartOfCollection();
             scoreText.text = "Lets go!";
         }
 
@@ -80,7 +78,6 @@ namespace mainController {
             {
                 CollectionScreen.SetActive(true);
                 aniDirector.playCollectionLoseAnimation();
-                //aniDirector.SlimeIdle.enabled = false;
                 scoreText.text = "GAME OVER. SCORE: " + playerScore;
                 Time.timeScale = defaultSpeed;
             }
